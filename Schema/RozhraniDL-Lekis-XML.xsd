@@ -95,7 +95,6 @@
     <xs:annotation>
       <xs:documentation>
         Element slouží pro uchování údajů o ceně.
-        Použití pro výrobní cenu, suroviny a podobně, kde není třeba určovat sazbu DPH.
       </xs:documentation>
     </xs:annotation>
     <xs:attribute name="cenaSDPH" type="xs:decimal" use="required" />
@@ -106,6 +105,7 @@
     <xs:annotation>
       <xs:documentation>
         Element slouží pro uchování údajů o ceně bez DPH.
+        Použití pro výrobní cenu, suroviny a podobně, kde není třeba určovat sazbu DPH.
       </xs:documentation>
     </xs:annotation>
     <xs:attribute name="cenaBezDPH" type="xs:decimal" use="required" />
@@ -114,6 +114,7 @@
     <xs:annotation>
       <xs:documentation>
         Element slouží pro uchování údajů o ceně s DPH.
+        Použití pro úhradu ZP a podobně, kde není třeba určovat sazbu DPH.
       </xs:documentation>
     </xs:annotation>
     <xs:attribute name="cenaSDPH" type="xs:decimal" use="required" />
