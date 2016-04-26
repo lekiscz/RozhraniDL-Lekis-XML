@@ -139,7 +139,7 @@ bude vybrána hlavička ve VnF/VnŽ pro přefakturaci.</xs:documentation>
     <xs:attribute name="cenaSDPH" type="xs:decimal" use="required" />
     <xs:attribute name="cenaBezDPH" type="xs:decimal" use="required" />
     <xs:attribute name="sazbaDPH" type="xs:decimal" use="required" />
-        <xs:annotation>
+    <xs:annotation>
       <xs:documentation>Sazba DPH platná v DUZP (datum uskutečněného zdanitelného plnění).</xs:documentation>
     </xs:annotation>
   </xs:complexType>
@@ -205,70 +205,70 @@ bude vybrána hlavička ve VnF/VnŽ pro přefakturaci.</xs:documentation>
     </xs:annotation>
     <xs:sequence>
       <xs:element name="sukl" type="suklType" nillable="true" />
-    <xs:annotation>
-      <xs:documentation>Identifikační kód položky SÚKL.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Identifikační kód položky SÚKL.</xs:documentation>
+      </xs:annotation>
       <xs:element name="pdk" type="pdkType" nillable="true" />
-    <xs:annotation>
-      <xs:documentation>Identifikační kód položky PDK.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Identifikační kód položky PDK.</xs:documentation>
+      </xs:annotation>
       <xs:element name="kodDodavatele" type="xs:string" nillable="true" />
-    <xs:annotation>
-      <xs:documentation>Identifikační kód položky dodavatele.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Identifikační kód položky dodavatele.</xs:documentation>
+      </xs:annotation>
       <xs:element name="IdPolozky" type="unsignedIntNullableType" nillable="true" />
-    <xs:annotation>
-      <xs:documentation>ID položky skladové karty v LpW. Informativní údaj</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>ID položky skladové karty v LpW. Informativní údaj</xs:documentation>
+      </xs:annotation>
       <xs:element name="IdSkladoveKarty" type="unsignedIntNullableType" nillable="true" />
-    <xs:annotation>
-      <xs:documentation>ID skladove karty v LpW. Postačuje jako jediný jednoznačný identifikátor pro spárování se skladovou kartou.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>ID skladove karty v LpW. Postačuje jako jediný jednoznačný identifikátor pro spárování se skladovou kartou.</xs:documentation>
+      </xs:annotation>
       <xs:element name="nazev" type="xs:string" />
-    <xs:annotation>
-      <xs:documentation>Název přípravku.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Název přípravku.</xs:documentation>
+      </xs:annotation>
       <xs:element name="skupina" type="sskType" />
-          <xs:annotation>
-      <xs:documentation>Skupina přípravků. Při identifikace dle kódu SÚKL je tento údaj povinný.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Skupina přípravků. Při identifikace dle kódu SÚKL je tento údaj povinný.</xs:documentation>
+      </xs:annotation>
       <xs:element name="mnozstvi" type="xs:decimal" />
-    <xs:annotation>
-      <xs:documentation>Dodané množství přípravku.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Dodané množství přípravku.</xs:documentation>
+      </xs:annotation>
       <xs:element name="sarze" type="xs:string" nillable="true" />
-    <xs:annotation>
-      <xs:documentation>Šarže přípravku.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Šarže přípravku.</xs:documentation>
+      </xs:annotation>
       <xs:element name="exspirace" type="dateTimeNullableType" nillable="true" />
-    <xs:annotation>
-      <xs:documentation>Exspirace přípravku.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Exspirace přípravku.</xs:documentation>
+      </xs:annotation>
       <xs:element name="certifikat" type="xs:string" nillable="true" />
-    <xs:annotation>
-      <xs:documentation>Certifikát přípravku.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Certifikát přípravku.</xs:documentation>
+      </xs:annotation>
       <xs:element name="priprava" type="pripravaType" minOccurs="0" />
       <xs:element name="vyrobniCena" type="cenaBezDPHType" />
-    <xs:annotation>
-      <xs:documentation>Výrobní cena přípravku.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Výrobní cena přípravku.</xs:documentation>
+      </xs:annotation>
       <xs:element name="nakupniCena" type="cenaType" />
-    <xs:annotation>
-      <xs:documentation>Nákupní cena přípravku.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Nákupní cena přípravku.</xs:documentation>
+      </xs:annotation>
       <xs:element name="prodejniCena" type="cenaType" />
-    <xs:annotation>
-      <xs:documentation>Prodejní cena přípravku.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Prodejní cena přípravku.</xs:documentation>
+      </xs:annotation>
       <xs:element name="carovyKod" type="xs:string" nillable="true" />
-    <xs:annotation>
-      <xs:documentation>Identifikační čárový kód přípravku.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Identifikační čárový kód přípravku.</xs:documentation>
+      </xs:annotation>
       <xs:element name="carovyKodPolozkySkladoveKarty" type="xs:string" nillable="true" />
-    <xs:annotation>
-      <xs:documentation>Identifikační čárový kód položky SK přípravku.</xs:documentation>
-    </xs:annotation>
+      <xs:annotation>
+        <xs:documentation>Identifikační čárový kód položky SK přípravku.</xs:documentation>
+      </xs:annotation>
     </xs:sequence>
     <xs:attribute name="pozice" type="xs:unsignedInt" />
     <xs:annotation>
