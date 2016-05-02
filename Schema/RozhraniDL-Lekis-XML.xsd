@@ -65,17 +65,20 @@
 	<xs:simpleType name="sskType">
 		<xs:annotation>
 			<xs:documentation>
+				<![CDATA[
 				Skupina skladových karet v LpW.
+
 				Podporovány jsou hodnoty s následujícími významy:
 
-				1 - HVLP
-				2 - IVLP
-				3 - PZT
-				4 - Ostatní
-				5 - Připravované
-				6 - Registrované
-				7 - Suroviny
-				8 - Obaly
+				* 1 - HVLP
+				* 2 - IVLP
+				* 3 - PZT
+				* 4 - Ostatní
+				* 5 - Připravované
+				* 6 - Registrované
+				* 7 - Suroviny
+				* 8 - Obaly
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:unsignedInt">
@@ -85,7 +88,9 @@
 	<xs:simpleType name="kodZPType">
 		<xs:annotation>
 			<xs:documentation>
+				<![CDATA[
 				Kód zdravotní pojišťovny. Například 111 pro VZP.
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -111,11 +116,14 @@
 	<xs:simpleType name="opravnyDanovyDokladType">
 		<xs:annotation>
 			<xs:documentation>
+				<![CDATA[
 				Příznak opravného daňového dokladu.
+
 				Podporovány jsou hodnoty s následujícími významy:
 
-				0 - jde o běžný daňový doklad
-				1 - jde o opravný daňový doklad
+				* 0 - jde o *běžný* daňový doklad
+				* 1 - jde o *opravný* daňový doklad
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -147,7 +155,9 @@
 					nillable="true">
 				<xs:annotation>
 					<xs:documentation>
-						FIXME: doplnit informaci o pouziti pro ID obchodniho partnera u prevodek nebo si s tim poradit nejak jinak
+						<![CDATA[
+						_FIXME:_ doplnit informaci o pouziti pro ID obchodniho partnera u prevodek nebo si s tim poradit nejak jinak
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -160,9 +170,13 @@
 					minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Nákladové středisko.
+
 						Pro účely účetnictví.
-						FIXME: upresnit
+
+						_FIXME:_ upresnit
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -172,9 +186,11 @@
 					minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
-						Kód Typů výdeje s odloženou splatností, podle kterého bude vybrána hlavička
-						ve Výdeji na fakturu / Výdeji na žádanku pro přefakturaci.
-						FIXME: upresnit
+						<![CDATA[
+						Kód Typů výdeje s odloženou splatností, podle kterého bude vybrána hlavička ve Výdeji na fakturu / Výdeji na žádanku pro přefakturaci.
+
+						_FIXME:_ upresnit
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -184,8 +200,11 @@
 					minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Číslo pobočky obchodního partnera.
-						FIXME: upresnit
+
+						_FIXME:_ upresnit
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -194,7 +213,9 @@
 	<xs:complexType name="cenaType">
 		<xs:annotation>
 			<xs:documentation>
+				<![CDATA[
 				Cena bez DPH, sazba DPH a cena s DPH.
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="cenaSDPH"
@@ -202,7 +223,9 @@
 				use="required">
 			<xs:annotation>
 				<xs:documentation>
+					<![CDATA[
 					Cena s DPH.
+					]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -211,7 +234,9 @@
 				use="required">
 			<xs:annotation>
 				<xs:documentation>
+					<![CDATA[
 					Cena bez DPH.
+					]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -220,7 +245,9 @@
 				use="required">
 			<xs:annotation>
 				<xs:documentation>
+					<![CDATA[
 					Sazba DPH platná v DUZP (datum uskutečnění zdanitelného plnění).
+					]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -228,8 +255,11 @@
 	<xs:complexType name="cenaBezDPHType">
 		<xs:annotation>
 			<xs:documentation>
+				<![CDATA[
 				Cena bez DPH, bez určení sazby DPH.
+
 				Použití pro výrobní cenu, suroviny a podobně, kde není třeba určovat sazbu DPH.
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="cenaBezDPH"
@@ -237,7 +267,9 @@
 				use="required">
 			<xs:annotation>
 				<xs:documentation>
+					<![CDATA[
 					Cena bez DPH.
+					]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -245,8 +277,11 @@
 	<xs:complexType name="cenaSDPHType">
 		<xs:annotation>
 			<xs:documentation>
+				<![CDATA[
 				Cena s DPH, bez určení sazby DPH.
+
 				Použití pro úhradu ZP a podobně, kde není třeba určovat sazbu DPH.
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="cenaSDPH"
@@ -254,7 +289,9 @@
 				use="required">
 			<xs:annotation>
 				<xs:documentation>
+					<![CDATA[
 					Cena s DPH.
+					]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -262,7 +299,9 @@
 	<xs:complexType name="soucetProdCenType">
 		<xs:annotation>
 			<xs:documentation>
+				<![CDATA[
 				Součet prodejních cen a rozpis DPH.
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
@@ -276,7 +315,9 @@
 				use="required">
 			<xs:annotation>
 				<xs:documentation>
+					<![CDATA[
 					Celkem prodejní cena s DPH.
+					]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -285,7 +326,9 @@
 				use="required">
 			<xs:annotation>
 				<xs:documentation>
+					<![CDATA[
 					Celkem prodejní cena bez DPH.
+					]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -293,7 +336,9 @@
 	<xs:complexType name="soucetNakCenType">
 		<xs:annotation>
 			<xs:documentation>
+				<![CDATA[
 				Součet nákupních cen a rozpis DPH.
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
@@ -307,7 +352,9 @@
 				use="required">
 			<xs:annotation>
 				<xs:documentation>
+					<![CDATA[
 					Celkem nákupní cena s DPH.
+					]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -316,7 +363,9 @@
 				use="required">
 			<xs:annotation>
 				<xs:documentation>
+					<![CDATA[
 					Celkem nákupní cena bez DPH.
+					]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -324,8 +373,11 @@
 	<xs:complexType name="pripravaType">
 		<xs:annotation>
 			<xs:documentation>
+				<![CDATA[
 				Příprava.
-				FIXME: doplnit dokumentacni texty
+
+				_FIXME:_ doplnit dokumentacni texty
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
@@ -365,10 +417,20 @@
 	<xs:complexType name="polozkaType">
 		<xs:annotation>
 			<xs:documentation>
-				Položka dokumentu.
-				Pro párování se skladovými kartami v LpW musí být uvedeno aspoň jedno z polí: sukl, pdk, kodDodavatele, IdSkladoveKarty.
+				<![CDATA[
+				_Položka dokumentu_
+
+				Pro párování se skladovými kartami v LpW musí být uvedeno aspoň jedno z polí:
+
+				* sukl
+				* pdk
+				* kodDodavatele
+				* IdSkladoveKarty
+
 				Jinak je položka importována do LpW jako nespárovaná a její spárování musí provést uživatel ručně.
-				FIXME: je to tak? takze specialni reseni "pozadovano aspon jedno z poli" neni potreba, protoze to v nejhorsim skonci jako nesparovana polozka?
+
+				_FIXME:_ je to tak? takze specialni reseni "pozadovano aspon jedno z poli" neni potreba, protoze to v nejhorsim skonci jako nesparovana polozka?
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
@@ -377,7 +439,9 @@
 					nillable="true">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Kód SÚKLu nebo kód VZP ZP.
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -386,7 +450,9 @@
 					nillable="true">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Kód PDK.
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -395,7 +461,9 @@
 					nillable="true">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Kód dodavatele.
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -404,9 +472,13 @@
 					nillable="true">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						ID položky skladové karty v LpW.
+
 						Informativní údaj. Má smysl pouze u dokumentů exportovaných z LpW.
-						FIXME: je to tak?
+
+						_FIXME:_ je to tak?
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -415,8 +487,11 @@
 					nillable="true">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						ID skladove karty v LpW.
+
 						Postačuje jako jednoznačný identifikátor pro spárování se skladovou kartou.
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -424,7 +499,9 @@
 					type="xs:string">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Název přípravku.
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -432,9 +509,13 @@
 					type="sskType">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Skupina skladových karet v LpW, viz popis použitého datového typu.
+
 						Při identifikaci přípravku kódem SÚKLu nebo kódem VZP ZP je tento údaj povinný.
-						FIXME: validuje si LpW uvnitr, v XSD nelze vyjadrit, je tak?
+
+						_FIXME:_ validuje si LpW uvnitr, v XSD nelze vyjadrit, je tak?
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -442,7 +523,9 @@
 					type="xs:decimal">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Dodané množství přípravku.
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -451,7 +534,9 @@
 					nillable="true">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Šarže přípravku.
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -460,10 +545,13 @@
 					nillable="true">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Exspirace přípravku.
-						Uvedena jako datum a čas, tj. exspirace například "do 31.1.2016 včetně" se uvádí jako
-						exspirace 2016-02-01T00:00:00.000 nebo obdobně v jiných variantách zápisu datového typu datum a čas.
-						FIXME: je to tak? pripadne prepsat, uvest kazdopadne priklad
+
+						Uvedena jako datum a čas, tj. exspirace například "do 31.1.2016 včetně" se uvádí jako exspirace 2016-02-01T00:00:00.000 nebo obdobně v jiných variantách zápisu datového typu datum a čas.
+
+						_FIXME:_ je to tak? pripadne prepsat, uvest kazdopadne priklad
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -472,8 +560,11 @@
 					nillable="true">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Certifikát přípravku.
-						FIXME: co to je, kdy to je, ...?
+
+						_FIXME:_ co to je, kdy to je, ...?
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -484,7 +575,9 @@
 					type="cenaBezDPHType">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Výrobní cena přípravku.
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -492,7 +585,9 @@
 					type="cenaType">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Nákupní cena přípravku.
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -500,7 +595,9 @@
 					type="cenaType">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Prodejní cena přípravku.
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -509,7 +606,9 @@
 					nillable="true">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Čárový kód přípravku.
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -518,9 +617,13 @@
 					nillable="true">
 				<xs:annotation>
 					<xs:documentation>
+						<![CDATA[
 						Čárový kód položky skladové karty přípravku.
+
 						Informativní údaj. Má smysl pouze u dokumentů exportovaných z LpW.
-						FIXME: je to tak?
+
+						_FIXME:_ je to tak?
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -529,7 +632,9 @@
 				type="xs:unsignedInt">
 			<xs:annotation>
 				<xs:documentation>
+					<![CDATA[
 					Pořadí položky dokumentu.
+					]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -551,8 +656,11 @@
 								nillable="true">
 							<xs:annotation>
 								<xs:documentation>
+									<![CDATA[
 									Číslo dokumentu.
-									FIXME: upresnit
+
+									_FIXME:_ upresnit
+									]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
@@ -561,8 +669,11 @@
 								nillable="true">
 							<xs:annotation>
 								<xs:documentation>
+									<![CDATA[
 									Číslo objednávky.
-									FIXME: upresnit
+
+									_FIXME:_ upresnit
+									]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
@@ -570,7 +681,9 @@
 								type="xs:unsignedInt">
 							<xs:annotation>
 								<xs:documentation>
+									<![CDATA[
 									Počet položek dokumentu.
+									]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
@@ -579,10 +692,13 @@
 								nillable="true">
 							<xs:annotation>
 								<xs:documentation>
-									Rozlišení skladu pro případ N skladů jedné společnosti v LpW
-									reprezentovaných N obchodními partnery se stejným IČ.
+									<![CDATA[
+									Rozlišení skladu pro případ N skladů jedné společnosti v LpW reprezentovaných N obchodními partnery se stejným IČ.
+
 									Například PHARMOS Ostrava, PHARMOS Brandýsek a podobně.
-									FIXME: je to tak?
+
+									_FIXME:_ je to tak?
+									]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
@@ -590,7 +706,9 @@
 								type="xs:dateTime">
 							<xs:annotation>
 								<xs:documentation>
+									<![CDATA[
 									Datum a čas vytvoření dokumentu.
+									]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
@@ -599,7 +717,9 @@
 								nillable="true">
 							<xs:annotation>
 								<xs:documentation>
+									<![CDATA[
 									Poznámka.
+									]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
@@ -648,9 +768,13 @@
 			type="dokladType">
 		<xs:annotation>
 			<xs:documentation>
-				Dodací list.
-				FIXME: popsat kde se dodaci list v LpW pouziva (import do prijmu jako DL prijaty, export z VnF/VnZ jako DL vydany, pri distribuci pomoci skriptu, jeste neco dalsiho?)
-				FIXME: plus nejaka anotace k celemu XSD souboru (celemu schematu), pro 2 radky obecne o tom, ze jde o XML format pro datovou vymenu, trochu prisnejsi nez je ve skutecnosti LpW parser XML DL
+				<![CDATA[
+				_Dodací list_
+
+				_FIXME:_ popsat kde se dodaci list v LpW pouziva (import do prijmu jako DL prijaty, export z VnF/VnZ jako DL vydany, pri distribuci pomoci skriptu, jeste neco dalsiho?)
+
+				_FIXME:_ plus nejaka anotace k celemu XSD souboru (celemu schematu), pro 2 radky obecne o tom, ze jde o XML format pro datovou vymenu, trochu prisnejsi nez je ve skutecnosti LpW parser XML DL
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
@@ -658,8 +782,11 @@
 			type="dokladType">
 		<xs:annotation>
 			<xs:documentation>
-				Převodka.
-				FIXME: podobne jako vyse
+				<![CDATA[
+				_Převodka_
+
+				_FIXME:_ podobne jako vyse
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
