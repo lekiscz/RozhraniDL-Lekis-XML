@@ -325,3 +325,4 @@ Temporary Items
 # Excel Backup File
 *.xlk
 
+/Documentation/*.xsd.htm
