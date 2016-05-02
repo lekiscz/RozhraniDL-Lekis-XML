@@ -10,71 +10,91 @@ function loadSchemas(callback) {
     glob("../../Schema/**/*.xsd", null, function (er, files) {
         async.eachSeries(
             files,
-            function (file, notifyItemDoneCallback) {
+            function iteratee(file, notifyItemDoneCallback) {
+                console.log('==================================================');
                 console.log('Schema: ' + file);
+                console.log('==================================================');
+                console.log();
+
                 fs.readFile(file, function (err, dataxsd) {
                     if (err) {
-                        console.log('Schema: ' + file + ' ... NOT loaded');
-                        console.log(err);
+                        console.log('    ' + 'NOT loaded');
+                        console.log();
+                        console.log('    ' + err);
+                        console.log();
+
                         // nezpracovava dale aktualne zpracovavany soubor; jelikoz jde o anonymni funkci pro zpracovani jedne polozky seznamu,
                         //  tak se pokracuje zpracovanim dalsich souboru
                         notifyItemDoneCallback();
+
                         return;
                     };
 
                     var xsdDoc = libxml.parseXml(dataxsd);
                     if (xsdDoc != null) {
-                        console.log('Schema: ' + file + ' ... loaded');
+                        console.log('    ' + 'Loaded');
+                        console.log();
+
                         // ulozi nactene schema do kolekce pro pozdejsi praci, klicem je relativni cesta k souboru
                         xsdDocs[file] = xsdDoc;
                     } else {
-                        console.log('Schema: ' + file + ' ... NOT loaded');
+                        console.log('    ' + 'NOT loaded');
+                        console.log();
                     }
 
                     notifyItemDoneCallback();
                 });
             },
-            function (err) {
-                console.log();
+            function done(err) {
                 callback(err);
             });
     });
 }
 
 function validate(xmlname, notifyItemDoneCallback) {
-    console.log();
-    console.log();
     console.log('==================================================');
+    console.log('File: ' + xmlname);
+    console.log('==================================================');
+    console.log();
 
     fs.readFile(xmlname, function (err, dataxml) {
         if (err) {
-            console.log('File: ' + xmlname + ' ... NOT loaded');
-            console.log(err);
+            console.log('    ' + 'XML text NOT loaded');
+            console.log();
+            console.log('    ' + err);
         } else {
-            console.log('File: ' + xmlname + ' ... loaded');
+            console.log('    ' + 'XML text loaded');
         }
-
-        console.log('==================================================');
+        console.log();
 
         try
         {
             var xmlDoc = libxml.parseXml(dataxml);
 
-            async.eachSeries(Object.keys(xsdDocs), function (xsdKey, notifyItemDoneCallback) {
+            console.log('    ' + 'XML loaded');
+            console.log();
+
+            async.eachSeries(Object.keys(xsdDocs), function iteratee(xsdKey, notifyItemDoneCallback) {
+                console.log('    ' + 'Schema: ' + xsdKey);
                 console.log();
+                
+                var ok = xmlDoc.validate(xsdDocs[xsdKey]);
+
+                if (xmlDoc.validationErrors.length > 0) {
+                    console.log(
+                        xmlDoc.validationErrors
+                            .map(function (item) {
+                                return '    ' + '    ' + item.toString().trim() + "\n" +
+                                        '    ' + '    ' + JSON.stringify(item);
+                            })
+                            .join("\n\n")
+                    );
+                    console.log();
+                }
+
+                console.log('    ' + '    ' + (ok ? 'Validation OK' : 'Validation NOT OK'));
                 console.log();
-                console.log('==================================================');
-                console.log('File: ' + xmlname);
-                console.log('Schema: ' + xsdKey);
-                console.log();
-                console.log(xmlDoc.validate(xsdDocs[xsdKey]));
-                console.log();
-                console.log(xmlDoc.validationErrors
-                    .map(function (item) {
-                        return item.toString();
-                        return JSON.stringify(item, null, "  ");
-                    })
-                    .join("\n"));
+
                 notifyItemDoneCallback();
             });
         } catch (ex) {
@@ -83,8 +103,9 @@ function validate(xmlname, notifyItemDoneCallback) {
             //  chyby pri validaci nekterym z nich)
             // libxmljs neumi pracovat s XML soubory ve Windows-1250 kodovani, pri jejich
             //  zpracovani se take vyskytne vyjimka
-            console.log('File: ' + xmlname + ' ... NOT parsed');
-            console.log(ex);
+            console.log('    ' + 'Exception occured! Will continue with next XML file.');
+            console.log();
+            console.log('    ' + ex);
         }
 
         notifyItemDoneCallback();
@@ -95,10 +116,10 @@ function validateAll(xmlglobpattern, callback) {
     glob(xmlglobpattern, null, function (er, files) {
         async.eachSeries(
             files,
-            function (file, notifyItemDoneCallback) {
+            function iteratee(file, notifyItemDoneCallback) {
                 validate(file, notifyItemDoneCallback);
             },
-            function (err) {
+            function done(err) {
                 callback(err);
             });
     });
