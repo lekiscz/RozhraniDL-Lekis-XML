@@ -14,6 +14,18 @@
 			</xs:simpleType>
 		</xs:union>
 	</xs:simpleType>
+	<xs:simpleType name="decimalNullableType">
+		<xs:annotation>
+			<xs:documentation>Číslo s desetinnou čárkou, umožňuje prázdnou hodnotu.</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="xs:decimal">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value=""/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
 	<xs:simpleType name="dateTimeNullableType">
 		<xs:annotation>
 			<xs:documentation>Datum a čas, umožňuje prázdnou hodnotu.</xs:documentation>
@@ -252,6 +264,45 @@
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
+	<xs:complexType name="cenaNullableType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				Cena bez DPH, sazba DPH a cena s DPH, umožňuje prázdné hodnoty.
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="cenaSDPH"
+				type="decimalNullableType">
+			<xs:annotation>
+				<xs:documentation>
+					<![CDATA[
+					Cena s DPH.
+					]]>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="cenaBezDPH"
+				type="decimalNullableType">
+			<xs:annotation>
+				<xs:documentation>
+					<![CDATA[
+					Cena bez DPH.
+					]]>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="sazbaDPH"
+				type="decimalNullableType">
+			<xs:annotation>
+				<xs:documentation>
+					<![CDATA[
+					Sazba DPH platná v DUZP (datum uskutečnění zdanitelného plnění).
+					]]>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
 	<xs:complexType name="cenaBezDPHType">
 		<xs:annotation>
 			<xs:documentation>
@@ -265,6 +316,27 @@
 		<xs:attribute name="cenaBezDPH"
 				type="xs:decimal"
 				use="required">
+			<xs:annotation>
+				<xs:documentation>
+					<![CDATA[
+					Cena bez DPH.
+					]]>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="cenaBezDPHNullableType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				Cena bez DPH, bez určení sazby DPH, umožňuje prázdné hodnoty.
+
+				Použití pro výrobní cenu, suroviny a podobně, kde není třeba určovat sazbu DPH.
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="cenaBezDPH"
+				type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -296,6 +368,27 @@
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
+	<xs:complexType name="cenaSDPHNullableType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				Cena s DPH, bez určení sazby DPH, umožňuje prázdné hodnoty.
+
+				Použití pro úhradu ZP a podobně, kde není třeba určovat sazbu DPH.
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="cenaSDPH"
+				type="decimalNullableType">
+			<xs:annotation>
+				<xs:documentation>
+					<![CDATA[
+					Cena s DPH.
+					]]>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
 	<xs:complexType name="soucetProdCenType">
 		<xs:annotation>
 			<xs:documentation>
@@ -306,13 +399,12 @@
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="prodejniCena"
-					type="cenaType"
+					type="cenaNullableType"
 					minOccurs="1"
 					maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:attribute name="cenaSDPH"
-				type="xs:decimal"
-				use="required">
+				type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -322,8 +414,7 @@
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="cenaBezDPH"
-				type="xs:decimal"
-				use="required">
+				type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -572,7 +663,7 @@
 					type="pripravaType"
 					minOccurs="0"/>
 			<xs:element name="vyrobniCena"
-					type="cenaBezDPHType">
+					type="cenaBezDPHNullableType">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -592,7 +683,7 @@
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="prodejniCena"
-					type="cenaType">
+					type="cenaNullableType">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -757,8 +848,7 @@
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="datumExportu"
-				type="xs:dateTime"
-				use="required">
+				type="xs:dateTime">
 			<xs:annotation>
 				<xs:documentation>Datum a čas exportu dokumentu.</xs:documentation>
 			</xs:annotation>
