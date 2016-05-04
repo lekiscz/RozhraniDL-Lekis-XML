@@ -78,7 +78,7 @@
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
-				Skupina skladových karet v LpW.
+				*Skupina skladových karet v LpW*
 
 				Podporovány jsou hodnoty s následujícími významy:
 
@@ -129,7 +129,7 @@
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
-				Příznak opravného daňového dokladu.
+				*Příznak opravného daňového dokladu*
 
 				Podporovány jsou hodnoty s následujícími významy:
 
@@ -509,7 +509,7 @@
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
-				_Položka dokumentu_
+				*Položka dokumentu*
 
 				Pro párování se skladovými kartami v LpW musí být uvedeno aspoň jedno z polí:
 
@@ -859,7 +859,7 @@
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
-				_Dodací list_
+				*Dodací list*
 
 				_FIXME:_ popsat kde se dodaci list v LpW pouziva (import do prijmu jako DL prijaty, export z VnF/VnZ jako DL vydany, pri distribuci pomoci skriptu, jeste neco dalsiho?)
 
@@ -873,7 +873,7 @@
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
-				_Převodka_
+				*Převodka*
 
 				_FIXME:_ podobne jako vyse
 				]]>

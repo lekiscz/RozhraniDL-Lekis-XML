@@ -6,6 +6,13 @@ rem So, just run something like this from <this repo>\Documentation:
 rem
 rem  git clone --branch pr-cdn-normalize-exmp https://github.com/jmarsik/xs3p.git ..\..\xs3p
 rem
+rem You must also have xsltproc.exe tool in your PATH. It can be installed on Windows by using the Chocolatey
+rem  package manager as part of Strawberry Perl package (see https://chocolatey.org/packages/StrawberryPerl).
+rem
+rem To install it run something like this:
+rem
+rem  choco install StrawberryPerl --yes
+rem
 rem After that just run this batch file to generate RozhraniDL-Lekis-XML.xsd.htm file with documentation.
 rem
 
