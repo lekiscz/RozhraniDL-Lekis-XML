@@ -10,11 +10,14 @@ rem After that just run this batch file to generate RozhraniDL-Lekis-XML.xsd.htm
 rem
 
 set XS3P_REPO=..\..\xs3p
+IF NOT "%1"=="" (
+    set XS3P_REPO=%1
+)
 
 set XSLT_FILE=xs3p.xsl
 set XSD_DIR=..\Schema
 set XSD_FILE=RozhraniDL-Lekis-XML.xsd
 
-copy /y %XS3P_REPO%\%XSLT_FILE% .
-xsltproc.exe --nonet --stringparam printGlossary false --stringparam printLegend false --stringparam title %XSD_FILE% --output %XSD_FILE%.htm %XSLT_FILE% %XSD_DIR%\%XSD_FILE%
-del /f /q %XSLT_FILE%
+copy /y "%XS3P_REPO%\%XSLT_FILE%" .
+xsltproc.exe --nonet --stringparam printGlossary false --stringparam printLegend false --stringparam title "%XSD_FILE%" --output "%XSD_FILE%.htm" "%XSLT_FILE%" "%XSD_DIR%\%XSD_FILE%"
+del /f /q "%XSLT_FILE%"
