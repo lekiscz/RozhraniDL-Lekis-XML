@@ -1,0 +1,27 @@
+{
+  "name": "xmlschemavalidator.nodejs",
+  "version": "1.0.0",
+  "author": "Lekis s.r.o.",
+  "private": true,
+  "homepage": "https://github.com/lekiscz/RozhraniDL-Lekis-XML",
+  "description": "Rozhraní dodacích listů Lekis XML - XML schéma a příklady",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lekiscz/RozhraniDL-Lekis-XML.git"
+  },
+  "keywords": [
+    "lekis",
+    "lpw",
+    "xsd",
+    "delivery-note"
+  ],
+  "dependencies": {
+    "async": "^1.5.0",
+    "glob": "^6.0.1",
+    "libxmljs": "^0.15.0"
+  }
+}
