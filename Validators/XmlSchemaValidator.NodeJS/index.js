@@ -51,7 +51,7 @@ function loadSchemas(callback) {
     });
 }
 
-function validate(xmlname, notifyItemDoneCallback) {
+function validate(xmlname, callback) {
     console.log('==================================================');
     console.log('File: ' + xmlname);
     console.log('==================================================');
@@ -74,29 +74,34 @@ function validate(xmlname, notifyItemDoneCallback) {
             console.log('    ' + 'XML loaded');
             console.log();
 
-            async.eachSeries(Object.keys(xsdDocs), function iteratee(xsdKey, notifyItemDoneCallback) {
-                console.log('    ' + 'Schema: ' + xsdKey);
-                console.log();
-                
-                var ok = xmlDoc.validate(xsdDocs[xsdKey]);
-
-                if (xmlDoc.validationErrors.length > 0) {
-                    console.log(
-                        xmlDoc.validationErrors
-                            .map(function (item) {
-                                return '    ' + '    ' + item.toString().trim() + "\n" +
-                                        '    ' + '    ' + JSON.stringify(item);
-                            })
-                            .join("\n\n")
-                    );
+            async.eachSeries(
+                Object.keys(xsdDocs),
+                function iteratee(xsdKey, notifyItemDoneCallback) {
+                    console.log('    ' + 'Schema: ' + xsdKey);
                     console.log();
-                }
+                    
+                    var ok = xmlDoc.validate(xsdDocs[xsdKey]);
 
-                console.log('    ' + '    ' + (ok ? 'Validation OK' : 'Validation NOT OK'));
-                console.log();
+                    if (xmlDoc.validationErrors.length > 0) {
+                        console.log(
+                            xmlDoc.validationErrors
+                                .map(function (item) {
+                                    return '    ' + '    ' + item.toString().trim() + "\n" +
+                                            '    ' + '    ' + JSON.stringify(item);
+                                })
+                                .join("\n\n")
+                        );
+                        console.log();
+                    }
 
-                notifyItemDoneCallback();
-            });
+                    console.log('    ' + '    ' + (ok ? 'Validation OK' : 'Validation NOT OK'));
+                    console.log();
+
+                    notifyItemDoneCallback();
+                },
+                function done(err) {
+                    callback(err);
+                });
         } catch (ex) {
             // v pripade chyby pri parsovani XML souboru nebo pri validaci XSD schematem
             //  pokracuje na dalsi XML soubor (zbyle XSD soubory uz nezkousi v pripade
@@ -106,9 +111,9 @@ function validate(xmlname, notifyItemDoneCallback) {
             console.log('    ' + 'Exception occured! Will continue with next XML file.');
             console.log();
             console.log('    ' + ex);
-        }
 
-        notifyItemDoneCallback();
+            notifyItemDoneCallback();
+        }
     });
 }
 

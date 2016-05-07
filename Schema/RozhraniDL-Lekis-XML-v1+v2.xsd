@@ -2,6 +2,24 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		attributeFormDefault="unqualified"
 		elementFormDefault="qualified">
+	<xs:simpleType name="verzeRozhraniType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				**Verze XML rozhraní**
+
+				Toto XML schéma je určeno pro validaci dokumentů s uvedeným atributem __verzeRozhrani__ u kořenového elementu s __hodnotou 1 nebo 2__.
+
+				Jde o starší verze rozhraní, kde nebylo původně XML schéma vůbec používáno. Dokumenty nemají určený žádný namespace a validace uváděných informací je o něco volnější (tak, aby XML schéma úspěšně zvalidovalo téměř všechny dokumenty, které načte parser v SW Lekis pro Windows).
+
+				Na webu https://lekiscz.github.io/RozhraniDL-Lekis-XML jsou informace o samostatném XML schématu pro verzi rozhraní 3, kde jsou tyto nedostatky verzí 1 a 2 vyřešené.
+				]]>
+				</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:unsignedInt">
+			<xs:pattern value="[1-2]"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="unsignedIntNullableType">
 		<xs:annotation>
 			<xs:documentation>Celé číslo bez znaménka, umožňuje prázdnou hodnotu.</xs:documentation>
@@ -78,7 +96,7 @@
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
-				*Skupina skladových karet v LpW*
+				**Skupina skladových karet v LpW**
 
 				Podporovány jsou hodnoty s následujícími významy:
 
@@ -129,12 +147,12 @@
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
-				*Příznak opravného daňového dokladu*
+				**Příznak opravného daňového dokladu**
 
 				Podporovány jsou hodnoty s následujícími významy:
 
-				* 0 - jde o *běžný* daňový doklad
-				* 1 - jde o *opravný* daňový doklad
+				* 0 - jde o _běžný_ daňový doklad
+				* 1 - jde o _opravný_ daňový doklad
 				]]>
 			</xs:documentation>
 		</xs:annotation>
@@ -168,7 +186,7 @@
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
-						_FIXME:_ doplnit informaci o pouziti pro ID obchodniho partnera u prevodek nebo si s tim poradit nejak jinak
+						__FIXME:__ doplnit informaci o pouziti pro ID obchodniho partnera u prevodek nebo si s tim poradit nejak jinak
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -187,7 +205,7 @@
 
 						Pro účely účetnictví.
 
-						_FIXME:_ upresnit
+						__FIXME:__ upresnit
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -201,7 +219,7 @@
 						<![CDATA[
 						Kód Typů výdeje s odloženou splatností, podle kterého bude vybrána hlavička ve Výdeji na fakturu / Výdeji na žádanku pro přefakturaci.
 
-						_FIXME:_ upresnit
+						__FIXME:__ upresnit
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -215,7 +233,7 @@
 						<![CDATA[
 						Číslo pobočky obchodního partnera.
 
-						_FIXME:_ upresnit
+						__FIXME:__ upresnit
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -467,7 +485,7 @@
 				<![CDATA[
 				Příprava.
 
-				_FIXME:_ doplnit dokumentacni texty
+				__FIXME:__ doplnit dokumentacni texty
 				]]>
 			</xs:documentation>
 		</xs:annotation>
@@ -509,7 +527,7 @@
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
-				*Položka dokumentu*
+				**Položka dokumentu**
 
 				Pro párování se skladovými kartami v LpW musí být uvedeno aspoň jedno z polí:
 
@@ -520,7 +538,7 @@
 
 				Jinak je položka importována do LpW jako nespárovaná a její spárování musí provést uživatel ručně.
 
-				_FIXME:_ je to tak? takze specialni reseni "pozadovano aspon jedno z poli" neni potreba, protoze to v nejhorsim skonci jako nesparovana polozka?
+				__FIXME:__ je to tak? takze specialni reseni "pozadovano aspon jedno z poli" neni potreba, protoze to v nejhorsim skonci jako nesparovana polozka?
 				]]>
 			</xs:documentation>
 		</xs:annotation>
@@ -568,7 +586,7 @@
 
 						Informativní údaj. Má smysl pouze u dokumentů exportovaných z LpW.
 
-						_FIXME:_ je to tak?
+						__FIXME:__ je to tak?
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -605,7 +623,7 @@
 
 						Při identifikaci přípravku kódem SÚKLu nebo kódem VZP ZP je tento údaj povinný.
 
-						_FIXME:_ validuje si LpW uvnitr, v XSD nelze vyjadrit, je tak?
+						__FIXME:__ validuje si LpW uvnitr, v XSD nelze vyjadrit, je tak?
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -641,7 +659,7 @@
 
 						Uvedena jako datum a čas, tj. exspirace například "do 31.1.2016 včetně" se uvádí jako exspirace 2016-02-01T00:00:00.000 nebo obdobně v jiných variantách zápisu datového typu datum a čas.
 
-						_FIXME:_ je to tak? pripadne prepsat, uvest kazdopadne priklad
+						__FIXME:__ je to tak? pripadne prepsat, uvest kazdopadne priklad
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -654,7 +672,7 @@
 						<![CDATA[
 						Certifikát přípravku.
 
-						_FIXME:_ co to je, kdy to je, ...?
+						__FIXME:__ co to je, kdy to je, ...?
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -713,7 +731,7 @@
 
 						Informativní údaj. Má smysl pouze u dokumentů exportovaných z LpW.
 
-						_FIXME:_ je to tak?
+						__FIXME:__ je to tak?
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -750,7 +768,7 @@
 									<![CDATA[
 									Číslo dokumentu.
 
-									_FIXME:_ upresnit
+									__FIXME:__ upresnit
 									]]>
 								</xs:documentation>
 							</xs:annotation>
@@ -763,7 +781,7 @@
 									<![CDATA[
 									Číslo objednávky.
 
-									_FIXME:_ upresnit
+									__FIXME:__ upresnit
 									]]>
 								</xs:documentation>
 							</xs:annotation>
@@ -788,7 +806,7 @@
 
 									Například PHARMOS Ostrava, PHARMOS Brandýsek a podobně.
 
-									_FIXME:_ je to tak?
+									__FIXME:__ je to tak?
 									]]>
 								</xs:documentation>
 							</xs:annotation>
@@ -835,12 +853,8 @@
 		<xs:attribute name="opravnyDanovyDoklad"
 				type="opravnyDanovyDokladType"/>
 		<xs:attribute name="verzeRozhrani"
-				type="xs:unsignedInt"
-				use="required">
-			<xs:annotation>
-				<xs:documentation>Verze XML rozhraní.</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
+				type="verzeRozhraniType"
+				use="required"/>
 		<xs:attribute name="verzeLpW"
 				type="xs:string">
 			<xs:annotation>
@@ -859,11 +873,11 @@
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
-				*Dodací list*
+				**Dodací list**
 
-				_FIXME:_ popsat kde se dodaci list v LpW pouziva (import do prijmu jako DL prijaty, export z VnF/VnZ jako DL vydany, pri distribuci pomoci skriptu, jeste neco dalsiho?)
+				__FIXME:__ popsat kde se dodaci list v LpW pouziva (import do prijmu jako DL prijaty, export z VnF/VnZ jako DL vydany, pri distribuci pomoci skriptu, jeste neco dalsiho?)
 
-				_FIXME:_ plus nejaka anotace k celemu XSD souboru (celemu schematu), pro 2 radky obecne o tom, ze jde o XML format pro datovou vymenu, trochu prisnejsi nez je ve skutecnosti LpW parser XML DL
+				__FIXME:__ plus nejaka anotace k celemu XSD souboru (celemu schematu), pro 2 radky obecne o tom, ze jde o XML format pro datovou vymenu, trochu prisnejsi nez je ve skutecnosti LpW parser XML DL
 				]]>
 			</xs:documentation>
 		</xs:annotation>
@@ -875,7 +889,7 @@
 				<![CDATA[
 				*Převodka*
 
-				_FIXME:_ podobne jako vyse
+				__FIXME:__ podobne jako vyse
 				]]>
 			</xs:documentation>
 		</xs:annotation>
