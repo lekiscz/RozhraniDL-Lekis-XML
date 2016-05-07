@@ -6,6 +6,12 @@ XML schéma, příklady, validátor
 
 [RozhraniDL-Lekis-XML.xsd](Schema/RozhraniDL-Lekis-XML.xsd)
 
+## Dokumentace
+
+Adresář [Documentation](Documentation) obsahuje skripty pro vygenerování HTML dokumentace výše uvedeného XSD souboru pomocí xs3p XSLT transformace s použitím různých XSLT SW. Uvnitř každého skriptu jsou popsány jeho další požadavky.
+
+Vygenerovanou dokumentaci k aktuální verzi XSD souboru najdete také [zde](https://lekiscz.github.io/RozhraniDL-Lekis-XML/).
+
 ## Příklady
 
 Několik příkladů je k dispozici v adresáři [Examples](Examples).
@@ -35,8 +41,11 @@ node index.js
 
 ### Validátor .NET
 
+Validátor běží pod .NET 4.5 a používá XML funkčnost .NET frameworku.
+
+#### Kompilace a spuštění
+
 Lze zkompilovat ve Visual Studio 2015 nebo pomocí command-line nástrojů instalovaných s Visual Studio 2015, případně s .NET Framework prostředím a podobně.
-Validátor běží pod .NET 4.5.
 Předpokládá se spuštění v kořenovém adresáři daného validátoru.
 
 
