@@ -1,6 +1,6 @@
 {
   "name": "RozhraniDL-Lekis-XML",
   "tagline": "Rozhraní dodacích listů Lekis XML",
-  "body": "[GitHub repo](https://github.com/lekiscz/RozhraniDL-Lekis-XML)\r\n* XML schéma\r\n* příklady\r\n* validátory včetně zdrojových kódů\r\n\r\n[HTML dokumentace](https://lekiscz.github.io/RozhraniDL-Lekis-XML/RozhraniDL-Lekis-XML.xsd.htm)\r\n",
+  "body": "[GitHub repo](https://github.com/lekiscz/RozhraniDL-Lekis-XML)\r\n* XML schéma\r\n* příklady\r\n* validátory včetně zdrojových kódů\r\n\r\n[HTML dokumentace XML schéma pro verzi rozhraní 1 a 2](https://lekiscz.github.io/RozhraniDL-Lekis-XML/RozhraniDL-Lekis-XML-v1+v2.xsd.htm)\r\n\r\nHTML dokumentace XML schéma pro verzi rozhraní 3 (TODO)\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
