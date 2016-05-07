@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="windows-1250"?>
+ď»ż<?xml version="1.0" encoding="utf-8"?>
 <dodaciList datumExportu="2015-11-27T10:32:25.9164282+01:00" verzeLpW="1.0.5809.18269" verzeRozhrani="1" opravnyDanovyDoklad="0">
   <hlavicka>
     <dodavatel>
-      <nazev>Testovací lékárna</nazev>
-      <nazev2>Lekárna u Hrocha</nazev2>
+      <nazev>TestovacĂ­ lĂ©kĂˇrna</nazev>
+      <nazev2>LekĂˇrna u Hrocha</nazev2>
       <IC>00000000</IC>
       <DIC>CZ27604977</DIC>
       <interniCislo>555</interniCislo>
@@ -40,7 +40,7 @@
       <kodDodavatele />
       <IdPolozky>121781</IdPolozky>
       <IdSkladoveKarty>100</IdSkladoveKarty>
-      <nazev>IPL (VL Nemocnice Písek 1)</nazev>
+      <nazev>IPL (VL Nemocnice PĂ­sek 1)</nazev>
       <skupina>5</skupina>
       <mnozstvi>1.0000</mnozstvi>
       <sarze>15.08.2014</sarze>
@@ -52,8 +52,8 @@
         <ICZLekare>32</ICZLekare>
         <vlastniOznaceni>4</vlastniOznaceni>
         <cisloPripravy>2014081538</cisloPripravy>
-        <nazevPripravy>VL Nemocnice Písek 1</nazevPripravy>
-        <pripravil>Administrátor LpW</pripravil>
+        <nazevPripravy>VL Nemocnice PĂ­sek 1</nazevPripravy>
+        <pripravil>AdministrĂˇtor LpW</pripravil>
         <objemSurovin />
         <mnozstviSurovin />
         <uhradaZP cenaSDPH="361.00" />
@@ -91,7 +91,7 @@
       <kodDodavatele />
       <IdPolozky>119823</IdPolozky>
       <IdSkladoveKarty>17244</IdSkladoveKarty>
-      <nazev>BRONCHO-VAXOM PRO INFANTIBUS cps 30x3.5mg§§§</nazev>
+      <nazev>BRONCHO-VAXOM PRO INFANTIBUS cps 30x3.5mgÂ§Â§Â§</nazev>
       <skupina>1</skupina>
       <mnozstvi>1</mnozstvi>
       <sarze>0023821</sarze>
@@ -109,7 +109,7 @@
       <kodDodavatele />
       <IdPolozky>121000</IdPolozky>
       <IdSkladoveKarty>733158</IdSkladoveKarty>
-      <nazev>!ondrův problém</nazev>
+      <nazev>!ondrĹŻv problĂ©m</nazev>
       <skupina>5</skupina>
       <mnozstvi>1</mnozstvi>
       <sarze />
@@ -145,7 +145,7 @@
       <kodDodavatele />
       <IdPolozky>122369</IdPolozky>
       <IdSkladoveKarty>100</IdSkladoveKarty>
-      <nazev>IPL (Lék všelék)</nazev>
+      <nazev>IPL (LĂ©k vĹˇelĂ©k)</nazev>
       <skupina>5</skupina>
       <mnozstvi>1</mnozstvi>
       <sarze>27.11.2015</sarze>
@@ -157,8 +157,8 @@
         <ICZLekare>20</ICZLekare>
         <vlastniOznaceni>1081</vlastniOznaceni>
         <cisloPripravy>2015112701</cisloPripravy>
-        <nazevPripravy>Lék všelék</nazevPripravy>
-        <pripravil>Administrátor LpW</pripravil>
+        <nazevPripravy>LĂ©k vĹˇelĂ©k</nazevPripravy>
+        <pripravil>AdministrĂˇtor LpW</pripravil>
         <objemSurovin>5</objemSurovin>
         <mnozstviSurovin>5</mnozstviSurovin>
         <uhradaZP cenaSDPH="252.33" />
@@ -178,7 +178,7 @@
       <kodDodavatele />
       <IdPolozky>118151</IdPolozky>
       <IdSkladoveKarty>18773</IdSkladoveKarty>
-      <nazev>HI-ČAJ INST.nápoj s meruňkami 200g  CZ3923</nazev>
+      <nazev>HI-ÄŚAJ INST.nĂˇpoj s meruĹkami 200g  CZ3923</nazev>
       <skupina>4</skupina>
       <mnozstvi>-1.0000</mnozstvi>
       <sarze>L611791</sarze>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.IO;
 using System.Linq;
 using System.Xml.Linq;
@@ -10,62 +11,83 @@ namespace XmlSchemaValidator.DotNet
     {
         public static void Main(string[] args)
         {
-            var schemaDir = @"..\..\..\..\Schema";
-            var xmlDir = @"..\..\..\..\Examples";
-
-            var schemaFiles = Directory.EnumerateFiles(Path.Combine(Directory.GetCurrentDirectory(), schemaDir), "*.xsd", SearchOption.AllDirectories);
-            var schemas = schemaFiles.Select(
-                schemaFile =>
-                {
-                    var ss = new XmlSchemaSet();
-                    ss.Add("", schemaFile);
-                    return new
-                    {
-                        SchemaFile = schemaFile,
-                        SchemaSet = ss,
-                    };
-                });
-
-            var xmlFiles = Directory.EnumerateFiles(Path.Combine(Directory.GetCurrentDirectory(), xmlDir), "*.xml", SearchOption.AllDirectories);
-            foreach (var file in xmlFiles)
+            using (var tw = new IndentedTextWriter(Console.Out))
             {
-                Console.WriteLine();
-                Console.WriteLine();
-                var s1 = "File: " + Path.GetFileName(file);
-                var s2 = "".PadLeft(s1.Length + 1, '=');
-                Console.WriteLine(s2 + @"\");
-                Console.WriteLine(s1 + " |");
-                Console.WriteLine(s2 + @"/");
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine("".PadLeft(80, '='));
+                var schemaDir = @"..\..\..\..\Schema";
+                var xmlDir = @"..\..\..\..\Examples";
 
-                XDocument xmlDoc;
-                try
-                {
-                    xmlDoc = XDocument.Load(file);
+                var schemaDirResolved = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), schemaDir));
+                var xmlDirResolved = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), xmlDir));
 
-                    foreach (var schema in schemas)
+                var schemaFiles = Directory.EnumerateFiles(schemaDirResolved, "*.xsd", SearchOption.AllDirectories);
+                var schemas = schemaFiles.Select(
+                    schemaFile =>
                     {
-                        Console.WriteLine();
-                        Console.WriteLine(s1);
-                        Console.WriteLine("Schema: {0}", Path.GetFileName(schema.SchemaFile));
-                        Console.WriteLine();
+                        var ss = new XmlSchemaSet();
+                        ss.Add("", schemaFile);
+                        return new
+                        {
+                            SchemaFile = schemaFile,
+                            SchemaSet = ss,
+                        };
+                    });
 
-                        xmlDoc.Validate(schema.SchemaSet,
-                            (sender, eventArgs) =>
-                            {
-                                Console.WriteLine(eventArgs.Message);
-                                Console.WriteLine();
-                            });
-
-                        Console.WriteLine("".PadLeft(80, '='));
-                    }
-                }
-                catch (Exception ex)
+                var xmlFiles = Directory.EnumerateFiles(xmlDirResolved, "*.xml", SearchOption.AllDirectories);
+                foreach (var file in xmlFiles)
                 {
-                    // vyjimku pri nacitani XML nebo validaci pomoci XSD vypiseme a pokracujeme dalsim XML
-                    Console.Error.WriteLine(ex.ToString());
+                    var s1 = "File: " + file.Replace(xmlDirResolved + Path.DirectorySeparatorChar, "").Replace(Path.DirectorySeparatorChar.ToString(), " " + Path.DirectorySeparatorChar + " ");
+                    var s2 = "".PadLeft(s1.Length + 1, '=');
+                    tw.WriteLine(s2 + @"\");
+                    tw.WriteLine(s1 + " |");
+                    tw.WriteLine(s2 + @"/");
+                    tw.WriteLine();
+
+                    tw.Indent++;
+
+                    XDocument xmlDoc;
+
+                    try
+                    {
+                        xmlDoc = XDocument.Load(file);
+
+                        tw.WriteLine("XML loaded");
+                        tw.WriteLine();
+
+                        foreach (var schema in schemas)
+                        {
+                            var ok = true;
+
+                            tw.WriteLine("Schema: {0}", schema.SchemaFile.Replace(schemaDirResolved + Path.DirectorySeparatorChar, "").Replace(Path.DirectorySeparatorChar.ToString(), " " + Path.DirectorySeparatorChar + " "));
+                            tw.WriteLine();
+
+                            tw.Indent++;
+
+                            xmlDoc.Validate(
+                                schema.SchemaSet,
+                                (sender, eventArgs) =>
+                                {
+                                    if (eventArgs.Severity == XmlSeverityType.Error) ok = false;
+
+                                    tw.WriteLine(eventArgs.Severity.ToString() + ": " + eventArgs.Message);
+                                    tw.WriteLine();
+                                });
+
+                            tw.WriteLine(ok ? "Validation OK" : "Validation NOT OK");
+                            tw.WriteLine();
+
+                            tw.Indent--;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // vyjimku pri nacitani XML nebo validaci pomoci XSD vypiseme a pokracujeme dalsim XML
+                        tw.WriteLine("Exception occured! Will continue with next XML file.");
+                        tw.WriteLine();
+                        tw.WriteLine(ex);
+                        tw.WriteLine();
+                    }
+
+                    tw.Indent--;
                 }
             }
         }

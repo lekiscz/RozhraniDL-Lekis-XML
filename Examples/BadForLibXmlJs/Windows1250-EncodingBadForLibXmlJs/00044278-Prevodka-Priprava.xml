@@ -2,18 +2,18 @@
 <prevodka datumExportu="2015-06-16T12:59:41.5694317+02:00" verzeLpW="2015.1.3.10" verzeRozhrani="1">
   <hlavicka>
     <dodavatel>
-      <nazev>Všeobecná fakultní nemocnice</nazev>
-      <nazev2>Nemocnièní lékárna OPL - Pøíprava IPLP</nazev2>
-      <IC>00064165</IC>
-      <DIC>CZ00064165</DIC>
-      <interniCislo>4</interniCislo>
+      <nazev>Testovací lékárna</nazev>
+      <nazev2>Lekárna u Hrocha</nazev2>
+      <IC>00000000</IC>
+      <DIC>CZ27604977</DIC>
+      <interniCislo>555</interniCislo>
     </dodavatel>
     <odberatel>
-      <nazev>LEKARNA VFN OVVI 16140</nazev>
-      <IC>16140</IC>
+      <nazev>ABC International s.r.o.</nazev>
+      <IC>17522</IC>
       <DIC />
     </odberatel>
-    <oznaceni>44278</oznaceni>
+    <oznaceni>12345</oznaceni>
     <cisloObjednavky />
     <pocetPolozek>1</pocetPolozek>
     <idSkladu>1002</idSkladu>
@@ -33,7 +33,7 @@
       <kodDodavatele />
       <IdPolozky>227058</IdPolozky>
       <IdSkladoveKarty>100</IdSkladoveKarty>
-      <nazev>IPL (Pokorný/48 šedá)</nazev>
+      <nazev>IPL (Novák/48 šedá)</nazev>
       <skupina>5</skupina>
       <mnozstvi>1.0000</mnozstvi>
       <sarze>16.06.2015</sarze>
@@ -45,8 +45,8 @@
         <ICZLekare>02004032</ICZLekare>
         <vlastniOznaceni>48</vlastniOznaceni>
         <cisloPripravy>2015061605</cisloPripravy>
-        <nazevPripravy>Pokorný/48 šedá</nazevPripravy>
-        <pripravil>Davidová Jana</pripravil>
+        <nazevPripravy>Novák/48 šedá</nazevPripravy>
+        <pripravil>Krásná Šárka</pripravil>
         <objemSurovin>200.0000</objemSurovin>
         <mnozstviSurovin>200.0000</mnozstviSurovin>
         <uhradaZP cenaSDPH="718.2100" />
