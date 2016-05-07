@@ -12,6 +12,7 @@
 
 Param([string] $Xs3pRepo = "..\..\xs3p")
 
+$xs3pDir = Resolve-Path $Xs3pRepo
 $xsltFile = "xs3p.xsl"
 $xsdDir = "..\Schema"
 $xsdFile = "RozhraniDL-Lekis-XML.xsd"
@@ -20,7 +21,7 @@ $xml = New-Object System.Xml.XmlDocument
 $xml.Load((Join-Path (Join-Path (Get-Location) $xsdDir) $xsdFile -Resolve))
 
 $xslt = New-Object System.Xml.Xsl.XslCompiledTransform
-$xslt.Load((Join-Path (Join-Path (Get-Location) $Xs3pRepo) $xsltFile -Resolve))
+$xslt.Load((Join-Path $xs3pDir $xsltFile -Resolve))
 
 # prevent indentation of the output stream - with that setting the PRE sections of the result
 #  will be rendered correctly (with correct visual indentation)
@@ -32,7 +33,7 @@ $arglist.AddParam("printGlossary", "", "false")
 $arglist.AddParam("printLegend", "", "false")
 $arglist.AddParam("title", "", $xsdFile)
 
-$transformedWriter = [System.Xml.XmlWriter]::Create(((Join-Path (Get-Location) $xsdFile) + "a.htm"), $xsltOutputSettings)
+$transformedWriter = [System.Xml.XmlWriter]::Create(((Join-Path (Get-Location) $xsdFile) + ".htm"), $xsltOutputSettings)
 
 $xslt.Transform($xml, $arglist, $transformedWriter)
 
