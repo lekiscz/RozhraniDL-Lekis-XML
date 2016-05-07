@@ -1,16 +1,16 @@
 # Rozhraní dodacích listů Lekis XML
 
-XML schéma, příklady, validátor
+XML schéma, dokumentace, příklady, validátory
 
 ## XML schéma (XSD)
 
-[RozhraniDL-Lekis-XML.xsd](Schema/RozhraniDL-Lekis-XML.xsd)
+[RozhraniDL-Lekis-XML-v1+v2.xsd](Schema/RozhraniDL-Lekis-XML-v1+v2.xsd)
 
 ## Dokumentace
 
-Adresář [Documentation](Documentation) obsahuje skripty pro vygenerování HTML dokumentace výše uvedeného XSD souboru pomocí xs3p XSLT transformace s použitím různých XSLT SW. Uvnitř každého skriptu jsou popsány jeho další požadavky.
+Adresář [Documentation](Documentation) obsahuje skripty pro vygenerování HTML dokumentace výše uvedených XSD souborů pomocí xs3p XSLT transformace s použitím různých XSLT SW. Uvnitř každého skriptu jsou popsány jeho další požadavky.
 
-Vygenerovanou dokumentaci k aktuální verzi XSD souboru najdete také [zde](https://lekiscz.github.io/RozhraniDL-Lekis-XML/).
+Vygenerovanou dokumentaci k aktuálním verzím XSD souborů najdete také [zde](https://lekiscz.github.io/RozhraniDL-Lekis-XML/).
 
 ## Příklady
 
@@ -20,7 +20,7 @@ Jsou rozdělené na korektní (Good) a nekorektní (Bad), které neprojdou (a ne
 
 ## Validátory
 
-Jde o velmi základní validátory příkladových XML souborů, zda odpovídají danému XML schématu. Oba validátory mají v sobě zadané pevné cesty a jsou tedy spustitelné pouze v rámci adresářové struktury tohoto repository. Další omezení validátorů jsou popsána níže.
+Jde o velmi základní validátory příkladových XML souborů, zda odpovídají danému XML schématu. Oba validátory mají v sobě zadané pevné relativní cesty a jsou tedy spustitelné pouze v rámci adresářové struktury tohoto repository. Další omezení validátorů jsou popsána níže.
 
 ### Validátor NodeJS
 
