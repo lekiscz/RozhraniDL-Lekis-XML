@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		attributeFormDefault="unqualified"
-		elementFormDefault="qualified">
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
 	<xs:simpleType name="verzeRozhraniType">
 		<xs:annotation>
 			<xs:documentation>
@@ -14,7 +13,7 @@
 
 				Na webu https://lekiscz.github.io/RozhraniDL-Lekis-XML jsou informace o samostatném XML schématu pro verzi rozhraní 3, kde jsou tyto nedostatky verzí 1 a 2 vyřešené.
 				]]>
-				</xs:documentation>
+			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:unsignedInt">
 			<xs:pattern value="[1-2]"/>
@@ -22,7 +21,10 @@
 	</xs:simpleType>
 	<xs:simpleType name="unsignedIntNullableType">
 		<xs:annotation>
-			<xs:documentation>Celé číslo bez znaménka, umožňuje prázdnou hodnotu.</xs:documentation>
+			<xs:documentation>
+				<![CDATA[
+Celé číslo bez znaménka, umožňuje prázdnou hodnotu.]]>
+			</xs:documentation>
 		</xs:annotation>
 		<xs:union memberTypes="xs:unsignedInt">
 			<xs:simpleType>
@@ -46,7 +48,10 @@
 	</xs:simpleType>
 	<xs:simpleType name="dateTimeNullableType">
 		<xs:annotation>
-			<xs:documentation>Datum a čas, umožňuje prázdnou hodnotu.</xs:documentation>
+			<xs:documentation>Datum a čas, umožňuje prázdnou hodnotu.
+						Uvedena jako datum a čas, tj. exspirace například "do 31.1.2016 včetně" se uvádí jako exspirace 2016-02-01T00:00:00.000 nebo obdobně v jiných variantách zápisu datového typu datum a čas.
+             https://www.w3.org/TR/xmlschema-2/#dateTime
+</xs:documentation>
 		</xs:annotation>
 		<xs:union memberTypes="xs:dateTime">
 			<xs:simpleType>
@@ -166,23 +171,17 @@
 			<xs:documentation>Obchodní partner.</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="nazev"
-					type="xs:string">
+			<xs:element name="nazev" type="xs:string">
 				<xs:annotation>
 					<xs:documentation>Název obchodního partnera.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="nazev2"
-					type="xs:string"
-					nillable="true"
-					minOccurs="0">
+			<xs:element name="nazev2" type="xs:string" nillable="true" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Doplněk názvu obchodního partnera.</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="IC"
-					type="icoType"
-					nillable="true">
+			<xs:element name="IC" type="icoType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -191,13 +190,8 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="DIC"
-					type="dicType"
-					nillable="true"/>
-			<xs:element name="nakladoveStredisko"
-					type="xs:string"
-					nillable="true"
-					minOccurs="0">
+			<xs:element name="DIC" type="dicType" nillable="true"/>
+			<xs:element name="nakladoveStredisko" type="xs:string" nillable="true" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -210,10 +204,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="kodTypuVydejky"
-					type="xs:string"
-					nillable="true"
-					minOccurs="0">
+			<xs:element name="kodTypuVydejky" type="xs:string" nillable="true" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -224,15 +215,11 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="interniCislo"
-					type="xs:string"
-					nillable="true"
-					minOccurs="0">
+			<xs:element name="interniCislo" type="xs:string" nillable="true" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
 						Číslo pobočky obchodního partnera.
-
 						__FIXME:__ upresnit
 						]]>
 					</xs:documentation>
@@ -248,9 +235,7 @@
 				]]>
 			</xs:documentation>
 		</xs:annotation>
-		<xs:attribute name="cenaSDPH"
-				type="xs:decimal"
-				use="required">
+		<xs:attribute name="cenaSDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -259,9 +244,7 @@
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="cenaBezDPH"
-				type="xs:decimal"
-				use="required">
+		<xs:attribute name="cenaBezDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -270,9 +253,7 @@
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="sazbaDPH"
-				type="xs:decimal"
-				use="required">
+		<xs:attribute name="sazbaDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -290,8 +271,7 @@
 				]]>
 			</xs:documentation>
 		</xs:annotation>
-		<xs:attribute name="cenaSDPH"
-				type="decimalNullableType">
+		<xs:attribute name="cenaSDPH" type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -300,8 +280,7 @@
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="cenaBezDPH"
-				type="decimalNullableType">
+		<xs:attribute name="cenaBezDPH" type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -310,8 +289,7 @@
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="sazbaDPH"
-				type="decimalNullableType">
+		<xs:attribute name="sazbaDPH" type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -331,9 +309,7 @@
 				]]>
 			</xs:documentation>
 		</xs:annotation>
-		<xs:attribute name="cenaBezDPH"
-				type="xs:decimal"
-				use="required">
+		<xs:attribute name="cenaBezDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -353,8 +329,7 @@
 				]]>
 			</xs:documentation>
 		</xs:annotation>
-		<xs:attribute name="cenaBezDPH"
-				type="decimalNullableType">
+		<xs:attribute name="cenaBezDPH" type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -374,9 +349,7 @@
 				]]>
 			</xs:documentation>
 		</xs:annotation>
-		<xs:attribute name="cenaSDPH"
-				type="xs:decimal"
-				use="required">
+		<xs:attribute name="cenaSDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -396,8 +369,7 @@
 				]]>
 			</xs:documentation>
 		</xs:annotation>
-		<xs:attribute name="cenaSDPH"
-				type="decimalNullableType">
+		<xs:attribute name="cenaSDPH" type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -416,13 +388,9 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="prodejniCena"
-					type="cenaNullableType"
-					minOccurs="1"
-					maxOccurs="unbounded"/>
+			<xs:element name="prodejniCena" type="cenaNullableType" minOccurs="1" maxOccurs="unbounded"/>
 		</xs:sequence>
-		<xs:attribute name="cenaSDPH"
-				type="decimalNullableType">
+		<xs:attribute name="cenaSDPH" type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -431,8 +399,7 @@
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="cenaBezDPH"
-				type="decimalNullableType">
+		<xs:attribute name="cenaBezDPH" type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -451,14 +418,9 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="nakupniCena"
-					type="cenaType"
-					minOccurs="1"
-					maxOccurs="unbounded"/>
+			<xs:element name="nakupniCena" type="cenaType" minOccurs="1" maxOccurs="unbounded"/>
 		</xs:sequence>
-		<xs:attribute name="cenaSDPH"
-				type="xs:decimal"
-				use="required">
+		<xs:attribute name="cenaSDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -467,9 +429,7 @@
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="cenaBezDPH"
-				type="xs:decimal"
-				use="required">
+		<xs:attribute name="cenaBezDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -490,37 +450,97 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="rodneCislo"
-					type="rodneCisloType"/>
-			<xs:element name="kodZP"
-					type="kodZPType"/>
-			<xs:element name="ICZLekare"
-					type="iczType"/>
-			<xs:element name="vlastniOznaceni"
-					type="xs:string"
-					nillable="true"/>
-			<xs:element name="cisloPripravy"
-					type="xs:unsignedInt"/>
-			<xs:element name="nazevPripravy"
-					type="xs:string"/>
-			<xs:element name="pripravil"
-					type="xs:string"/>
-			<xs:element name="objemSurovin"
-					type="xs:decimal"
-					nillable="true"
-					default="0.00"/>
-			<xs:element name="mnozstviSurovin"
-					type="xs:decimal"
-					nillable="true"
-					default="0.00"/>
-			<xs:element name="uhradaZP"
-					type="cenaSDPHType"/>
-			<xs:element name="taxaLaborum"
-					type="cenaBezDPHType"/>
-			<xs:element name="cenaSurovin"
-					type="cenaBezDPHType"/>
-			<xs:element name="prirazka"
-					type="cenaBezDPHType"/>
+			<xs:element name="rodneCislo" type="rodneCisloType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Rodné číslo pacienta.]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="kodZP" type="kodZPType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Kód ZP, SÚKLu, pod kterým se příprava vydává, předává.]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ICZLekare" type="iczType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[IČZ lékaře, který přípravek předepsal.]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="vlastniOznaceni" type="xs:string" nillable="true">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Vlastní označení přípravy.]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cisloPripravy" type="xs:unsignedInt">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Číslo přípravy.]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nazevPripravy" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Název přípravy]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="pripravil" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Jméno pracovníka, který přípravek vyrobil.]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="objemSurovin" type="xs:decimal" nillable="true" default="0.00">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Objem surovin [ml].]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="mnozstviSurovin" type="xs:decimal" nillable="true" default="0.00">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Množství surovin [g].]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="uhradaZP" type="cenaSDPHType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Úhrada ZP.]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="taxaLaborum" type="cenaBezDPHType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Cena taxalaborum.]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cenaSurovin" type="cenaBezDPHType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Cena surovin.]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="prirazka" type="cenaBezDPHType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Cena přirážky.]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="polozkaType">
@@ -543,9 +563,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="sukl"
-					type="suklType"
-					nillable="true">
+			<xs:element name="sukl" type="suklType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -554,9 +572,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="pdk"
-					type="pdkType"
-					nillable="true">
+			<xs:element name="pdk" type="pdkType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -565,9 +581,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="kodDodavatele"
-					type="xs:string"
-					nillable="true">
+			<xs:element name="kodDodavatele" type="xs:string" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -576,9 +590,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="IdPolozky"
-					type="unsignedIntNullableType"
-					nillable="true">
+			<xs:element name="IdPolozky" type="unsignedIntNullableType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -591,9 +603,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="IdSkladoveKarty"
-					type="unsignedIntNullableType"
-					nillable="true">
+			<xs:element name="IdSkladoveKarty" type="unsignedIntNullableType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -604,8 +614,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="nazev"
-					type="xs:string">
+			<xs:element name="nazev" type="xs:string">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -614,8 +623,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="skupina"
-					type="sskType">
+			<xs:element name="skupina" type="sskType">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -628,8 +636,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="mnozstvi"
-					type="xs:decimal">
+			<xs:element name="mnozstvi" type="xs:decimal">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -638,9 +645,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="sarze"
-					type="xs:string"
-					nillable="true">
+			<xs:element name="sarze" type="xs:string" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -649,24 +654,16 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="exspirace"
-					type="dateTimeNullableType"
-					nillable="true">
+			<xs:element name="exspirace" type="dateTimeNullableType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
-						Exspirace přípravku.
-
-						Uvedena jako datum a čas, tj. exspirace například "do 31.1.2016 včetně" se uvádí jako exspirace 2016-02-01T00:00:00.000 nebo obdobně v jiných variantách zápisu datového typu datum a čas.
-
-						__FIXME:__ je to tak? pripadne prepsat, uvest kazdopadne priklad
+						Exspirace (minimální trvanlivost) přípravku.
 						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="certifikat"
-					type="xs:string"
-					nillable="true">
+			<xs:element name="certifikat" type="xs:string" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -677,11 +674,8 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="priprava"
-					type="pripravaType"
-					minOccurs="0"/>
-			<xs:element name="vyrobniCena"
-					type="cenaBezDPHNullableType">
+			<xs:element name="priprava" type="pripravaType" minOccurs="0"/>
+			<xs:element name="vyrobniCena" type="cenaBezDPHNullableType">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -690,8 +684,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="nakupniCena"
-					type="cenaType">
+			<xs:element name="nakupniCena" type="cenaType">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -700,8 +693,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="prodejniCena"
-					type="cenaNullableType">
+			<xs:element name="prodejniCena" type="cenaNullableType">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -710,9 +702,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="carovyKod"
-					type="xs:string"
-					nillable="true">
+			<xs:element name="carovyKod" type="xs:string" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -721,9 +711,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="carovyKodPolozkySkladoveKarty"
-					type="xs:string"
-					nillable="true">
+			<xs:element name="carovyKodPolozkySkladoveKarty" type="xs:string" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -737,8 +725,7 @@
 				</xs:annotation>
 			</xs:element>
 		</xs:sequence>
-		<xs:attribute name="pozice"
-				type="xs:unsignedInt">
+		<xs:attribute name="pozice" type="xs:unsignedInt">
 			<xs:annotation>
 				<xs:documentation>
 					<![CDATA[
@@ -753,16 +740,10 @@
 			<xs:element name="hlavicka">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="dodavatel"
-								type="subjektType"/>
-						<xs:element name="odberatel"
-								type="subjektType"/>
-						<xs:element name="prijemce"
-								type="subjektType"
-								minOccurs="0"/>
-						<xs:element name="oznaceni"
-								type="xs:string"
-								nillable="true">
+						<xs:element name="dodavatel" type="subjektType"/>
+						<xs:element name="odberatel" type="subjektType"/>
+						<xs:element name="prijemce" type="subjektType" minOccurs="0"/>
+						<xs:element name="oznaceni" type="xs:string" nillable="true">
 							<xs:annotation>
 								<xs:documentation>
 									<![CDATA[
@@ -773,9 +754,7 @@
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="cisloObjednavky"
-								type="xs:string"
-								nillable="true">
+						<xs:element name="cisloObjednavky" type="xs:string" nillable="true">
 							<xs:annotation>
 								<xs:documentation>
 									<![CDATA[
@@ -786,8 +765,7 @@
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="pocetPolozek"
-								type="xs:unsignedInt">
+						<xs:element name="pocetPolozek" type="xs:unsignedInt">
 							<xs:annotation>
 								<xs:documentation>
 									<![CDATA[
@@ -796,9 +774,7 @@
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="idSkladu"
-								type="unsignedIntNullableType"
-								nillable="true">
+						<xs:element name="idSkladu" type="unsignedIntNullableType" nillable="true">
 							<xs:annotation>
 								<xs:documentation>
 									<![CDATA[
@@ -811,8 +787,7 @@
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="datumVytvoreni"
-								type="xs:dateTime">
+						<xs:element name="datumVytvoreni" type="xs:dateTime">
 							<xs:annotation>
 								<xs:documentation>
 									<![CDATA[
@@ -821,9 +796,7 @@
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="poznamka"
-								type="xs:string"
-								nillable="true">
+						<xs:element name="poznamka" type="xs:string" nillable="true">
 							<xs:annotation>
 								<xs:documentation>
 									<![CDATA[
@@ -832,44 +805,33 @@
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="soucetNakupnichCen"
-								type="soucetNakCenType"/>
-						<xs:element name="soucetProdejnichCen"
-								type="soucetProdCenType"/>
+						<xs:element name="soucetNakupnichCen" type="soucetNakCenType"/>
+						<xs:element name="soucetProdejnichCen" type="soucetProdCenType"/>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
 			<xs:element name="polozky">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element minOccurs="1"
-								maxOccurs="unbounded"
-								name="polozka"
-								type="polozkaType"/>
+						<xs:element minOccurs="1" maxOccurs="unbounded" name="polozka" type="polozkaType"/>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
-		<xs:attribute name="opravnyDanovyDoklad"
-				type="opravnyDanovyDokladType"/>
-		<xs:attribute name="verzeRozhrani"
-				type="verzeRozhraniType"
-				use="required"/>
-		<xs:attribute name="verzeLpW"
-				type="xs:string">
+		<xs:attribute name="opravnyDanovyDoklad" type="opravnyDanovyDokladType"/>
+		<xs:attribute name="verzeRozhrani" type="verzeRozhraniType" use="required"/>
+		<xs:attribute name="verzeLpW" type="xs:string">
 			<xs:annotation>
 				<xs:documentation>Verze LpW, která byla použita při exportu dokumentu.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="datumExportu"
-				type="xs:dateTime">
+		<xs:attribute name="datumExportu" type="xs:dateTime">
 			<xs:annotation>
 				<xs:documentation>Datum a čas exportu dokumentu.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
-	<xs:element name="dodaciList"
-			type="dokladType">
+	<xs:element name="dodaciList" type="dokladType">
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
@@ -882,8 +844,7 @@
 			</xs:documentation>
 		</xs:annotation>
 	</xs:element>
-	<xs:element name="prevodka"
-			type="dokladType">
+	<xs:element name="prevodka" type="dokladType">
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
