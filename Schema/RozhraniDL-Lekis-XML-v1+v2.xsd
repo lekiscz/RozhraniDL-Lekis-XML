@@ -22,8 +22,7 @@
 	<xs:simpleType name="unsignedIntNullableType">
 		<xs:annotation>
 			<xs:documentation>
-				<![CDATA[
-Celé číslo bez znaménka, umožňuje prázdnou hodnotu.]]>
+				<![CDATA[Celé číslo bez znaménka, umožňuje prázdnou hodnotu.]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:union memberTypes="xs:unsignedInt">
@@ -36,7 +35,9 @@ Celé číslo bez znaménka, umožňuje prázdnou hodnotu.]]>
 	</xs:simpleType>
 	<xs:simpleType name="decimalNullableType">
 		<xs:annotation>
-			<xs:documentation>Číslo s desetinnou čárkou, umožňuje prázdnou hodnotu.</xs:documentation>
+			<xs:documentation>
+				<![CDATA[Číslo s desetinnou čárkou, umožňuje prázdnou hodnotu.]]>
+			</xs:documentation>
 		</xs:annotation>
 		<xs:union memberTypes="xs:decimal">
 			<xs:simpleType>
@@ -48,10 +49,11 @@ Celé číslo bez znaménka, umožňuje prázdnou hodnotu.]]>
 	</xs:simpleType>
 	<xs:simpleType name="dateTimeNullableType">
 		<xs:annotation>
-			<xs:documentation>Datum a čas, umožňuje prázdnou hodnotu.
-						Uvedena jako datum a čas, tj. exspirace například "do 31.1.2016 včetně" se uvádí jako exspirace 2016-02-01T00:00:00.000 nebo obdobně v jiných variantách zápisu datového typu datum a čas.
-             https://www.w3.org/TR/xmlschema-2/#dateTime
-</xs:documentation>
+			<xs:documentation>
+				<![CDATA[Datum a čas, umožňuje prázdnou hodnotu.
+			Uvedena jako datum a čas, tj. exspirace například "do 31.1.2016 včetně" se uvádí jako 2016-01-31T00:00:00.000 nebo obdobně v jiných variantách zápisu datového typu datum a čas.
+            https://www.w3.org/TR/xmlschema-2/#dateTime]]>
+			</xs:documentation>
 		</xs:annotation>
 		<xs:union memberTypes="xs:dateTime">
 			<xs:simpleType>
@@ -63,19 +65,22 @@ Celé číslo bez znaménka, umožňuje prázdnou hodnotu.]]>
 	</xs:simpleType>
 	<xs:simpleType name="icoType">
 		<xs:annotation>
-			<xs:documentation>Identifikační číslo (IČ), umožňuje prázdnou hodnotu.</xs:documentation>
+			<xs:documentation>
+				<![CDATA[
+			Identifikační číslo (IČ), umožňuje prázdnou hodnotu.
+			U prevodky je u dodavatele v IC uvedeno interní číslo / číslo pobočky.
+			Schema obsahuje pouze zjednodusenou validaci zahrnujici oba pripady, bez rozdeleni typu na varianty]]>
+			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<!-- @RT tohle platilo u formátů DL4-6 -->
-			<!-- @JM FIXME: tak musis ale zmenit i tu validaci a ne jen smazat komentar ... plus upravit priklady, protoze se tam myslim jeden vyskytuje, ktery takovy obsah v poli pro IC ma -->
-			<!-- u prevodky JE u odberatele v IC uvedeno ID obchodniho partnera nebo podobny kod, ktery muze byt kratsi nez IC -->
-			<!-- schema obsahuje pouze zjednodusenou validaci zahrnujici oba pripady, bez rozdeleni typu na varianty -->
 			<xs:pattern value="\d{3,8}|.{0}"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="dicType">
 		<xs:annotation>
-			<xs:documentation>Daňové identifikační číslo (DIČ), umožňuje prázdnou hodnotu.</xs:documentation>
+			<xs:documentation>
+				<![CDATA[Daňové identifikační číslo (DIČ), umožňuje prázdnou hodnotu.]]>
+			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[A-Z]{2}\d{8,10}|.{0}"/>
@@ -83,7 +88,10 @@ Celé číslo bez znaménka, umožňuje prázdnou hodnotu.]]>
 	</xs:simpleType>
 	<xs:simpleType name="suklType">
 		<xs:annotation>
-			<xs:documentation>Kód SÚKLu nebo kód VZP ZP, umožňuje prázdnou hodnotu.</xs:documentation>
+			<xs:documentation>
+				<![CDATA[Registrační kód SÚKLu nebo kód ZP VZP přípravku, umožňuje prázdnou hodnotu.
+				Představuje 7 čísel, doplněných zleva nulami.]]>
+			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="\d{7}|.{0}"/>
@@ -91,7 +99,9 @@ Celé číslo bez znaménka, umožňuje prázdnou hodnotu.]]>
 	</xs:simpleType>
 	<xs:simpleType name="pdkType">
 		<xs:annotation>
-			<xs:documentation>Kód PDK, umožňuje prázdnou hodnotu.</xs:documentation>
+			<xs:documentation>
+				<![CDATA[Kód číselníku PDK, umožňuje prázdnou hodnotu.]]>
+			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="\d{7,20}|.{0}"/>
@@ -134,7 +144,7 @@ Celé číslo bez znaménka, umožňuje prázdnou hodnotu.]]>
 	</xs:simpleType>
 	<xs:simpleType name="iczType">
 		<xs:annotation>
-			<xs:documentation>Kód lékaře IČZ.</xs:documentation>
+			<xs:documentation>Identifikační číslo lékaře.</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="\d{2}|\d{6,10}"/>
