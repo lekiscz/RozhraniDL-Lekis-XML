@@ -67,9 +67,8 @@
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
-			Identifikační číslo (IČ), umožňuje prázdnou hodnotu.
-			U prevodky je u dodavatele v IC uvedeno interní číslo / číslo pobočky.
-			Schema obsahuje pouze zjednodusenou validaci zahrnujici oba pripady, bez rozdeleni typu na varianty]]>
+        Identifikační číslo osoby (IČO), unikátní osmimístné identifikační číslo právnické osoby, podnikající fyzické osoby nebo organizační složky státu.
+        Umožňuje prázdnou hodnotu.]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -79,7 +78,7 @@
 	<xs:simpleType name="dicType">
 		<xs:annotation>
 			<xs:documentation>
-				<![CDATA[Daňové identifikační číslo (DIČ), umožňuje prázdnou hodnotu.]]>
+				<![CDATA[Daňové identifikační číslo (DIČ)/identifikace daňového subjektu, umožňuje prázdnou hodnotu.]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -90,7 +89,7 @@
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[Registrační kód SÚKLu nebo kód ZP VZP přípravku, umožňuje prázdnou hodnotu.
-				Představuje 7 čísel, doplněných zleva nulami.]]>
+				Představuje 7 čísel, případně doplněných zleva nulami.]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -133,9 +132,7 @@
 	<xs:simpleType name="kodZPType">
 		<xs:annotation>
 			<xs:documentation>
-				<![CDATA[
-				Kód zdravotní pojišťovny. Například 111 pro VZP.
-				]]>
+				<![CDATA[Kód zdravotní pojišťovny. Například 111 pro VZP.]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -144,7 +141,9 @@
 	</xs:simpleType>
 	<xs:simpleType name="iczType">
 		<xs:annotation>
-			<xs:documentation>Identifikační číslo lékaře.</xs:documentation>
+			<xs:documentation>
+				<![CDATA[Identifikační číslo lékaře.]]>
+			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="\d{2}|\d{6,10}"/>
@@ -152,7 +151,9 @@
 	</xs:simpleType>
 	<xs:simpleType name="rodneCisloType">
 		<xs:annotation>
-			<xs:documentation>Číslo pojištěnce.</xs:documentation>
+			<xs:documentation>
+				<![CDATA[Číslo pojištěnce (rodné číslo).]]>
+			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:pattern value="[0-9]{2}([05][1-9]|[16][0-2])([012][0-9]|3[01])[0-9]{3,4}|.{0}"/>
@@ -178,24 +179,32 @@
 	</xs:simpleType>
 	<xs:complexType name="subjektType">
 		<xs:annotation>
-			<xs:documentation>Obchodní partner.</xs:documentation>
+			<xs:documentation>
+				<![CDATA[Obchodní partner.]]>
+			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="nazev" type="xs:string">
 				<xs:annotation>
-					<xs:documentation>Název obchodního partnera.</xs:documentation>
+					<xs:documentation>
+						<![CDATA[Název obchodního partnera.]]>
+					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="nazev2" type="xs:string" nillable="true" minOccurs="0">
 				<xs:annotation>
-					<xs:documentation>Doplněk názvu obchodního partnera.</xs:documentation>
+					<xs:documentation>
+						<![CDATA[Doplněk názvu obchodního partnera.]]>
+					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="IC" type="icoType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
-						__FIXME:__ doplnit informaci o pouziti pro ID obchodniho partnera u prevodek nebo si s tim poradit nejak jinak
+            ** Identifikační číslo osoby (IČO) **
+            U prevodky je u dodavatele v IC uvedeno interní číslo / číslo pobočky.
+			      Schema obsahuje pouze zjednodusenou validaci zahrnujici oba pripady, bez rozdeleni typu na varianty
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -206,7 +215,6 @@
 					<xs:documentation>
 						<![CDATA[
 						Nákladové středisko.
-
 						Pro účely účetnictví.
 
 						__FIXME:__ upresnit
@@ -220,7 +228,7 @@
 						<![CDATA[
 						Kód Typů výdeje s odloženou splatností, podle kterého bude vybrána hlavička ve Výdeji na fakturu / Výdeji na žádanku pro přefakturaci.
 
-						__FIXME:__ upresnit
+						__FIXME:__ upresnit @pjanousek
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -229,8 +237,8 @@
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
-						Číslo pobočky obchodního partnera.
-						__FIXME:__ upresnit
+						Číslo pobočky obchodního partnera. 
+            Slouží pro rozlišení obchodního partnera se shodným IČO/DIČ.
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -240,35 +248,27 @@
 	<xs:complexType name="cenaType">
 		<xs:annotation>
 			<xs:documentation>
-				<![CDATA[
-				Cena bez DPH, sazba DPH a cena s DPH.
-				]]>
+				<![CDATA[Cena s DPH, cena bez DPH a sazba DPH.]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="cenaSDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Cena s DPH.
-					]]>
+					<![CDATA[Cena s DPH.]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="cenaBezDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Cena bez DPH.
-					]]>
+					<![CDATA[Cena bez DPH.]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="sazbaDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Sazba DPH platná v DUZP (datum uskutečnění zdanitelného plnění).
-					]]>
+					<![CDATA[Sazba DPH platná v DUZP (datum uskutečnění zdanitelného plnění).]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -276,35 +276,27 @@
 	<xs:complexType name="cenaNullableType">
 		<xs:annotation>
 			<xs:documentation>
-				<![CDATA[
-				Cena bez DPH, sazba DPH a cena s DPH, umožňuje prázdné hodnoty.
-				]]>
+				<![CDATA[Cena s DPH, cena bez DPH a sazba DPH, umožňuje prázdné hodnoty.]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:attribute name="cenaSDPH" type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Cena s DPH.
-					]]>
+					<![CDATA[Cena s DPH.]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="cenaBezDPH" type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Cena bez DPH.
-					]]>
+					<![CDATA[Cena bez DPH.]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="sazbaDPH" type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Sazba DPH platná v DUZP (datum uskutečnění zdanitelného plnění).
-					]]>
+					<![CDATA[Sazba DPH platná v DUZP (datum uskutečnění zdanitelného plnění).]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -312,9 +304,7 @@
 	<xs:complexType name="cenaBezDPHType">
 		<xs:annotation>
 			<xs:documentation>
-				<![CDATA[
-				Cena bez DPH, bez určení sazby DPH.
-
+				<![CDATA[Cena bez DPH, bez určení sazby DPH.
 				Použití pro výrobní cenu, suroviny a podobně, kde není třeba určovat sazbu DPH.
 				]]>
 			</xs:documentation>
@@ -322,9 +312,7 @@
 		<xs:attribute name="cenaBezDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Cena bez DPH.
-					]]>
+					<![CDATA[Cena bez DPH.]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -334,7 +322,6 @@
 			<xs:documentation>
 				<![CDATA[
 				Cena bez DPH, bez určení sazby DPH, umožňuje prázdné hodnoty.
-
 				Použití pro výrobní cenu, suroviny a podobně, kde není třeba určovat sazbu DPH.
 				]]>
 			</xs:documentation>
@@ -342,9 +329,7 @@
 		<xs:attribute name="cenaBezDPH" type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Cena bez DPH.
-					]]>
+					<![CDATA[Cena bez DPH.]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -354,7 +339,6 @@
 			<xs:documentation>
 				<![CDATA[
 				Cena s DPH, bez určení sazby DPH.
-
 				Použití pro úhradu ZP a podobně, kde není třeba určovat sazbu DPH.
 				]]>
 			</xs:documentation>
@@ -362,9 +346,7 @@
 		<xs:attribute name="cenaSDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Cena s DPH.
-					]]>
+					<![CDATA[Cena s DPH.]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -374,7 +356,6 @@
 			<xs:documentation>
 				<![CDATA[
 				Cena s DPH, bez určení sazby DPH, umožňuje prázdné hodnoty.
-
 				Použití pro úhradu ZP a podobně, kde není třeba určovat sazbu DPH.
 				]]>
 			</xs:documentation>
@@ -382,9 +363,7 @@
 		<xs:attribute name="cenaSDPH" type="decimalNullableType">
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Cena s DPH.
-					]]>
+					<![CDATA[Cena s DPH.]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -392,29 +371,29 @@
 	<xs:complexType name="soucetProdCenType">
 		<xs:annotation>
 			<xs:documentation>
-				<![CDATA[
-				Součet prodejních cen a rozpis DPH.
-				]]>
+				<![CDATA[Součet prodejních cen a rozpis DPH.]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="prodejniCena" type="cenaNullableType" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="prodejniCena" type="cenaNullableType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Prodejní cena pro konkrétní sazbu DPH. Není povinná.]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
-		<xs:attribute name="cenaSDPH" type="decimalNullableType">
+		<xs:attribute name="cenaBezDPH" type="decimalNullableType"> <!-- __FIXME__ nelze použít komplexní typ? cena...Nullable -->
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Celkem prodejní cena s DPH.
-					]]>
+					<![CDATA[Celkem prodejní cena bez DPH.]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute name="cenaBezDPH" type="decimalNullableType">
+		<xs:attribute name="cenaSDPH" type="decimalNullableType"> <!-- __FIXME__ nelze použít komplexní typ? cena...Nullable -->
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Celkem prodejní cena bez DPH.
-					]]>
+					<![CDATA[Celkem prodejní cena s DPH.]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -422,29 +401,29 @@
 	<xs:complexType name="soucetNakCenType">
 		<xs:annotation>
 			<xs:documentation>
-				<![CDATA[
-				Součet nákupních cen a rozpis DPH.
-				]]>
+				<![CDATA[Součet nákupních cen a rozpis DPH.]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="nakupniCena" type="cenaType" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element name="nakupniCena" type="cenaType" minOccurs="1" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[Nákupní cena pro konkrétní sazbu DPH. Není povinná.]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
 		</xs:sequence>
-		<xs:attribute name="cenaSDPH" type="xs:decimal" use="required">
-			<xs:annotation>
-				<xs:documentation>
-					<![CDATA[
-					Celkem nákupní cena s DPH.
-					]]>
-				</xs:documentation>
-			</xs:annotation>
-		</xs:attribute>
 		<xs:attribute name="cenaBezDPH" type="xs:decimal" use="required">
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Celkem nákupní cena bez DPH.
-					]]>
+					<![CDATA[Celkem nákupní cena bez DPH.]]>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="cenaSDPH" type="xs:decimal" use="required">
+			<xs:annotation>
+				<xs:documentation>
+					<![CDATA[Celkem nákupní cena s DPH.]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -453,7 +432,9 @@
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
-				Příprava.
+				** Příprava **
+        
+        Obsahuje informace o přípravovaném přípravku, které není možné zapsat do běžné položky dodacího listu.
 
 				__FIXME:__ doplnit dokumentacni texty
 				]]>
@@ -463,42 +444,42 @@
 			<xs:element name="rodneCislo" type="rodneCisloType">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[Rodné číslo pacienta.]]>
+						<![CDATA[Rodné číslo pacienta, kterému je přípravek určen.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="kodZP" type="kodZPType">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[Kód ZP, SÚKLu, pod kterým se příprava vydává, předává.]]>
+						<![CDATA[Kód ZP, SÚKLu, pod kterým se přípravek vydává, předává.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="ICZLekare" type="iczType">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[IČZ lékaře, který přípravek předepsal.]]>
+						<![CDATA[IČZ lékaře.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="vlastniOznaceni" type="xs:string" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[Vlastní označení přípravy.]]>
+						<![CDATA[Vlastní označení přípravy. Číslo pro vyzvednutí pacientem.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="cisloPripravy" type="xs:unsignedInt">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[Číslo přípravy.]]>
+						<![CDATA[Číslo přípravy. Číslo přípravy v dodavatelském systému.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="nazevPripravy" type="xs:string">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[Název přípravy]]>
+						<![CDATA[Název přípravy. Může obsahovat jméno pacienta, nebo název připravovaného přípravku.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -526,7 +507,7 @@
 			<xs:element name="uhradaZP" type="cenaSDPHType">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[Úhrada ZP.]]>
+						<![CDATA[Úhrada zdravotní pojišťovny.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -569,6 +550,7 @@
 				Jinak je položka importována do LpW jako nespárovaná a její spárování musí provést uživatel ručně.
 
 				__FIXME:__ je to tak? takze specialni reseni "pozadovano aspon jedno z poli" neni potreba, protoze to v nejhorsim skonci jako nesparovana polozka?
+        ANO, JE TO TAK
 				]]>
 			</xs:documentation>
 		</xs:annotation>
@@ -576,27 +558,21 @@
 			<xs:element name="sukl" type="suklType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[
-						Kód SÚKLu nebo kód VZP ZP.
-						]]>
+						<![CDATA[Kód SÚKLu nebo kód VZP ZP. Slouží k lepší identifikaci přípravku.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="pdk" type="pdkType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[
-						Kód PDK.
-						]]>
+						<![CDATA[Kód PDK. Slouží k lepší identifikaci přípravku.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="kodDodavatele" type="xs:string" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[
-						Kód dodavatele.
-						]]>
+						<![CDATA[Kód dodavatele. Slouží k lepší identifikaci přípravku.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -609,6 +585,7 @@
 						Informativní údaj. Má smysl pouze u dokumentů exportovaných z LpW.
 
 						__FIXME:__ je to tak?
+            ANO, JE TO TAK
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -627,9 +604,7 @@
 			<xs:element name="nazev" type="xs:string">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[
-						Název přípravku.
-						]]>
+						<![CDATA[Název přípravku.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -639,9 +614,10 @@
 						<![CDATA[
 						Skupina skladových karet v LpW, viz popis použitého datového typu.
 
-						Při identifikaci přípravku kódem SÚKLu nebo kódem VZP ZP je tento údaj povinný.
-
+						Při identifikaci přípravku kódem SÚKLu nebo kódem VZP ZP je tento údaj důležitý aby nedošlo k záměně např. HVLP/PZT.
+            
 						__FIXME:__ validuje si LpW uvnitr, v XSD nelze vyjadrit, je tak?
+            ANO, JE TO TAK
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -649,75 +625,63 @@
 			<xs:element name="mnozstvi" type="xs:decimal">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[
-						Dodané množství přípravku.
-						]]>
+						<![CDATA[Dodané množství přípravku.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="sarze" type="xs:string" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[
-						Šarže přípravku.
-						]]>
+						<![CDATA[Šarže přípravku. Slouží k rozlišení dávky, např. při stahování vadné série.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="exspirace" type="dateTimeNullableType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[
-						Exspirace (minimální trvanlivost) přípravku.
-						]]>
+						<![CDATA[Exspirace (minimální trvanlivost) přípravku.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="certifikat" type="xs:string" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[
-						Certifikát přípravku.
-
-						__FIXME:__ co to je, kdy to je, ...?
-						]]>
+						<![CDATA[Certifikát (atest) přípravku u surovin.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="priprava" type="pripravaType" minOccurs="0"/>
+      <xs:element name="priprava" type="pripravaType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Pokud se jedná o připravované přípravky, jsou rozšiřující informace zaznamenány zde.]]>
+					</xs:documentation>
+				</xs:annotation>
+      </xs:element>
 			<xs:element name="vyrobniCena" type="cenaBezDPHNullableType">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[
-						Výrobní cena přípravku.
-						]]>
+						<![CDATA[Výrobní cena přípravku bez DPH.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="nakupniCena" type="cenaType">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[
-						Nákupní cena přípravku.
-						]]>
+						<![CDATA[Nákupní cena přípravku.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="prodejniCena" type="cenaNullableType">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[
-						Prodejní cena přípravku.
-						]]>
+						<![CDATA[Prodejní cena přípravku vypočítaná/doporučená dodavatelem.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="carovyKod" type="xs:string" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[
-						Čárový kód přípravku.
-						]]>
+						<![CDATA[Čárový kód přípravku. Slouží k lepší identifikaci přípravku.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
@@ -728,8 +692,10 @@
 						Čárový kód položky skladové karty přípravku.
 
 						Informativní údaj. Má smysl pouze u dokumentů exportovaných z LpW.
-
+            
 						__FIXME:__ je to tak?
+            NEVÍM, ZDA JE V TÉTO VERZI XML ROZHRANÍ POUŽIT
+            @PJANOUSEK
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -738,9 +704,7 @@
 		<xs:attribute name="pozice" type="xs:unsignedInt">
 			<xs:annotation>
 				<xs:documentation>
-					<![CDATA[
-					Pořadí položky dokumentu.
-					]]>
+					<![CDATA[Pořadí položky dokumentu.]]>
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
@@ -750,37 +714,45 @@
 			<xs:element name="hlavicka">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="dodavatel" type="subjektType"/>
-						<xs:element name="odberatel" type="subjektType"/>
-						<xs:element name="prijemce" type="subjektType" minOccurs="0"/>
+						<xs:element name="dodavatel" type="subjektType">
+							<xs:annotation>
+								<xs:documentation>
+									<![CDATA[Identifikace dodavatele.]]>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="odberatel" type="subjektType">
+							<xs:annotation>
+								<xs:documentation>
+									<![CDATA[Identifikace odběratele – provozovatele lékárny.]]>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="prijemce" type="subjektType" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>
+									<![CDATA[Identifikace obchodního partnera, kterému bude zboží vydáno; tento OP bude vybrán v dialogu převedení dokladu do výdeje na žádanku/fakturu/převodky.]]>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
 						<xs:element name="oznaceni" type="xs:string" nillable="true">
 							<xs:annotation>
 								<xs:documentation>
-									<![CDATA[
-									Číslo dokumentu.
-
-									__FIXME:__ upresnit
-									]]>
+									<![CDATA[Identifikační číslo dodacího listu/převodky. Stanovuje dodavatel.]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 						<xs:element name="cisloObjednavky" type="xs:string" nillable="true">
 							<xs:annotation>
 								<xs:documentation>
-									<![CDATA[
-									Číslo objednávky.
-
-									__FIXME:__ upresnit
-									]]>
+									<![CDATA[Identifikační číslo objednávky na základě které bylo dodáno zboží na tomto dodacím listu.]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 						<xs:element name="pocetPolozek" type="xs:unsignedInt">
 							<xs:annotation>
 								<xs:documentation>
-									<![CDATA[
-									Počet položek dokumentu.
-									]]>
+									<![CDATA[Počet položek příjmového dokumentu.]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
@@ -793,6 +765,7 @@
 									Například PHARMOS Ostrava, PHARMOS Brandýsek a podobně.
 
 									__FIXME:__ je to tak?
+                  NEJSEM SI JIST
 									]]>
 								</xs:documentation>
 							</xs:annotation>
@@ -800,44 +773,79 @@
 						<xs:element name="datumVytvoreni" type="xs:dateTime">
 							<xs:annotation>
 								<xs:documentation>
-									<![CDATA[
-									Datum a čas vytvoření dokumentu.
-									]]>
+									<![CDATA[Datum a čas vytvoření/vystavení dokumentu.]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 						<xs:element name="poznamka" type="xs:string" nillable="true">
 							<xs:annotation>
 								<xs:documentation>
-									<![CDATA[
-									Poznámka.
-									]]>
+									<![CDATA[Poznámka. Informace, kterou je možné sdělit cílové lékárně.]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="soucetNakupnichCen" type="soucetNakCenType"/>
-						<xs:element name="soucetProdejnichCen" type="soucetProdCenType"/>
+						<xs:element name="soucetNakupnichCen" type="soucetNakCenType">
+							<xs:annotation>
+								<xs:documentation>
+									<![CDATA[Součet nákupních cen. Slouží pro kontrolu správnosti informací uvedených v dokumentu.]]>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="soucetProdejnichCen" type="soucetProdCenType">
+							<xs:annotation>
+								<xs:documentation>
+									<![CDATA[Součet prodejních cen. Slouží pro kontrolu správnosti informací uvedených v dokumentu.]]>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
 			<xs:element name="polozky">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Položky dodacího listu/převodky.]]>
+					</xs:documentation>
+				</xs:annotation>
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element minOccurs="1" maxOccurs="unbounded" name="polozka" type="polozkaType"/>
+						<xs:element minOccurs="1" maxOccurs="unbounded" name="polozka" type="polozkaType">
+							<xs:annotation>
+								<xs:documentation>
+									<![CDATA[Položka dodacího listu/převodky]]>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
-		<xs:attribute name="opravnyDanovyDoklad" type="opravnyDanovyDokladType"/>
-		<xs:attribute name="verzeRozhrani" type="verzeRozhraniType" use="required"/>
+		<xs:attribute name="opravnyDanovyDoklad" type="opravnyDanovyDokladType">
+			<xs:annotation>
+				<xs:documentation>
+					<![CDATA[Příznak zda se jedná o opravný daňový doklad.]]>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="verzeRozhrani" type="verzeRozhraniType" use="required">
+			<xs:annotation>
+				<xs:documentation>
+					<![CDATA[Verze rozhraní dodacího listu/převodky]]>
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
 		<xs:attribute name="verzeLpW" type="xs:string">
 			<xs:annotation>
-				<xs:documentation>Verze LpW, která byla použita při exportu dokumentu.</xs:documentation>
+				<xs:documentation>
+          <![CDATA[Verze LpW, která byla použita při exportu dokumentu.]]>
+        </xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute name="datumExportu" type="xs:dateTime">
 			<xs:annotation>
-				<xs:documentation>Datum a čas exportu dokumentu.</xs:documentation>
+				<xs:documentation>
+					<![CDATA[Datum a čas exportu dokumentu.]]>
+				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
@@ -847,9 +855,17 @@
 				<![CDATA[
 				**Dodací list**
 
+        Jedná se o elektronickou verzi vytištěného dodacího listu.
+        Používá se ke komunikaci mezi různými podnikatelskými/daňovými subjekty.
+        Může být použit i jako opravný daňový doklad/dobropis.
+        V LpW se jedná o dodací list přijatý/vydaný.
+        
 				__FIXME:__ popsat kde se dodaci list v LpW pouziva (import do prijmu jako DL prijaty, export z VnF/VnZ jako DL vydany, pri distribuci pomoci skriptu, jeste neco dalsiho?)
+        NIC DALŠÍHO MĚ NENAPADÁ
+        @PJANOUSEK
 
 				__FIXME:__ plus nejaka anotace k celemu XSD souboru (celemu schematu), pro 2 radky obecne o tom, ze jde o XML format pro datovou vymenu, trochu prisnejsi nez je ve skutecnosti LpW parser XML DL
+        
 				]]>
 			</xs:documentation>
 		</xs:annotation>
@@ -860,6 +876,11 @@
 				<![CDATA[
 				*Převodka*
 
+        Používá se ke komunikaci v rámci jednoho podnikatelského subjektu.
+        Jedná se o elektronickou verzi vytištěné převodky.
+        Může být použit i jako opravný daňový doklad/dobropis.
+        V takovém případě mají smysl i prodejní ceny.
+        V LpW se jedná o převodku vydanou/přijatou.
 				__FIXME:__ podobne jako vyse
 				]]>
 			</xs:documentation>
