@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<dodaciList datumExportu="2017-10-18T18:05:52.4749915+02:00" verzeLpW="2017.2.1.19" verzeRozhrani="1" opravnyDanovyDoklad="0">
+  <hlavicka>
+    <dodavatel>
+      <nazev>Lékárna U Testera</nazev>
+      <nazev2 />
+      <IC>28123456</IC>
+      <DIC>CZ1212121218</DIC>
+      <interniCislo>1</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev>*Nemocnice Konopiště</nazev>
+      <IC>123123123</IC>
+      <DIC />
+      <nakladoveStredisko>CHI</nakladoveStredisko>
+    </odberatel>
+    <oznaceni>1</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>1</pocetPolozek>
+    <idSkladu>1000</idSkladu>
+    <datumVytvoreni>2017-09-29T14:14:37.207</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="47.58" cenaSDPH="47.58">
+      <nakupniCena sazbaDPH="0.00" cenaBezDPH="47.58" cenaSDPH="47.58" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="52.17" cenaSDPH="60.00">
+      <prodejniCena sazbaDPH="0.00" cenaBezDPH="52.17" cenaSDPH="60.00" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl />
+      <pdk>2898030</pdk>
+      <kodDodavatele />
+      <IdPolozky>70060</IdPolozky>
+      <IdSkladoveKarty>175370</IdSkladoveKarty>
+      <nazev>SpongeBob detske naplasti 20ks</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>0010914017695</sarze>
+      <exspirace>2017-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="0.00" cenaBezDPH="47.58" cenaSDPH="47.58" />
+      <prodejniCena sazbaDPH="0.00" cenaBezDPH="52.17" cenaSDPH="60.00" />
+      <carovyKod>672935940357</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2200000700605</carovyKodPolozkySkladoveKarty>
+    </polozka>
+  </polozky>
+</dodaciList>
