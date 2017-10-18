@@ -7,7 +7,7 @@ var libxml = require("libxmljs");
 var xsdDocs = [];
 
 function loadSchemas(callback) {
-    glob("../../Schema/**/*.xsd", null, function (er, files) {
+    glob("../../Schema/**/*.xsd", null, function(er, files) {
         async.eachSeries(
             files,
             function iteratee(file, notifyItemDoneCallback) {
@@ -16,7 +16,7 @@ function loadSchemas(callback) {
                 console.log('==================================================');
                 console.log();
 
-                fs.readFile(file, function (err, dataxsd) {
+                fs.readFile(file, function(err, dataxsd) {
                     if (err) {
                         console.log('    ' + 'NOT loaded');
                         console.log();
@@ -57,7 +57,7 @@ function validate(xmlname, callback) {
     console.log('==================================================');
     console.log();
 
-    fs.readFile(xmlname, function (err, dataxml) {
+    fs.readFile(xmlname, function(err, dataxml) {
         if (err) {
             console.log('    ' + 'XML text NOT loaded');
             console.log();
@@ -67,8 +67,7 @@ function validate(xmlname, callback) {
         }
         console.log();
 
-        try
-        {
+        try {
             var xmlDoc = libxml.parseXml(dataxml);
 
             console.log('    ' + 'XML loaded');
@@ -79,17 +78,17 @@ function validate(xmlname, callback) {
                 function iteratee(xsdKey, notifyItemDoneCallback) {
                     console.log('    ' + 'Schema: ' + xsdKey);
                     console.log();
-                    
+
                     var ok = xmlDoc.validate(xsdDocs[xsdKey]);
 
                     if (xmlDoc.validationErrors.length > 0) {
                         console.log(
                             xmlDoc.validationErrors
-                                .map(function (item) {
-                                    return '    ' + '    ' + item.toString().trim() + "\n" +
-                                            '    ' + '    ' + JSON.stringify(item);
-                                })
-                                .join("\n\n")
+                            .map(function(item) {
+                                return '    ' + '    ' + item.toString().trim() + "\n" +
+                                    '    ' + '    ' + JSON.stringify(item);
+                            })
+                            .join("\n\n")
                         );
                         console.log();
                     }
@@ -100,7 +99,8 @@ function validate(xmlname, callback) {
                     notifyItemDoneCallback();
                 },
                 function done(err) {
-                    callback(err);
+                    // chybu neoznami vyse, aby se pokracovalo s dalsim XML souborem
+                    callback(false);
                 });
         } catch (ex) {
             // v pripade chyby pri parsovani XML souboru nebo pri validaci XSD schematem
@@ -112,13 +112,14 @@ function validate(xmlname, callback) {
             console.log();
             console.log('    ' + ex);
 
-            notifyItemDoneCallback();
+            // chybu neoznami vyse, aby se pokracovalo s dalsim XML souborem
+            callback(false);
         }
     });
 }
 
 function validateAll(xmlglobpattern, callback) {
-    glob(xmlglobpattern, null, function (er, files) {
+    glob(xmlglobpattern, null, function(er, files) {
         async.eachSeries(
             files,
             function iteratee(file, notifyItemDoneCallback) {
@@ -131,6 +132,6 @@ function validateAll(xmlglobpattern, callback) {
 }
 
 async.series([
-    function (callback) { loadSchemas(callback); },
-    function (callback) { validateAll("../../Examples/**/*.xml", callback); }
+    function(callback) { loadSchemas(callback); },
+    function(callback) { validateAll("../../Examples/**/*.xml", callback); }
 ]);
