@@ -76,12 +76,17 @@
 
 				Umožňuje prázdnou hodnotu.
 
-				Unikátní osmimístné identifikační číslo právnické osoby, podnikající fyzické osoby nebo organizační složky státu.
-		        ]]>
+				Běžně jde o unikátní osmimístné identifikační číslo právnické osoby, podnikající fyzické osoby nebo organizační složky státu.
+
+				**POZOR!**
+
+				V LpW je možné zadat do pole IČO obchodního partnera až 15 číslic. Při exportu převodky z LpW je také element __IC__ použit pro interní číslo / číslo pobočky, která zboží vydala na převodku.
+				Proto schéma obsahuje pouze zjednodušenou (volnou) validaci zahrnujíci tyto případy.
+				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="\d{3,8}|.{0}"/>
+			<xs:pattern value="\d{3,15}|.{0}"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="dicType">
@@ -227,8 +232,6 @@
 						**Identifikační číslo osoby (IČO)**
 
 						U převodky je u dodavatele v IČ uvedeno interní číslo / číslo pobočky, která zboží vydala na převodku.
-
-						Schéma obsahuje pouze zjednodušenou validaci zahrnujíci oba případy, bez rozdělení typu na varianty.
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -438,9 +441,9 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-	    	<xs:element name="nakupniCena" type="cenaType" minOccurs="1" maxOccurs="unbounded">
-		    	<xs:annotation>
-			  		<xs:documentation>
+			<xs:element name="nakupniCena" type="cenaType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>
 						<![CDATA[Nákupní cena pro konkrétní sazbu DPH, není povinná]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -467,7 +470,7 @@
 				<![CDATA[
 				**Příprava**
 
-		        Obsahuje informace o připravovaném přípravku, které není možné zapsat do běžné položky dodacího listu / převodky.
+				Obsahuje informace o připravovaném přípravku, které není možné zapsat do běžné položky dodacího listu / převodky.
 				]]>
 			</xs:documentation>
 		</xs:annotation>
@@ -882,7 +885,7 @@
 				<![CDATA[
 				**Dodací list**
 
-		        Jedná se o elektronickou verzi vytištěného dodacího listu.
+				Jedná se o elektronickou verzi vytištěného dodacího listu.
 				Používá se ke komunikaci mezi různými podnikatelskými / daňovými subjekty.
 				Může být použit i jako opravný daňový doklad / dobropis.
 
@@ -897,7 +900,7 @@
 				<![CDATA[
 				**Převodka**
 
-		        Používá se ke komunikaci v rámci jednoho podnikatelského subjektu.
+				Používá se ke komunikaci v rámci jednoho podnikatelského subjektu.
 				Jedná se o elektronickou verzi vytištěné převodky.
 				Může být použit i jako opravný daňový doklad / dobropis. __FIXME:__ @rtomsa
 				V takovém případě mají smysl i prodejní ceny. __FIXME:__ @rtomsa
