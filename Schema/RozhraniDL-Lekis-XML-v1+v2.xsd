@@ -897,7 +897,7 @@
 
 				V LpW se jedná o dodací list přijatý (modul Příjem), dodací list vydaný (modul Výdej na fakturu), žádanku (modul Výdej na žádanku).
 
-				Prodejní ceny uvedené v dokladu jsou v modulu Příjem chápány jako informativní či doporučené hodnoty.
+				Prodejní ceny uvedené v dokladu jsou chápány jako informativní či doporučené hodnoty, jejich použití závisí na nastavení u obchodního partnera v LpW či na rozhodnutí uživatele.
 				]]>
 			</xs:documentation>
 		</xs:annotation>
@@ -913,7 +913,7 @@
 
 				V LpW se jedná o převodku přijatou (modul Převodky - příjem), převodku vydanou (modul Převodky - výdej).
 
-				Prodejní ceny uvedené v dokladu jsou v modulu Převodky - příjem chápány jako doporučené hodnoty, jsou uživatelem většinou respektovány, protože jde o pohyb zboží v rámci jednoho podnikatelského subjektu (pravděpodobně tedy obě strany mají shodnou prodejní politiku).
+				Prodejní ceny uvedené v dokladu jsou chápány jako informativní či doporučené hodnoty, jejich použití závisí na nastavení u obchodního partnera v LpW či na rozhodnutí uživatele.
 				]]>
 			</xs:documentation>
 		</xs:annotation>
