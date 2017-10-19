@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<dodaciList datumExportu="2017-10-18T18:06:23.8813883+02:00" verzeLpW="2017.2.1.19" verzeRozhrani="1" opravnyDanovyDoklad="0">
+  <hlavicka>
+    <dodavatel>
+      <nazev>Lékárna U Testera</nazev>
+      <nazev2 />
+      <IC>28123456</IC>
+      <DIC>CZ1212121218</DIC>
+      <interniCislo>1</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev>*Nemocnice Konopiště</nazev>
+      <IC>123123123</IC>
+      <DIC />
+      <nakladoveStredisko>CHI</nakladoveStredisko>
+    </odberatel>
+    <oznaceni>1</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>5</pocetPolozek>
+    <idSkladu>1000</idSkladu>
+    <datumVytvoreni>2017-09-13T09:09:02.75</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="1677.14" cenaSDPH="1677.14">
+      <nakupniCena sazbaDPH="0.00" cenaBezDPH="1677.14" cenaSDPH="1677.14" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="2050.93" cenaSDPH="2256.00">
+      <prodejniCena sazbaDPH="0.00" cenaBezDPH="2050.93" cenaSDPH="2256.00" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl>0094918</sukl>
+      <pdk>4030096456333</pdk>
+      <kodDodavatele />
+      <IdPolozky>64823</IdPolozky>
+      <IdSkladoveKarty>86077</IdSkladoveKarty>
+      <nazev>Ambrobene tbl.20x30mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>O16685</sarze>
+      <exspirace>2019-04-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="38.81" />
+      <nakupniCena sazbaDPH="0.00" cenaBezDPH="43.51" cenaSDPH="43.51" />
+      <prodejniCena sazbaDPH="0.00" cenaBezDPH="54.55" cenaSDPH="60.00" />
+      <carovyKod>4030096456333</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2200000648235</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="2">
+      <sukl>0096303</sukl>
+      <pdk>8584005121400</pdk>
+      <kodDodavatele />
+      <IdPolozky>73281</IdPolozky>
+      <IdSkladoveKarty>85885</IdSkladoveKarty>
+      <nazev>Ascorutin tbl.obd.50</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>2320915</sarze>
+      <exspirace>2017-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="33.50" />
+      <nakupniCena sazbaDPH="0.00" cenaBezDPH="37.55" cenaSDPH="37.55" />
+      <prodejniCena sazbaDPH="0.00" cenaBezDPH="46.36" cenaSDPH="51.00" />
+      <carovyKod>8584005121400</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2200000732811</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="3">
+      <sukl>0088518</sukl>
+      <pdk>8584005110909</pdk>
+      <kodDodavatele />
+      <IdPolozky>75984</IdPolozky>
+      <IdSkladoveKarty>85760</IdSkladoveKarty>
+      <nazev>Amicloton por.tbl.nob.30</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>2091015</sarze>
+      <exspirace>2017-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="33.68" />
+      <nakupniCena sazbaDPH="0.00" cenaBezDPH="37.75" cenaSDPH="37.75" />
+      <prodejniCena sazbaDPH="0.00" cenaBezDPH="46.09" cenaSDPH="50.70" />
+      <carovyKod>8584005110909</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2200000759849</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="4">
+      <sukl>0088518</sukl>
+      <pdk>8584005110909</pdk>
+      <kodDodavatele />
+      <IdPolozky>76913</IdPolozky>
+      <IdSkladoveKarty>85760</IdSkladoveKarty>
+      <nazev>Amicloton por.tbl.nob.30</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>2091015</sarze>
+      <exspirace>2017-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="33.68" />
+      <nakupniCena sazbaDPH="0.00" cenaBezDPH="37.75" cenaSDPH="37.75" />
+      <prodejniCena sazbaDPH="0.00" cenaBezDPH="46.09" cenaSDPH="50.70" />
+      <carovyKod>8584005110909</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2200000769138</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="5">
+      <sukl>0094113</sukl>
+      <pdk>0137068</pdk>
+      <kodDodavatele />
+      <IdPolozky>78077</IdPolozky>
+      <IdSkladoveKarty>87690</IdSkladoveKarty>
+      <nazev>Warfarin Orion 3mg por.tbl.nob. 100x3mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>13.0000</mnozstvi>
+      <sarze />
+      <exspirace />
+      <certifikat />
+      <vyrobniCena cenaBezDPH="99.17" />
+      <nakupniCena sazbaDPH="0.00" cenaBezDPH="111.16" cenaSDPH="111.16" />
+      <prodejniCena sazbaDPH="0.00" cenaBezDPH="135.82" cenaSDPH="149.40" />
+      <carovyKod>6432100022035</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2200000780775</carovyKodPolozkySkladoveKarty>
+    </polozka>
+  </polozky>
+</dodaciList>

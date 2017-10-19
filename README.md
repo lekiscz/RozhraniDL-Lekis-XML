@@ -1,4 +1,4 @@
-# Rozhraní dodacích listů Lekis XML
+# Rozhraní dodacích listů a převodek Lekis XML
 
 XML schéma, dokumentace, příklady, validátory
 
@@ -10,7 +10,7 @@ XML schéma, dokumentace, příklady, validátory
 
 Adresář [Documentation](Documentation) obsahuje skripty pro vygenerování HTML dokumentace výše uvedených XSD souborů pomocí xs3p XSLT transformace s použitím různých XSLT SW. Uvnitř každého skriptu jsou popsány jeho další požadavky.
 
-Vygenerovanou dokumentaci k aktuálním verzím XSD souborů najdete také [zde](https://lekiscz.github.io/RozhraniDL-Lekis-XML/).
+![#c5f015](https://placehold.it/10/c5f015/000000?text=+) **[Vygenerovaná dokumentace k aktuálním verzím XSD souborů](https://lekiscz.github.io/RozhraniDL-Lekis-XML/)** ![#c5f015](https://placehold.it/10/c5f015/000000?text=+)
 
 ## Příklady
 
@@ -30,12 +30,18 @@ Neumí pracovat se vstupními soubory v jiném kódování než UTF-8. Mezi př�
 
 #### Instalace balíčků a spuštění
 
-Na Windows platformě je nutné použít příznak `--msvs_version=VERZEVS`, který umožní kompilaci nativních částí použitých balíčků.
+Na Windows platformě je nutné umožnit kompilaci nativních částí použitých balíčků. K tomu lze pohodlně použít například balíček [windows-build-tools](https://www.npmjs.com/package/windows-build-tools).
+
+
+```
+npm install --global --production windows-build-tools
+```
+
 Předpokládá se spuštění v kořenovém adresáři daného validátoru.
 
 
 ```
-npm install --msvs_version=2012
+npm install
 node index.js
 ```
 
