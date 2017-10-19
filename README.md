@@ -31,11 +31,16 @@ Neumí pracovat se vstupními soubory v jiném kódování než UTF-8. Mezi př�
 #### Instalace balíčků a spuštění
 
 Na Windows platformě je nutné umožnit kompilaci nativních částí použitých balíčků. K tomu lze pohodlně použít například balíček [windows-build-tools](https://www.npmjs.com/package/windows-build-tools).
-Předpokládá se spuštění v kořenovém adresáři daného validátoru.
 
 
 ```
 npm install --global --production windows-build-tools
+```
+
+Předpokládá se spuštění v kořenovém adresáři daného validátoru.
+
+
+```
 npm install
 node index.js
 ```

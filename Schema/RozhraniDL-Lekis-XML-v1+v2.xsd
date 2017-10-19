@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:annotation>
+		<xs:documentation>
+			<![CDATA[
+			**XML schéma dodacího listu nebo převodky ve formátu Lekis XML**
+
+			Umožňuje validaci obsahu elektronických dokladů (dodacích listů a převodek) používaných při komunikaci mezi SW Lekis pro Windows (LpW) a dalšími systémy (provozovanými dodavateli lékárny, odběrateli lékárny a dalšími subjekty).
+			]]>
+		</xs:documentation>
+	</xs:annotation>
 	<xs:simpleType name="verzeRozhraniType">
 		<xs:annotation>
 			<xs:documentation>
@@ -9,7 +18,7 @@
 
 				Toto XML schéma je určeno pro validaci dokumentů s uvedeným atributem __verzeRozhrani__ u kořenového elementu s __hodnotou 1 nebo 2__.
 
-				Jde o starší verze rozhraní, kde nebylo původně XML schéma vůbec používáno. Dokumenty nemají určený žádný namespace a validace uváděných informací je o něco volnější (tak, aby XML schéma úspěšně zvalidovalo téměř všechny dokumenty, které načte parser v SW Lekis pro Windows).
+				Jde o starší verze rozhraní, kde nebylo původně XML schéma vůbec používáno. Dokumenty nemají určený žádný namespace a validace uváděných informací je o něco volnější (tak, aby XML schéma úspěšně zvalidovalo téměř všechny dokumenty, které načte parser v LpW).
 
 				Na webu https://lekiscz.github.io/RozhraniDL-Lekis-XML bude později zveřejněno samostatné XML schématu pro verzi rozhraní 3, kde jsou tyto nedostatky verzí 1 a 2 vyřešené.
 				]]>
@@ -255,10 +264,7 @@
 						<![CDATA[
 						**Kód typu výdeje s odloženou splatností**
 
-						podle kterého bude vybrána hlavička ve Výdeji na fakturu / Výdeji na žádanku pro přefakturaci ???
-						JM: podle me se toto vubec nepouziva, ani pri exportu, ani pri importu
-
-						__FIXME:__ upresnit @pjanousek
+						Pro přijímané dodací listy může být uvedeno u příjemce pro předvýběr skupiny vydaných dodacích listů nebo skupiny žádanek při použití _převedení dokladu do výdeje na fakturu / žádanku_.
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -887,9 +893,11 @@
 
 				Jedná se o elektronickou verzi vytištěného dodacího listu.
 				Používá se ke komunikaci mezi různými podnikatelskými / daňovými subjekty.
-				Může být použit i jako opravný daňový doklad / dobropis.
+				Může být použit také jako opravný daňový doklad / dobropis.
 
 				V LpW se jedná o dodací list přijatý (modul Příjem), dodací list vydaný (modul Výdej na fakturu), žádanku (modul Výdej na žádanku).
+
+				Prodejní ceny uvedené v dokladu jsou v modulu Příjem chápány jako informativní či doporučené hodnoty.
 				]]>
 			</xs:documentation>
 		</xs:annotation>
@@ -900,12 +908,12 @@
 				<![CDATA[
 				**Převodka**
 
-				Používá se ke komunikaci v rámci jednoho podnikatelského subjektu.
 				Jedná se o elektronickou verzi vytištěné převodky.
-				Může být použit i jako opravný daňový doklad / dobropis. __FIXME:__ @rtomsa
-				V takovém případě mají smysl i prodejní ceny. __FIXME:__ @rtomsa
+				Používá se ke komunikaci v rámci jednoho podnikatelského subjektu.
 
 				V LpW se jedná o převodku přijatou (modul Převodky - příjem), převodku vydanou (modul Převodky - výdej).
+
+				Prodejní ceny uvedené v dokladu jsou v modulu Převodky - příjem chápány jako doporučené hodnoty, jsou uživatelem většinou respektovány, protože jde o pohyb zboží v rámci jednoho podnikatelského subjektu (pravděpodobně tedy obě strany mají shodnou prodejní politiku).
 				]]>
 			</xs:documentation>
 		</xs:annotation>
