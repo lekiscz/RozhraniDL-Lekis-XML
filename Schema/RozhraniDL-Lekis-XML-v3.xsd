@@ -42,6 +42,20 @@
 			</xs:simpleType>
 		</xs:union>
 	</xs:simpleType>
+	<xs:simpleType name="booleanNullableType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[Logická hodnota 0/1, umožňuje prázdnou hodnotu]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="xs:boolean">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value=""/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
 	<xs:simpleType name="decimalNullableType">
 		<xs:annotation>
 			<xs:documentation>
@@ -727,6 +741,20 @@
 
 						Informativní údaj.
 						Má smysl pouze u dokladů exportovaných z LpW, při importu dokladů do LpW se nijak nezpracovává.
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sarzeOznacenaFMD" type="booleanNullableType" nillable="true">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Zda je šarže označena FMD 2D kódem**
+
+						Hodnoty 
+						* 0 - není označena FMD 2D kódem
+						* 1 - je označena FMD 2D kódem
+						* prázdno - není známo, zda je šarže označena FMD 2D kódem
 						]]>
 					</xs:documentation>
 				</xs:annotation>
