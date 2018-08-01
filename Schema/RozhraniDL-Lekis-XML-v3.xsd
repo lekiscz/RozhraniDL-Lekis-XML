@@ -179,6 +179,25 @@
 			<xs:pattern value="[1-8]"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="typPolozkyPripravyType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				**Typ položky přípravy**
+
+				Podporovány jsou hodnoty s následujícími významy:
+
+				* 1 - Surovina
+				* 2 - Obal
+				* 3 - Taxalaborum
+				* 4 - Přirážka
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:unsignedInt">
+			<xs:pattern value="[1-4]"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="kodZPType">
 		<xs:annotation>
 			<xs:documentation>
@@ -483,6 +502,90 @@
 				</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="polozkaPripravyType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				**Položka přípravy**
+
+				Obsahuje informace o substanci, které jsou určeny pro vygenerování eRp.
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="sukl" type="suklType" nillable="true">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Kód SÚKLu nebo kód VZP ZP**
+
+						Slouží k lepší identifikaci přípravku.
+						Při jeho uvedení je důležitý také element __skupina__, který určuje, zda se jedná o HVLP nebo PZT přípravek.
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nazev" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Název přípravku]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sarze" type="xs:string" nillable="true">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Šarže přípravku, slouží k rozlišení dávky, např. při stahování vadné série]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="jednotka" type="xs:string" nillable="true">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Jednotka množství (ks, g, ml)]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="mnozstvi" type="xs:decimal">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Použité množství přípravku do přípravy]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="uhradaZP" type="cenaSDPHType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Úhrada zdravotní pojišťovny]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="skupina" type="sskType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Skupina skladové karty v LpW**
+
+						Viz popis použitého datového typu.
+						Při identifikaci přípravku kódem SÚKLu nebo kódem VZP ZP je tento údaj důležitý aby nedošlo k záměně např. HVLP / PZT.
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typPolozkyPripravy" type="typPolozkyPripravyType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Typ položky přípravy**
+
+						Viz popis použitého datového typu.
+						Tento údaj je důležitý při vytváření eRp.
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="pripravaType">
 		<xs:annotation>
