@@ -550,18 +550,18 @@
 			<xs:element name="mnozstvi" type="xs:decimal">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[Použité množství přípravku do přípravy]]>
+						<![CDATA[Použité množství přípravku do přípravy. Vyžadovaná hodnota.]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="uhradaZP" type="cenaSDPHType">
+			<xs:element name="uhradaZP" type="cenaSDPHType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Úhrada zdravotní pojišťovny]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="skupina" type="sskType">
+			<xs:element name="skupina" type="sskType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -569,6 +569,7 @@
 
 						Viz popis použitého datového typu.
 						Při identifikaci přípravku kódem SÚKLu nebo kódem VZP ZP je tento údaj důležitý aby nedošlo k záměně např. HVLP / PZT.
+						Pokud se jedná o položku jiného typu, než je např. Surovina, není tato hodnota uváděna.
 						]]>
 					</xs:documentation>
 				</xs:annotation>
