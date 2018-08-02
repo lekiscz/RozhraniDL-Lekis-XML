@@ -42,13 +42,23 @@
 			</xs:simpleType>
 		</xs:union>
 	</xs:simpleType>
-	<xs:simpleType name="booleanNullableType">
+	<xs:simpleType name="bitType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[Logická hodnota 0/1]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:unsignedInt">
+			<xs:pattern value="[0-1]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="bitNullableType">
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[Logická hodnota 0/1, umožňuje prázdnou hodnotu]]>
 			</xs:documentation>
 		</xs:annotation>
-		<xs:union memberTypes="xs:boolean">
+		<xs:union memberTypes="xs:bitType">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value=""/>
@@ -745,7 +755,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="sarzeOznacenaFMD" type="booleanNullableType" nillable="true">
+			<xs:element name="sarzeOznacenaFMD" type="bitNullableType" nillable="true">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
