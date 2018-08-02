@@ -689,6 +689,24 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+				<xs:element name="polozkyPripravy">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Obsahuje informace o substancích, které jsou primárně určeny pro vygenerování eRp.]]>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" maxOccurs="unbounded" name="polozkaPripravy" type="polozkaPripravyType">
+							<xs:annotation>
+								<xs:documentation>
+									<![CDATA[Obsahuje informace o substanci, které jsou určeny pro vygenerování eRp.]]>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="polozkaType">
