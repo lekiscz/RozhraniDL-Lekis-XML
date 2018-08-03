@@ -627,7 +627,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="cisloPripravy" type="xs:unsignedInt">
+			<xs:element name="cisloPripravy" type="xs:string">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Číslo přípravy v systému dodavatele]]>
