@@ -690,7 +690,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-				<xs:element name="polozkyPripravy">
+				<xs:element name="polozkyPripravy" minOccurs="0" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Obsahuje informace o substancích, které jsou primárně určeny pro vygenerování eRp.]]>
