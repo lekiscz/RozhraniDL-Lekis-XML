@@ -514,7 +514,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="sukl" type="suklType" nillable="true">
+			<xs:element name="sukl" type="suklType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -533,14 +533,14 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="sarze" type="xs:string" nillable="true">
+			<xs:element name="sarze" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Šarže přípravku, slouží k rozlišení dávky, např. při stahování vadné série]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="jednotka" type="xs:string" nillable="true">
+			<xs:element name="jednotka" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Jednotka množství (ks, g, ml)]]>
@@ -554,14 +554,14 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="uhradaZP" type="cenaSDPHType" nillable="true">
+			<xs:element name="uhradaZP" type="cenaSDPHType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Úhrada zdravotní pojišťovny]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="skupina" type="sskType" nillable="true">
+			<xs:element name="skupina" type="sskType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
