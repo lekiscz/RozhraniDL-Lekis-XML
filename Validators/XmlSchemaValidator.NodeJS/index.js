@@ -2,6 +2,7 @@ var async = require('async');
 var fs = require('fs');
 var glob = require("glob");
 var libxml = require("libxmljs");
+var path = require("path");
 
 // inicializace pole dostupnych schemat, temi budeme pak validovat vsechny nalezene prikladove dokumenty
 var xsdDocs = [];
@@ -51,7 +52,7 @@ function loadSchemas(callback) {
     });
 }
 
-function validate(xmlname, callback) {
+function validate(xmlname, xsdKey, callback) {
     console.log('==================================================');
     console.log('File: ' + xmlname);
     console.log('==================================================');
@@ -73,35 +74,27 @@ function validate(xmlname, callback) {
             console.log('    ' + 'XML loaded');
             console.log();
 
-            async.eachSeries(
-                Object.keys(xsdDocs),
-                function iteratee(xsdKey, notifyItemDoneCallback) {
-                    console.log('    ' + 'Schema: ' + xsdKey);
-                    console.log();
+            console.log('    ' + 'Schema: ' + xsdKey);
+            console.log();
 
-                    var ok = xmlDoc.validate(xsdDocs[xsdKey]);
+            var ok = xmlDoc.validate(xsdDocs[xsdKey]);
 
-                    if (xmlDoc.validationErrors.length > 0) {
-                        console.log(
-                            xmlDoc.validationErrors
-                            .map(function(item) {
-                                return '    ' + '    ' + item.toString().trim() + "\n" +
-                                    '    ' + '    ' + JSON.stringify(item);
-                            })
-                            .join("\n\n")
-                        );
-                        console.log();
-                    }
+            if (xmlDoc.validationErrors.length > 0) {
+                console.log(
+                    xmlDoc.validationErrors
+                    .map(function(item) {
+                        return '    ' + '    ' + item.toString().trim() + "\n" +
+                            '    ' + '    ' + JSON.stringify(item);
+                    })
+                    .join("\n\n")
+                );
+                console.log();
+            }
 
-                    console.log('    ' + '    ' + (ok ? 'Validation OK' : 'Validation NOT OK'));
-                    console.log();
-
-                    notifyItemDoneCallback();
-                },
-                function done(err) {
-                    // chybu neoznami vyse, aby se pokracovalo s dalsim XML souborem
-                    callback(false);
-                });
+            console.log('    ' + '    ' + (ok ? 'Validation OK' : 'Validation NOT OK'));
+            console.log();
+            
+            callback(false);
         } catch (ex) {
             // v pripade chyby pri parsovani XML souboru nebo pri validaci XSD schematem
             //  pokracuje na dalsi XML soubor (zbyle XSD soubory uz nezkousi v pripade
@@ -118,12 +111,12 @@ function validate(xmlname, callback) {
     });
 }
 
-function validateAll(xmlglobpattern, callback) {
+function validateAll(xmlglobpattern, xsdKey, callback) {
     glob(xmlglobpattern, null, function(er, files) {
         async.eachSeries(
             files,
             function iteratee(file, notifyItemDoneCallback) {
-                validate(file, notifyItemDoneCallback);
+                validate(file, xsdKey, notifyItemDoneCallback);
             },
             function done(err) {
                 callback(err);
@@ -133,5 +126,16 @@ function validateAll(xmlglobpattern, callback) {
 
 async.series([
     function(callback) { loadSchemas(callback); },
-    function(callback) { validateAll("../../Examples/**/*.xml", callback); }
+    function(callback) {
+        async.eachSeries(
+            Object.keys(xsdDocs),
+            function iteratee(xsdKey, notifyItemDoneCallback) {
+                var schemaBaseName = path.basename(xsdKey, '.xsd');
+                // pro kazde schema bere prikladove soubory z adresare pojmenovaneho podle schematu
+                validateAll("../../Examples/" + schemaBaseName + "/**/*.xml", xsdKey, notifyItemDoneCallback);
+            },
+            function done(err) {
+                callback(err);
+            });
+    }
 ]);

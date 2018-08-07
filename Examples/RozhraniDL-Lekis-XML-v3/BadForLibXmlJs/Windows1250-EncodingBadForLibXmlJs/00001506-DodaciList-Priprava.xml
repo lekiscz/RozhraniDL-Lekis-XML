@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<dodaciList datumExportu="2015-11-27T10:32:25.9164282+01:00" verzeLpW="1.0.5809.18269" verzeRozhrani="3" opravnyDanovyDoklad="0">
+  <hlavicka>
+    <dodavatel>
+      <nazev>Testovací lékárna</nazev>
+      <nazev2>Lekárna u Hrocha</nazev2>
+      <IC>00000000</IC>
+      <DIC>CZ27604977</DIC>
+      <interniCislo>555</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev>NATURLAND BOHEMIA, s. r. o.</nazev>
+      <IC>26888441</IC>
+      <DIC>CZ26888441</DIC>
+      <nakladoveStredisko />
+    </odberatel>
+    <oznaceni>2001506</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>7</pocetPolozek>
+    <idSkladu />
+    <datumVytvoreni>2015-11-27T10:11:39.0777105+01:00</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="4694.17" cenaSDPH="5183.70">
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="506.61" cenaSDPH="613.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="-38.52" cenaSDPH="-44.30" />
+      <nakupniCena sazbaDPH="0.00" cenaBezDPH="337.00" cenaSDPH="337.00" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="3889.08" cenaSDPH="4278.00" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="4918.49" cenaSDPH="5425.82">
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="506.88" cenaSDPH="613.33" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="-38.70" cenaSDPH="-44.50" />
+      <prodejniCena sazbaDPH="0.00" cenaBezDPH="383.63" cenaSDPH="383.63" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="4066.68" cenaSDPH="4473.36" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl>0001003</sukl>
+      <pdk />
+      <kodDodavatele />
+      <IdPolozky>121781</IdPolozky>
+      <IdSkladoveKarty>100</IdSkladoveKarty>
+      <nazev>IPL (VL Nemocnice Písek 1)</nazev>
+      <skupina>5</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>15.08.2014</sarze>
+      <exspirace>2015-02-11T00:00:00</exspirace>
+      <certifikat />
+      <priprava>
+        <rodneCislo />
+        <kodZP>111</kodZP>
+        <ICZLekare>32</ICZLekare>
+        <vlastniOznaceni>4</vlastniOznaceni>
+        <cisloPripravy>2014081538</cisloPripravy>
+        <nazevPripravy>VL Nemocnice Písek 1</nazevPripravy>
+        <pripravil>Administrátor LpW</pripravil>
+        <objemSurovin />
+        <mnozstviSurovin />
+        <uhradaZP cenaSDPH="361.00" />
+        <taxaLaborum cenaBezDPH="0.00" />
+        <cenaSurovin cenaBezDPH="298.34" />
+        <prirazka cenaBezDPH="0.00" />
+      </priprava>
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="298.35" cenaSDPH="361.00" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="298.35" cenaSDPH="361.00" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270001217815</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="2">
+      <sukl>0001000</sukl>
+      <pdk />
+      <kodDodavatele />
+      <IdPolozky>109390</IdPolozky>
+      <IdSkladoveKarty>6772</IdSkladoveKarty>
+      <nazev>Tinctura valerianae 50g</nazev>
+      <skupina>5</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>27.11.2009</sarze>
+      <exspirace>2010-01-26T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="34.52" cenaSDPH="39.70" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="34.52" cenaSDPH="39.70" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270001093907</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="3">
+      <sukl>0017804</sukl>
+      <pdk>7681900599042</pdk>
+      <kodDodavatele />
+      <IdPolozky>119823</IdPolozky>
+      <IdSkladoveKarty>17244</IdSkladoveKarty>
+      <nazev>BRONCHO-VAXOM PRO INFANTIBUS cps 30x3.5mg§§§</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1</mnozstvi>
+      <sarze>0023821</sarze>
+      <exspirace>2014-02-28T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="252.39" />
+      <nakupniCena sazbaDPH="0.00" cenaBezDPH="337.00" cenaSDPH="337.00" />
+      <prodejniCena sazbaDPH="0.00" cenaBezDPH="383.63" cenaSDPH="383.63" />
+      <carovyKod>7681900599042</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001198237</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="4">
+      <sukl>0001000</sukl>
+      <pdk />
+      <kodDodavatele />
+      <IdPolozky>121000</IdPolozky>
+      <IdSkladoveKarty>733158</IdSkladoveKarty>
+      <nazev>!ondrův problém</nazev>
+      <skupina>5</skupina>
+      <mnozstvi>1</mnozstvi>
+      <sarze />
+      <exspirace />
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="17.39" cenaSDPH="20.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="17.39" cenaSDPH="20.00" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270001210007</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="5">
+      <sukl>0085265</sukl>
+      <pdk>1786749</pdk>
+      <kodDodavatele />
+      <IdPolozky>121082</IdPolozky>
+      <IdSkladoveKarty>850712</IdSkladoveKarty>
+      <nazev>INSPRA 50 MG POR TBL FLM 30X1X50MG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze />
+      <exspirace>2016-06-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="1037.29" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="1296.36" cenaSDPH="1426.00" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="1355.56" cenaSDPH="1491.12" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270001210823</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="6">
+      <sukl>0001003</sukl>
+      <pdk />
+      <kodDodavatele />
+      <IdPolozky>122369</IdPolozky>
+      <IdSkladoveKarty>100</IdSkladoveKarty>
+      <nazev>IPL (Lék všelék)</nazev>
+      <skupina>5</skupina>
+      <mnozstvi>1</mnozstvi>
+      <sarze>27.11.2015</sarze>
+      <exspirace>2016-01-26T10:17:22.9317941+01:00</exspirace>
+      <certifikat />
+      <priprava>
+        <rodneCislo />
+        <kodZP>111</kodZP>
+        <ICZLekare>20</ICZLekare>
+        <vlastniOznaceni>1081</vlastniOznaceni>
+        <cisloPripravy>2015112701</cisloPripravy>
+        <nazevPripravy>Lék všelék</nazevPripravy>
+        <pripravil>Administrátor LpW</pripravil>
+        <objemSurovin>5</objemSurovin>
+        <mnozstviSurovin>5</mnozstviSurovin>
+        <uhradaZP cenaSDPH="252.33" />
+        <taxaLaborum cenaBezDPH="3.78" />
+        <cenaSurovin cenaBezDPH="204.75" />
+        <prirazka cenaBezDPH="0.00" />
+      </priprava>
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="208.26" cenaSDPH="252.00" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="208.53" cenaSDPH="252.33" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270001223694</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="7">
+      <sukl />
+      <pdk>9062300110385</pdk>
+      <kodDodavatele />
+      <IdPolozky>118151</IdPolozky>
+      <IdSkladoveKarty>18773</IdSkladoveKarty>
+      <nazev>HI-ČAJ INST.nápoj s meruňkami 200g  CZ3923</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>-1.0000</mnozstvi>
+      <sarze>L611791</sarze>
+      <exspirace>2011-04-20T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="90.43" cenaSDPH="104.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="90.61" cenaSDPH="104.20" />
+      <carovyKod>9062300110385</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001181512</carovyKodPolozkySkladoveKarty>
+    </polozka>
+  </polozky>
+</dodaciList>
