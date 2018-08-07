@@ -42,13 +42,23 @@
 			</xs:simpleType>
 		</xs:union>
 	</xs:simpleType>
-	<xs:simpleType name="booleanNullableType">
+	<xs:simpleType name="bitType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[Logická hodnota 0/1]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:unsignedInt">
+			<xs:pattern value="[0-1]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="bitNullableType">
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[Logická hodnota 0/1, umožňuje prázdnou hodnotu]]>
 			</xs:documentation>
 		</xs:annotation>
-		<xs:union memberTypes="xs:boolean">
+		<xs:union memberTypes="bitType">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value=""/>
@@ -260,14 +270,14 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="nazev2" type="xs:string" nillable="true" minOccurs="0">
+			<xs:element name="nazev2" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Doplněk názvu obchodního partnera]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="IC" type="icoType" nillable="true">
+			<xs:element name="IC" type="icoType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -278,8 +288,8 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="DIC" type="dicType" nillable="true"/>
-			<xs:element name="nakladoveStredisko" type="xs:string" nillable="true" minOccurs="0">
+			<xs:element name="DIC" type="dicType" minOccurs="0"/>
+			<xs:element name="nakladoveStredisko" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -291,7 +301,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="kodTypuVydejky" type="xs:string" nillable="true" minOccurs="0">
+			<xs:element name="kodTypuVydejky" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -302,7 +312,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="interniCislo" type="xs:string" nillable="true" minOccurs="0">
+			<xs:element name="interniCislo" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -620,7 +630,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="vlastniOznaceni" type="xs:string" nillable="true">
+			<xs:element name="vlastniOznaceni" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Vlastní označení přípravy, číslo pro vyzvednutí pacientem]]>
@@ -648,14 +658,14 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="objemSurovin" type="xs:decimal" nillable="true" default="0.00">
+			<xs:element name="objemSurovin" type="xs:decimal" minOccurs="0" default="0.00">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Objem surovin [ml]]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="mnozstviSurovin" type="xs:decimal" nillable="true" default="0.00">
+			<xs:element name="mnozstviSurovin" type="xs:decimal" minOccurs="0" default="0.00">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Množství surovin [g]]]>
@@ -728,7 +738,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="sukl" type="suklType" nillable="true">
+			<xs:element name="sukl" type="suklType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -740,21 +750,21 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="pdk" type="pdkType" nillable="true">
+			<xs:element name="pdk" type="pdkType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Kód PDK, slouží k lepší identifikaci přípravku]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="kodDodavatele" type="xs:string" nillable="true">
+			<xs:element name="kodDodavatele" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Kód dodavatele, slouží k lepší identifikaci přípravku]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="IdPolozky" type="unsignedIntNullableType" nillable="true">
+			<xs:element name="IdPolozky" type="unsignedIntNullableType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -766,7 +776,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="IdSkladoveKarty" type="unsignedIntNullableType" nillable="true">
+			<xs:element name="IdSkladoveKarty" type="unsignedIntNullableType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[ID skladové karty v LpW]]>
@@ -799,21 +809,21 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="sarze" type="xs:string" nillable="true">
+			<xs:element name="sarze" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Šarže přípravku, slouží k rozlišení dávky, např. při stahování vadné série]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="exspirace" type="dateTimeNullableType" nillable="true">
+			<xs:element name="exspirace" type="dateTimeNullableType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Exspirace (minimální trvanlivost) přípravku]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="certifikat" type="xs:string" nillable="true">
+			<xs:element name="certifikat" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Certifikát (atest) přípravku u surovin]]>
@@ -848,14 +858,14 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="carovyKod" type="xs:string" nillable="true">
+			<xs:element name="carovyKod" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Čárový kód přípravku, slouží k lepší identifikaci přípravku]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="carovyKodPolozkySkladoveKarty" type="xs:string" nillable="true">
+			<xs:element name="carovyKodPolozkySkladoveKarty" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -867,7 +877,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="sarzeOznacenaFMD" type="booleanNullableType" nillable="true">
+			<xs:element name="sarzeOznacenaFMD" type="bitNullableType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -923,14 +933,14 @@
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="oznaceni" type="xs:string" nillable="true">
+						<xs:element name="oznaceni" type="xs:string" minOccurs="0">
 							<xs:annotation>
 								<xs:documentation>
 									<![CDATA[Číslo dodacího listu / převodky, stanovuje dodavatel]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="cisloObjednavky" type="xs:string" nillable="true">
+						<xs:element name="cisloObjednavky" type="xs:string" minOccurs="0">
 							<xs:annotation>
 								<xs:documentation>
 									<![CDATA[Číslo objednávky, na základě které bylo dodáno zboží na tomto dodacím listu]]>
@@ -944,7 +954,7 @@
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="idSkladu" type="unsignedIntNullableType" nillable="true">
+						<xs:element name="idSkladu" type="unsignedIntNullableType" minOccurs="0">
 							<xs:annotation>
 								<xs:documentation>
 									<![CDATA[
@@ -963,7 +973,7 @@
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
-						<xs:element name="poznamka" type="xs:string" nillable="true">
+						<xs:element name="poznamka" type="xs:string" minOccurs="0">
 							<xs:annotation>
 								<xs:documentation>
 									<![CDATA[Poznámka, informace, kterou je možné sdělit cílovému subjektu]]>

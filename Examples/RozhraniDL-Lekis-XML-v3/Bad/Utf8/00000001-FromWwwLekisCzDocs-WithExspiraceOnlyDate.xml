@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dodaciList datumExportu="2014-05-15T13:39:26.6927795+02:00" verzeLpW="2014.1.9.1" verzeRozhrani="3" opravnyDanovyDoklad="0">
+<hlavicka>
+<dodavatel>
+<nazev>Promedica</nazev>
+<nazev2></nazev2>
+<IC></IC>
+<DIC></DIC>
+<interniCislo></interniCislo>
+</dodavatel>
+<odberatel>
+<nazev>Nemocnice ONMB</nazev>
+<IC>27256456</IC>
+<DIC />
+<nakladoveStredisko />
+</odberatel>
+<prijemce>
+<nazev>Nemocnice ONMB</nazev> 
+<IC>27256456</IC>
+<DIC />
+<nakladoveStredisko>NS1</nakladoveStredisko>
+<kodTypuVydejky>OSLP</kodTypuVydejky>
+</prijemce>
+<oznaceni>20140001</oznaceni><!-- cislo DL od dodavatele -->
+<cisloObjednavky>23</cisloObjednavky>
+<pocetPolozek>1</pocetPolozek>
+<idSkladu />
+<datumVytvoreni>2014-02-17T11:16:25.63</datumVytvoreni>
+<poznamka />
+<soucetNakupnichCen cenaBezDPH="125.0000" cenaSDPH="143.7500">
+<nakupniCena sazbaDPH="15.00" cenaBezDPH="125.0000" cenaSDPH="143.7500" />
+</soucetNakupnichCen>
+<soucetProdejnichCen cenaBezDPH="170.8696" cenaSDPH="196.5000">
+<prodejniCena sazbaDPH="15.00" cenaBezDPH="170.8696" cenaSDPH="196.5000" />
+</soucetProdejnichCen>
+</hlavicka>
+<polozky>
+<polozka pozice="1">
+<sukl></sukl>
+<pdk></pdk>
+<kodDodavatele />
+<IdPolozky></IdPolozky>
+<IdSkladoveKarty>58753</IdSkladoveKarty>
+<nazev>FRAMYKOIN  UNG/1X10.0 Gramů</nazev>
+<skupina>1</skupina>
+<mnozstvi>5.0000</mnozstvi>
+<sarze />
+<exspirace>2015-09-14</exspirace>
+<certifikat />
+<vyrobniCena cenaBezDPH="25.0000" />
+<nakupniCena sazbaDPH="15.00" cenaBezDPH="25.0000" cenaSDPH="28.7500" />
+<prodejniCena sazbaDPH="15.00" cenaBezDPH="34.1700" cenaSDPH="39.3000" />
+<carovyKod>
+</carovyKod>
+<carovyKodPolozkySkladoveKarty></carovyKodPolozkySkladoveKarty>
+</polozka>
+</polozky>
+</dodaciList>
