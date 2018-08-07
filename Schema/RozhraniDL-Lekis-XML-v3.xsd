@@ -58,7 +58,7 @@
 				<![CDATA[Logická hodnota 0/1, umožňuje prázdnou hodnotu]]>
 			</xs:documentation>
 		</xs:annotation>
-		<xs:union memberTypes="xs:bitType">
+		<xs:union memberTypes="bitType">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value=""/>
