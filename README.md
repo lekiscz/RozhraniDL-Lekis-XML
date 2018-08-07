@@ -4,6 +4,7 @@ XML schéma, dokumentace, příklady, validátory
 
 ## XML schéma (XSD)
 
+[RozhraniDL-Lekis-XML-v3.xsd](Schema/RozhraniDL-Lekis-XML-v3.xsd) (preferováno)
 [RozhraniDL-Lekis-XML-v1+v2.xsd](Schema/RozhraniDL-Lekis-XML-v1+v2.xsd)
 
 ## Dokumentace
@@ -51,7 +52,7 @@ Validátor běží pod .NET 4.5 a používá XML funkčnost .NET frameworku.
 
 #### Kompilace a spuštění
 
-Lze zkompilovat ve Visual Studio 2015 nebo pomocí command-line nástrojů instalovaných s Visual Studio 2015, případně s .NET Framework prostředím a podobně.
+Lze zkompilovat ve Visual Studio 2015/2017 nebo pomocí command-line nástrojů instalovaných s Visual Studio 2015/2017, případně s .NET Framework prostředím a podobně.
 Předpokládá se spuštění v kořenovém adresáři daného validátoru.
 
 
