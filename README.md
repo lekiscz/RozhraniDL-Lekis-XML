@@ -4,8 +4,8 @@ XML schéma, dokumentace, příklady, validátory
 
 ## XML schéma (XSD)
 
-[RozhraniDL-Lekis-XML-v3.xsd](Schema/RozhraniDL-Lekis-XML-v3.xsd) (preferováno)
-[RozhraniDL-Lekis-XML-v1+v2.xsd](Schema/RozhraniDL-Lekis-XML-v1+v2.xsd)
+* [RozhraniDL-Lekis-XML-v3.xsd](Schema/RozhraniDL-Lekis-XML-v3.xsd) (preferováno)
+* [RozhraniDL-Lekis-XML-v1+v2.xsd](Schema/RozhraniDL-Lekis-XML-v1+v2.xsd)
 
 ## Dokumentace
 
@@ -17,7 +17,7 @@ Adresář [Documentation](Documentation) obsahuje skripty pro vygenerování HTM
 
 Několik příkladů je k dispozici v adresáři [Examples](Examples).
 
-Jsou rozdělené na korektní (Good) a nekorektní (Bad), které neprojdou (a nemají projít) validací pomocí výše uvedeného XSD souboru.
+Jsou rozdělené na adresáře pro jednotlivé verze schématu. V každém adresáři jsou dále rozdělené na korektní (Good) a nekorektní (Bad), které neprojdou (a nemají projít) validací pomocí schématu dané verze.
 
 ## Validátory
 
