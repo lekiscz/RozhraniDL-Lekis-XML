@@ -2,7 +2,13 @@
 
 XML schéma, dokumentace, příklady, validátory
 
+## Seznamy změn a release verze
+
+![#c5f015](https://placehold.it/10/c5f015/000000?text=+) **[Release sekce](https://github.com/lekiscz/RozhraniDL-Lekis-XML/releases)** ![#c5f015](https://placehold.it/10/c5f015/000000?text=+) tohoto repository obsahuje označené release verze rozhraní a seznam změn pro každou z těchto verzí.
+
 ## XML schéma (XSD)
+
+Jde o nejaktuálnější verze XML schématu z vybrané branch tohoto repository. Nemusí odpovídat označeným release verzím rozhraní.
 
 * [RozhraniDL-Lekis-XML-v3.xsd](Schema/RozhraniDL-Lekis-XML-v3.xsd) (preferováno)
 * [RozhraniDL-Lekis-XML-v1+v2.xsd](Schema/RozhraniDL-Lekis-XML-v1+v2.xsd)
