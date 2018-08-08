@@ -520,7 +520,7 @@
 				<![CDATA[
 				**Položka přípravy**
 
-				Obsahuje informace o substanci, které jsou určeny pro vygenerování eRp.
+				Obsahuje informace o položce přípravy.
 				]]>
 			</xs:documentation>
 		</xs:annotation>
@@ -592,7 +592,6 @@
 						**Typ položky přípravy**
 
 						Viz popis použitého datového typu.
-						Tento údaj je důležitý při vytváření eRp.
 						]]>
 					</xs:documentation>
 				</xs:annotation>
@@ -704,7 +703,12 @@
 				<xs:element name="polozkyPripravy" minOccurs="0" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[Obsahuje informace o substancích, které jsou primárně určeny pro vygenerování eRp.]]>
+						<![CDATA[
+						**Položky přípravy**
+						
+						Obsahuje informace o položkách přípravy.
+						Tyto údaje jsou důležité při práci s touto položkou dodacího listu / převodky v rámci eRp (například její výdej na eRp).
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 				<xs:complexType>
@@ -712,7 +716,7 @@
 						<xs:element minOccurs="0" maxOccurs="unbounded" name="polozkaPripravy" type="polozkaPripravyType">
 							<xs:annotation>
 								<xs:documentation>
-									<![CDATA[Obsahuje informace o substanci, které jsou určeny pro vygenerování eRp.]]>
+									<![CDATA[Obsahuje informace o položce přípravy.]]>
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
