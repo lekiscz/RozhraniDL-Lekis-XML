@@ -24,7 +24,12 @@ namespace XmlSchemaValidator.DotNet
                     schemaFile =>
                     {
                         var ss = new XmlSchemaSet();
-                        ss.Add("", schemaFile);
+
+                        // zjisteni targetNamespace ze schematu
+                        var xsdDoc = XDocument.Load(schemaFile);
+                        var targetNamespace = xsdDoc.Root.Attribute("targetNamespace")?.Value ?? "";
+
+                        ss.Add(targetNamespace, schemaFile);
                         return new
                         {
                             SchemaFile = schemaFile,

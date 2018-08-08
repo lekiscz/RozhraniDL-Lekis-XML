@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<dodaciList datumExportu="2015-11-27T10:32:25.9164282+01:00" verzeLpW="1.0.5809.18269" verzeRozhrani="3" opravnyDanovyDoklad="0">
+<dodaciList xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v3" datumExportu="2015-11-27T10:32:25.9164282+01:00" verzeLpW="1.0.5809.18269" verzeRozhrani="3" opravnyDanovyDoklad="0">
   <hlavicka>
     <dodavatel>
       <nazev>Testovací lékárna</nazev>

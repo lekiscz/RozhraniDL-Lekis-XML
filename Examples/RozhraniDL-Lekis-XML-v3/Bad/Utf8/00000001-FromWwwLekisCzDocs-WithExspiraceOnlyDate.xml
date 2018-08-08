@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<dodaciList datumExportu="2014-05-15T13:39:26.6927795+02:00" verzeLpW="2014.1.9.1" verzeRozhrani="3" opravnyDanovyDoklad="0">
+<dodaciList xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v3" datumExportu="2014-05-15T13:39:26.6927795+02:00" verzeLpW="2014.1.9.1" verzeRozhrani="3" opravnyDanovyDoklad="0">
 <hlavicka>
 <dodavatel>
 <nazev>Promedica</nazev>

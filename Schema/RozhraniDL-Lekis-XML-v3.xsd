@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
-	xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified"
+	targetNamespace="http://lekis.cz/RozhraniDL-Lekis-XML-v3" xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v3">
 	<xs:annotation>
 		<xs:documentation>
 			<![CDATA[
@@ -187,6 +188,25 @@
 		</xs:annotation>
 		<xs:restriction base="xs:unsignedInt">
 			<xs:pattern value="[1-8]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typPolozkyPripravyType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				**Typ položky přípravy**
+
+				Podporovány jsou hodnoty s následujícími významy:
+
+				* 1 - Surovina
+				* 2 - Obal
+				* 3 - Taxalaborum
+				* 4 - Přirážka
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:unsignedInt">
+			<xs:pattern value="[1-4]"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="kodZPType">
@@ -494,6 +514,90 @@
 			</xs:annotation>
 		</xs:attribute>
 	</xs:complexType>
+	<xs:complexType name="polozkaPripravyType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				**Položka přípravy**
+
+				Obsahuje informace o položce přípravy.
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="sukl" type="suklType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Kód SÚKLu nebo kód VZP ZP**
+
+						Slouží k lepší identifikaci přípravku.
+						Při jeho uvedení je důležitý také element __skupina__, který určuje, zda se jedná o HVLP nebo PZT přípravek.
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nazev" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Název přípravku]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sarze" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Šarže přípravku, slouží k rozlišení dávky, např. při stahování vadné série]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="jednotka" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Jednotka množství (ks, g, ml)]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="mnozstvi" type="xs:decimal">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Použité množství přípravku do přípravy. Vyžadovaná hodnota.]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="uhradaZP" type="cenaSDPHType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Úhrada zdravotní pojišťovny]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="skupina" type="sskType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Skupina skladové karty v LpW**
+
+						Viz popis použitého datového typu.
+						Při identifikaci přípravku kódem SÚKLu nebo kódem VZP ZP je tento údaj důležitý aby nedošlo k záměně např. HVLP / PZT.
+						Pokud se jedná o položku jiného typu, než je např. Surovina, není tato hodnota uváděna.
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typPolozkyPripravy" type="typPolozkyPripravyType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Typ položky přípravy**
+
+						Viz popis použitého datového typu.
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="pripravaType">
 		<xs:annotation>
 			<xs:documentation>
@@ -533,7 +637,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="cisloPripravy" type="xs:unsignedInt">
+			<xs:element name="cisloPripravy" type="xs:string">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Číslo přípravy v systému dodavatele]]>
@@ -595,6 +699,29 @@
 						<![CDATA[Cena přirážky]]>
 					</xs:documentation>
 				</xs:annotation>
+			</xs:element>
+				<xs:element name="polozkyPripravy" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Položky přípravy**
+						
+						Obsahuje informace o položkách přípravy.
+						Tyto údaje jsou důležité při práci s touto položkou dodacího listu / převodky v rámci eRp (například její výdej na eRp).
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" maxOccurs="unbounded" name="polozkaPripravy" type="polozkaPripravyType">
+							<xs:annotation>
+								<xs:documentation>
+									<![CDATA[Obsahuje informace o položce přípravy.]]>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>

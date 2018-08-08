@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="windows-1250"?>
-<prevodka datumExportu="2015-06-16T12:59:41.5694317+02:00" verzeLpW="2015.1.3.10" verzeRozhrani="3">
+<prevodka xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v3" datumExportu="2015-06-16T12:59:41.5694317+02:00" verzeLpW="2015.1.3.10" verzeRozhrani="3">
   <hlavicka>
     <dodavatel>
       <nazev>Testovací lékárna</nazev>
