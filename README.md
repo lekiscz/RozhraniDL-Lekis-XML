@@ -2,9 +2,16 @@
 
 XML schéma, dokumentace, příklady, validátory
 
+## Seznamy změn a release verze
+
+![#c5f015](https://placehold.it/10/c5f015/000000?text=+) **[Release sekce](https://github.com/lekiscz/RozhraniDL-Lekis-XML/releases)** ![#c5f015](https://placehold.it/10/c5f015/000000?text=+) tohoto repository obsahuje označené release verze rozhraní a seznam změn pro každou z těchto verzí.
+
 ## XML schéma (XSD)
 
-[RozhraniDL-Lekis-XML-v1+v2.xsd](Schema/RozhraniDL-Lekis-XML-v1+v2.xsd)
+Jde o nejaktuálnější verze XML schématu z vybrané branch tohoto repository. Nemusí odpovídat označeným release verzím rozhraní.
+
+* [RozhraniDL-Lekis-XML-v3.xsd](Schema/RozhraniDL-Lekis-XML-v3.xsd) (preferováno)
+* [RozhraniDL-Lekis-XML-v1+v2.xsd](Schema/RozhraniDL-Lekis-XML-v1+v2.xsd)
 
 ## Dokumentace
 
@@ -16,7 +23,7 @@ Adresář [Documentation](Documentation) obsahuje skripty pro vygenerování HTM
 
 Několik příkladů je k dispozici v adresáři [Examples](Examples).
 
-Jsou rozdělené na korektní (Good) a nekorektní (Bad), které neprojdou (a nemají projít) validací pomocí výše uvedeného XSD souboru.
+Jsou rozdělené na adresáře pro jednotlivé verze schématu. V každém adresáři jsou dále rozdělené na korektní (Good) a nekorektní (Bad), které neprojdou (a nemají projít) validací pomocí schématu dané verze.
 
 ## Validátory
 
@@ -51,7 +58,7 @@ Validátor běží pod .NET 4.5 a používá XML funkčnost .NET frameworku.
 
 #### Kompilace a spuštění
 
-Lze zkompilovat ve Visual Studio 2015 nebo pomocí command-line nástrojů instalovaných s Visual Studio 2015, případně s .NET Framework prostředím a podobně.
+Lze zkompilovat ve Visual Studio 2015/2017 nebo pomocí command-line nástrojů instalovaných s Visual Studio 2015/2017, případně s .NET Framework prostředím a podobně.
 Předpokládá se spuštění v kořenovém adresáři daného validátoru.
 
 
