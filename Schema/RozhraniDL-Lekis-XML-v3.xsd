@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
-	xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified"
+	targetNamespace="http://lekis.cz/RozhraniDL-Lekis-XML-v3" xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v3">
 	<xs:annotation>
 		<xs:documentation>
 			<![CDATA[
