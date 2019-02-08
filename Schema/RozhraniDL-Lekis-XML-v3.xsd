@@ -896,6 +896,20 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="sklademPred20190209" type="bitNullableType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Zda byla šarže skladem u dodavatele před 9.2.2019**
+
+						Hodnoty 
+						* 0 - šarže nebyla skladem u dodavatele před 9.2.2019 nebo to není známo
+						* 1 - šarže byla skladem u dodavatele před 9.2.2019
+						* prázdno - shodný význam jako 0
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 		<xs:attribute name="pozice" type="xs:unsignedInt">
 			<xs:annotation>
