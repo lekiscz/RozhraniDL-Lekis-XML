@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="windows-1250"?>
+ď»ż<?xml version="1.0" encoding="utf-8"?>
 <dodaciList xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v3" datumExportu="2019-02-08T15:59:42.0874723+01:00" verzeLpW="2019.2.1.17" verzeRozhrani="3" opravnyDanovyDoklad="0">
   <hlavicka>
     <dodavatel>
-      <nazev>Nemocnice Konopiště</nazev>
+      <nazev>Nemocnice KonopiĹˇtÄ›</nazev>
       <nazev2 />
       <IC>456456456</IC>
       <DIC>CZ1234567890</DIC>
@@ -76,7 +76,7 @@
       <kodDodavatele />
       <IdPolozky>160946</IdPolozky>
       <IdSkladoveKarty>33212</IdSkladoveKarty>
-      <nazev>Čaj Sladký sen Dr.Popov n.s.20x1.5g</nazev>
+      <nazev>ÄŚaj SladkĂ˝ sen Dr.Popov n.s.20x1.5g</nazev>
       <skupina>4</skupina>
       <mnozstvi>1.0000</mnozstvi>
       <sarze>5149016</sarze>
@@ -96,7 +96,7 @@
       <kodDodavatele />
       <IdPolozky>196437</IdPolozky>
       <IdSkladoveKarty>100</IdSkladoveKarty>
-      <nazev>IPL (Mast Matoušek)</nazev>
+      <nazev>IPL (Mast MatouĹˇek)</nazev>
       <skupina>5</skupina>
       <mnozstvi>1.0000</mnozstvi>
       <sarze>20190208001</sarze>
@@ -108,8 +108,8 @@
         <ICZLekare>20</ICZLekare>
         <vlastniOznaceni>93</vlastniOznaceni>
         <cisloPripravy>20190208001</cisloPripravy>
-        <nazevPripravy>Mast Matoušek</nazevPripravy>
-        <pripravil>René Jahoda</pripravil>
+        <nazevPripravy>Mast MatouĹˇek</nazevPripravy>
+        <pripravil>RenĂ© Jahoda</pripravil>
         <objemSurovin>10</objemSurovin>
         <mnozstviSurovin>10</mnozstviSurovin>
         <uhradaZP cenaSDPH="37.86" />
@@ -144,7 +144,7 @@
           </polozkaPripravy>
           <polozkaPripravy>
             <sukl>191</sukl>
-            <nazev>TP Úprava ředěním před dispenzací          sk.1.12</nazev>
+            <nazev>TP Ăšprava Ĺ™edÄ›nĂ­m pĹ™ed dispenzacĂ­          sk.1.12</nazev>
             <mnozstvi>1</mnozstvi>
             <uhradaZP cenaSDPH="23.38" />
             <typPolozkyPripravy>3</typPolozkyPripravy>
