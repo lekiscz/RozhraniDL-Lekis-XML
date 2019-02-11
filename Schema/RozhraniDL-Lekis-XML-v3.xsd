@@ -153,6 +153,22 @@
 			<xs:pattern value="\d{7}|.{0}"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="suklVPolozkachPripravyType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				**Registrační kód SÚKLu nebo kód ZP VZP přípravku nebo kód Taxa Laborum**
+
+				Umožňuje prázdnou hodnotu.
+
+				Představuje až 7 čísel, případně doplněných zleva nulami.
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{1,7}|.{0}"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="pdkType">
 		<xs:annotation>
 			<xs:documentation>
@@ -525,11 +541,11 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="sukl" type="suklType" minOccurs="0">
+			<xs:element name="sukl" type="suklVPolozkachPripravyType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
-						**Kód SÚKLu nebo kód VZP ZP**
+						**Kód SÚKLu nebo kód VZP ZP nebo kód Taxa Laborum**
 
 						Slouží k lepší identifikaci přípravku.
 						Při jeho uvedení je důležitý také element __skupina__, který určuje, zda se jedná o HVLP nebo PZT přípravek.
@@ -572,6 +588,17 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="typPolozkyPripravy" type="typPolozkyPripravyType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Typ položky přípravy**
+
+						Viz popis použitého datového typu.
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="skupina" type="sskType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
@@ -581,17 +608,6 @@
 						Viz popis použitého datového typu.
 						Při identifikaci přípravku kódem SÚKLu nebo kódem VZP ZP je tento údaj důležitý aby nedošlo k záměně např. HVLP / PZT.
 						Pokud se jedná o položku jiného typu, než je např. Surovina, není tato hodnota uváděna.
-						]]>
-					</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="typPolozkyPripravy" type="typPolozkyPripravyType">
-				<xs:annotation>
-					<xs:documentation>
-						<![CDATA[
-						**Typ položky přípravy**
-
-						Viz popis použitého datového typu.
 						]]>
 					</xs:documentation>
 				</xs:annotation>
