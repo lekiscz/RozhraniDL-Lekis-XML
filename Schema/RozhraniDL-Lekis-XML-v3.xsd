@@ -153,7 +153,7 @@
 			<xs:pattern value="\d{7}|.{0}"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="suklVPolozkachPripravyType">
+	<xs:simpleType name="suklNeboTlType">
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
@@ -541,7 +541,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="sukl" type="suklVPolozkachPripravyType" minOccurs="0">
+			<xs:element name="sukl" type="suklNeboTlType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
