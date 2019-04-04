@@ -33,6 +33,7 @@
     <polozka pozice="1">
       <sukl>0003822</sukl>
       <pdk>4022536860732</pdk>
+      <gtin>04022536860732</gtin>
       <kodDodavatele />
       <IdPolozky>196424</IdPolozky>
       <IdSkladoveKarty>9121</IdSkladoveKarty>
@@ -53,6 +54,7 @@
     <polozka pozice="2">
       <sukl>0162142</sukl>
       <pdk>0891201</pdk>
+      <gtin>08594739209978</gtin>
       <kodDodavatele />
       <IdPolozky>185873</IdPolozky>
       <IdSkladoveKarty>29488</IdSkladoveKarty>
@@ -73,6 +75,7 @@
     <polozka pozice="3">
       <sukl />
       <pdk>8595058902618</pdk>
+      <gtin />
       <kodDodavatele />
       <IdPolozky>160946</IdPolozky>
       <IdSkladoveKarty>33212</IdSkladoveKarty>
@@ -93,6 +96,7 @@
     <polozka pozice="4">
       <sukl>0001000</sukl>
       <pdk />
+      <gtin />
       <kodDodavatele />
       <IdPolozky>196437</IdPolozky>
       <IdSkladoveKarty>100</IdSkladoveKarty>
