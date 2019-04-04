@@ -183,6 +183,20 @@
 			<xs:pattern value="\d{7,20}|.{0}"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="gtinType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				**Kód GTIN**
+
+				Umožňuje prázdnou hodnotu.
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{14}|.{0}"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="sskType">
 		<xs:annotation>
 			<xs:documentation>
@@ -749,10 +763,14 @@
 
 				Pro párování se skladovými kartami v LpW musí být uvedeno aspoň jedno z polí:
 
+				* IdSkladoveKarty
 				* sukl + skupina
 				* pdk
+				* gtin
 				* kodDodavatele
-				* IdSkladoveKarty
+				* carovyKod
+
+				Kódy se pro párování používají v uvedeném pořadí.
 
 				Jinak je položka importována do LpW jako nespárovaná a její spárování musí provést uživatel ručně.
 				]]>
@@ -775,6 +793,13 @@
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Kód PDK, slouží k lepší identifikaci přípravku]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="gtin" type="gtinType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Kód GTIN (vyskytující se v FMD 2D kódu na balení přípravku), slouží k lepší identifikaci přípravku]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
