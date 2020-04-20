@@ -1,0 +1,2356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dodaciList xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2015-11-26T15:24:35.6706367+01:00" verzeLpW="1.0.5808.25836" verzeRozhrani="4" opravnyDanovyDoklad="0">
+  <hlavicka>
+    <dodavatel>
+      <nazev>Testovací lékárna</nazev>
+      <nazev2>Lekárna u Hrocha</nazev2>
+      <IC>00000000</IC>
+      <DIC>CZ27604977</DIC>
+      <interniCislo>555</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev>Lékárna Votice</nazev>
+      <IC />
+      <DIC />
+      <nakladoveStredisko />
+    </odberatel>
+    <oznaceni>2001416</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>129</pocetPolozek>
+    <idSkladu>1000</idSkladu>
+    <datumVytvoreni>2014-01-02T10:57:12.927</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="33697.69" cenaSDPH="38921.20">
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="30887.36" cenaSDPH="35520.70" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="2810.33" cenaSDPH="3400.50" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="33697.69" cenaSDPH="38921.20">
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="30887.36" cenaSDPH="35520.70" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="2810.33" cenaSDPH="3400.50" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl>0000025</sukl>
+      <pdk />
+      <kodDodavatele />
+      <IdPolozky>120382</IdPolozky>
+      <IdSkladoveKarty>2424</IdSkladoveKarty>
+      <nazev>ALNAGON TBL 10</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>55.0000</mnozstvi>
+      <sarze />
+      <exspirace />
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="123.04" cenaSDPH="141.50" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="123.04" cenaSDPH="141.50" />
+      <carovyKod>8584005110701</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203825</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="2">
+      <sukl>0078278</sukl>
+      <pdk>8595026401129</pdk>
+      <kodDodavatele />
+      <IdPolozky>120383</IdPolozky>
+      <IdSkladoveKarty>1621</IdSkladoveKarty>
+      <nazev>AMBROSAN 20x30mg tbl</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>7011210</sarze>
+      <exspirace>2012-12-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="32.48" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="46.00" cenaSDPH="52.90" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="46.00" cenaSDPH="52.90" />
+      <carovyKod>8595026401129</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203832</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="3">
+      <sukl>0004361</sukl>
+      <pdk>8594739011755</pdk>
+      <kodDodavatele />
+      <IdPolozky>120384</IdPolozky>
+      <IdSkladoveKarty>2073</IdSkladoveKarty>
+      <nazev>ANAVENOL drg 60x32mg  karton 240ks</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>3090911</sarze>
+      <exspirace>2014-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="26.24" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="37.13" cenaSDPH="42.70" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="37.13" cenaSDPH="42.70" />
+      <carovyKod>8594739011755</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203849</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="4">
+      <sukl>0087680</sukl>
+      <pdk>8584005111005</pdk>
+      <kodDodavatele />
+      <IdPolozky>120385</IdPolozky>
+      <IdSkladoveKarty>1511</IdSkladoveKarty>
+      <nazev>ANOPYRIN 10x400mg tbl</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>10.0000</mnozstvi>
+      <sarze>2061011</sarze>
+      <exspirace>2013-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="8.36" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="12.17" cenaSDPH="14.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="12.17" cenaSDPH="14.00" />
+      <carovyKod>8584005111005</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203856</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="5">
+      <sukl>0096175</sukl>
+      <pdk>3838957890019</pdk>
+      <kodDodavatele />
+      <IdPolozky>120386</IdPolozky>
+      <IdSkladoveKarty>1210</IdSkladoveKarty>
+      <nazev>ANSILAN  CPS 25X10MG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>BR2678</sarze>
+      <exspirace>2016-03-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="38.02" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="52.00" cenaSDPH="59.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="52.00" cenaSDPH="59.80" />
+      <carovyKod>3838957890019</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203863</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="6">
+      <sukl>0031536</sukl>
+      <pdk>8595106400882</pdk>
+      <kodDodavatele />
+      <IdPolozky>120387</IdPolozky>
+      <IdSkladoveKarty>13003</IdSkladoveKarty>
+      <nazev>BETALOC ZOK 25 MG tbl ret 100x25mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>NE9443</sarze>
+      <exspirace>2014-04-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="187.31" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="255.04" cenaSDPH="293.30" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="255.04" cenaSDPH="293.30" />
+      <carovyKod>8595106400882</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203870</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="7">
+      <sukl>0058856</sukl>
+      <pdk>5903546002581</pdk>
+      <kodDodavatele />
+      <IdPolozky>120388</IdPolozky>
+      <IdSkladoveKarty>14142</IdSkladoveKarty>
+      <nazev>BISOCARD 5 por tbl flm30x5mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>80061953</sarze>
+      <exspirace>2014-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="34.50" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="47.22" cenaSDPH="54.30" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="47.22" cenaSDPH="54.30" />
+      <carovyKod>5903546002581</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203887</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="8">
+      <sukl>0062696</sukl>
+      <pdk>8595106400738</pdk>
+      <kodDodavatele />
+      <IdPolozky>120389</IdPolozky>
+      <IdSkladoveKarty>1843</IdSkladoveKarty>
+      <nazev>BRICANYL TURBOHALER INH 200X0.5MG</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>3520797B00</sarze>
+      <exspirace>2013-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="177.28" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="239.65" cenaSDPH="275.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="239.65" cenaSDPH="275.60" />
+      <carovyKod>8595106400738</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203894</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="9">
+      <sukl>0010224</sukl>
+      <pdk>4030031890031</pdk>
+      <kodDodavatele />
+      <IdPolozky>120390</IdPolozky>
+      <IdSkladoveKarty>13758</IdSkladoveKarty>
+      <nazev>BROMHEXIN 12 KM-KAPKY por gtt sol 30ml</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>13202A</sarze>
+      <exspirace>2014-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="59.85" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="84.70" cenaSDPH="97.40" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="84.70" cenaSDPH="97.40" />
+      <carovyKod>4030031890031</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203900</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="10">
+      <sukl>0114888</sukl>
+      <pdk>3838989544522</pdk>
+      <kodDodavatele />
+      <IdPolozky>120391</IdPolozky>
+      <IdSkladoveKarty>20836</IdSkladoveKarty>
+      <nazev>CAZAPROL 5 MG POR TBL FLM 28X5MG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>J51050</sarze>
+      <exspirace>2013-02-28T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="86.29" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="118.17" cenaSDPH="135.90" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="118.17" cenaSDPH="135.90" />
+      <carovyKod>3838989544522</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203917</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="11">
+      <sukl>0097654</sukl>
+      <pdk>4030096455299</pdk>
+      <kodDodavatele />
+      <IdPolozky>120392</IdPolozky>
+      <IdSkladoveKarty>4437</IdSkladoveKarty>
+      <nazev>DOXYBENE 100MG cps 10x100mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>L30101</sarze>
+      <exspirace>2013-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="17.13" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="23.39" cenaSDPH="26.90" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="23.39" cenaSDPH="26.90" />
+      <carovyKod>4030096455299</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203924</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="12">
+      <sukl>0076975</sukl>
+      <pdk>8584055184189</pdk>
+      <kodDodavatele />
+      <IdPolozky>120393</IdPolozky>
+      <IdSkladoveKarty>4121</IdSkladoveKarty>
+      <nazev>ELOCOM ung 1x15gm 0.1%</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>1UHKA08002</sarze>
+      <exspirace>2014-01-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="70.94" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="97.13" cenaSDPH="111.70" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="97.13" cenaSDPH="111.70" />
+      <carovyKod>8584055184189</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203931</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="13">
+      <sukl>0092757</sukl>
+      <pdk>8594044140195</pdk>
+      <kodDodavatele />
+      <IdPolozky>120394</IdPolozky>
+      <IdSkladoveKarty>5964</IdSkladoveKarty>
+      <nazev>ERDOMED 300MG cps 10x300mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>1711</sarze>
+      <exspirace>2016-04-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="58.24" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="79.74" cenaSDPH="91.70" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="79.74" cenaSDPH="91.70" />
+      <carovyKod>8594044140195</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203948</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="14">
+      <sukl>0057586</sukl>
+      <pdk>4013054002001</pdk>
+      <kodDodavatele />
+      <IdPolozky>120395</IdPolozky>
+      <IdSkladoveKarty>14500</IdSkladoveKarty>
+      <nazev>Espumisan cps.50x40mg-blistr §§§</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>12501</sarze>
+      <exspirace>2014-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="57.36" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="81.22" cenaSDPH="93.40" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="81.22" cenaSDPH="93.40" />
+      <carovyKod>4013054002001</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203955</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="15">
+      <sukl>0097186</sukl>
+      <pdk>4022536876849</pdk>
+      <kodDodavatele />
+      <IdPolozky>120396</IdPolozky>
+      <IdSkladoveKarty>1129</IdSkladoveKarty>
+      <nazev>EUTHYROX 100  TBL 100X100RG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>5.0000</mnozstvi>
+      <sarze>136358</sarze>
+      <exspirace>2014-07-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="51.10" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="70.00" cenaSDPH="80.50" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="70.00" cenaSDPH="80.50" />
+      <carovyKod>4022536876849</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203962</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="16">
+      <sukl>0069189</sukl>
+      <pdk>4022536876825</pdk>
+      <kodDodavatele />
+      <IdPolozky>120397</IdPolozky>
+      <IdSkladoveKarty>7010</IdSkladoveKarty>
+      <nazev>EUTHYROX 50 tbl 100x50rg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>5.0000</mnozstvi>
+      <sarze>136355</sarze>
+      <exspirace>2014-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="35.63" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="48.78" cenaSDPH="56.10" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="48.78" cenaSDPH="56.10" />
+      <carovyKod>4022536876825</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203979</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="17">
+      <sukl>0016461</sukl>
+      <pdk>7680424280276</pdk>
+      <kodDodavatele />
+      <IdPolozky>120398</IdPolozky>
+      <IdSkladoveKarty>20442</IdSkladoveKarty>
+      <nazev>EXCIPIAL U HYDROLOTIO DRM EML 1X200ML (L)</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>K023</sarze>
+      <exspirace>2014-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="86.10" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="117.91" cenaSDPH="135.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="117.91" cenaSDPH="135.60" />
+      <carovyKod>7612076354715</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203986</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="18">
+      <sukl>0013194</sukl>
+      <pdk>4030855052417</pdk>
+      <kodDodavatele />
+      <IdPolozky>120399</IdPolozky>
+      <IdSkladoveKarty>20047</IdSkladoveKarty>
+      <nazev>Gingio 120 por.tbl.flm.60x120mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>BX3120</sarze>
+      <exspirace>2014-01-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="413.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="562.00" cenaSDPH="646.30" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="562.00" cenaSDPH="646.30" />
+      <carovyKod>4030855052417</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203993</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="19">
+      <sukl>0067015</sukl>
+      <pdk>5290931000247</pdk>
+      <kodDodavatele />
+      <IdPolozky>120400</IdPolozky>
+      <IdSkladoveKarty>1780</IdSkladoveKarty>
+      <nazev>GYRABLOCK 400 TBL OBD 14X400MG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>A5E011</sarze>
+      <exspirace>2014-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="72.28" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="98.96" cenaSDPH="113.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="98.96" cenaSDPH="113.80" />
+      <carovyKod>5290931000247</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204006</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="20">
+      <sukl>0003575</sukl>
+      <pdk>2287721</pdk>
+      <kodDodavatele />
+      <IdPolozky>120401</IdPolozky>
+      <IdSkladoveKarty>2130</IdSkladoveKarty>
+      <nazev>HEPAROID LECIVA  UNG 1X30GM</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>6.0000</mnozstvi>
+      <sarze>3351111</sarze>
+      <exspirace>2014-10-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="25.45" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="36.00" cenaSDPH="41.40" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="36.00" cenaSDPH="41.40" />
+      <carovyKod>8594739026384</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204013</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="21">
+      <sukl>0016895</sukl>
+      <pdk>1529917</pdk>
+      <kodDodavatele />
+      <IdPolozky>120402</IdPolozky>
+      <IdSkladoveKarty>20416</IdSkladoveKarty>
+      <nazev>IMAZOL KRÉMPASTA DRM PST 1X30GM (L)</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>K031</sarze>
+      <exspirace>2016-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="55.75" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="78.87" cenaSDPH="90.70" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="78.87" cenaSDPH="90.70" />
+      <carovyKod>7612076354517</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204020</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="22">
+      <sukl>0087666</sukl>
+      <pdk>2605237</pdk>
+      <kodDodavatele />
+      <IdPolozky>120403</IdPolozky>
+      <IdSkladoveKarty>19360</IdSkladoveKarty>
+      <nazev>VLOŽKY ABSORPČNÍ Molimed Classic Midi/30ks</nazev>
+      <skupina>3</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>127915029</sarze>
+      <exspirace>2014-10-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="128.04" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="160.00" cenaSDPH="184.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="160.00" cenaSDPH="184.00" />
+      <carovyKod>4049500342223</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204037</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="23">
+      <sukl>0053853</sukl>
+      <pdk>5013158773141</pdk>
+      <kodDodavatele />
+      <IdPolozky>120404</IdPolozky>
+      <IdSkladoveKarty>5875</IdSkladoveKarty>
+      <nazev>KLACID 500 tbl obd 14x500mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>6022154</sarze>
+      <exspirace>2015-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="270.67" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="365.91" cenaSDPH="420.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="365.91" cenaSDPH="420.80" />
+      <carovyKod>5013158773141</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204044</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="24">
+      <sukl>0059505</sukl>
+      <pdk>3400970002030</pdk>
+      <kodDodavatele />
+      <IdPolozky>120405</IdPolozky>
+      <IdSkladoveKarty>14438</IdSkladoveKarty>
+      <nazev>LIPANTHYL SUPRA 160 MG portblret90x160mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>17510</sarze>
+      <exspirace>2013-04-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="292.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="394.35" cenaSDPH="453.50" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="394.35" cenaSDPH="453.50" />
+      <carovyKod>3400970002030</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204051</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="25">
+      <sukl>0002481</sukl>
+      <pdk>8584005115409</pdk>
+      <kodDodavatele />
+      <IdPolozky>120406</IdPolozky>
+      <IdSkladoveKarty>2217</IdSkladoveKarty>
+      <nazev>LITHIUM CARBONICUM tbl 100x300mg SLOVAKOFARMA</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>3090711</sarze>
+      <exspirace>2014-06-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="134.06" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="183.65" cenaSDPH="211.20" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="183.65" cenaSDPH="211.20" />
+      <carovyKod>8584005115409</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204068</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="26">
+      <sukl>0092490</sukl>
+      <pdk>7612729000150</pdk>
+      <kodDodavatele />
+      <IdPolozky>120407</IdPolozky>
+      <IdSkladoveKarty>1356</IdSkladoveKarty>
+      <nazev>MACMIROR COMPLEX 500  SUP VAG 8</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>M110119</sarze>
+      <exspirace>2014-06-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="100.44" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="137.57" cenaSDPH="158.20" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="137.57" cenaSDPH="158.20" />
+      <carovyKod>7612729000150</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204075</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="27">
+      <sukl>0080108</sukl>
+      <pdk>4049500967761</pdk>
+      <kodDodavatele />
+      <IdPolozky>120408</IdPolozky>
+      <IdSkladoveKarty>10571</IdSkladoveKarty>
+      <nazev>Náplast Omnifix elasticka 5cmx10m</nazev>
+      <skupina>3</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>100944129</sarze>
+      <exspirace>2016-10-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="76.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="94.96" cenaSDPH="109.20" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="94.96" cenaSDPH="109.20" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270001204082</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="28">
+      <sukl>0091788</sukl>
+      <pdk>8594739037687</pdk>
+      <kodDodavatele />
+      <IdPolozky>120409</IdPolozky>
+      <IdSkladoveKarty>1388</IdSkladoveKarty>
+      <nazev>NEUROL TBL 30X0.25MG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>12.0000</mnozstvi>
+      <sarze>2431011</sarze>
+      <exspirace>2013-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="22.69" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="31.04" cenaSDPH="35.70" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="31.04" cenaSDPH="35.70" />
+      <carovyKod>8594739003767</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204099</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="29">
+      <sukl>0033355</sukl>
+      <pdk>8712400154413</pdk>
+      <kodDodavatele />
+      <IdPolozky>120410</IdPolozky>
+      <IdSkladoveKarty>14098</IdSkladoveKarty>
+      <nazev>Nutridrink Fat free jablko*</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>08082012</sarze>
+      <exspirace>2012-08-08T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="36.04" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="48.87" cenaSDPH="56.20" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="48.87" cenaSDPH="56.20" />
+      <carovyKod>8712400154413</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204105</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="30">
+      <sukl>0014914</sukl>
+      <pdk>1479741</pdk>
+      <kodDodavatele />
+      <IdPolozky>120411</IdPolozky>
+      <IdSkladoveKarty>14904</IdSkladoveKarty>
+      <nazev>PROPYCIL 50 por tblnob100x50mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>1101CZ</sarze>
+      <exspirace>2015-12-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="241.75" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="327.48" cenaSDPH="376.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="327.48" cenaSDPH="376.60" />
+      <carovyKod>4032128010568</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204112</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="31">
+      <sukl>0011468</sukl>
+      <pdk>8595026406162</pdk>
+      <kodDodavatele />
+      <IdPolozky>120412</IdPolozky>
+      <IdSkladoveKarty>10627</IdSkladoveKarty>
+      <nazev>PROSULPIN 50MG tbl 60x50mg !!</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>0030711</sarze>
+      <exspirace>2013-07-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="101.13" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="138.52" cenaSDPH="159.30" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="138.52" cenaSDPH="159.30" />
+      <carovyKod>8595026406162</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204129</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="32">
+      <sukl>0122197</sukl>
+      <pdk>8594013101271</pdk>
+      <kodDodavatele />
+      <IdPolozky>120413</IdPolozky>
+      <IdSkladoveKarty>733185</IdSkladoveKarty>
+      <nazev>PROTHAZIN</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>4.0000</mnozstvi>
+      <sarze>36204</sarze>
+      <exspirace>2014-01-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="36.20" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="49.57" cenaSDPH="57.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="49.57" cenaSDPH="57.00" />
+      <carovyKod>8594013101271</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204136</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="33">
+      <sukl>0047224</sukl>
+      <pdk>3582182990630</pdk>
+      <kodDodavatele />
+      <IdPolozky>120414</IdPolozky>
+      <IdSkladoveKarty>8115</IdSkladoveKarty>
+      <nazev>TANAKAN tbl obd 90x40mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>D26507</sarze>
+      <exspirace>2014-06-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="195.10" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="274.00" cenaSDPH="315.10" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="274.00" cenaSDPH="315.10" />
+      <carovyKod>3582182990630</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204143</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="34">
+      <sukl>0016032</sukl>
+      <pdk>8594050584952</pdk>
+      <kodDodavatele />
+      <IdPolozky>120415</IdPolozky>
+      <IdSkladoveKarty>17240</IdSkladoveKarty>
+      <nazev>VOLTAREN RAPID 50 MG drg 10x50mg §§§</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>K0311</sarze>
+      <exspirace>2014-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="45.05" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="61.65" cenaSDPH="70.90" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="61.65" cenaSDPH="70.90" />
+      <carovyKod>8594050584952</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204150</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="35">
+      <sukl>0057396</sukl>
+      <pdk>4030855002511</pdk>
+      <kodDodavatele />
+      <IdPolozky>120416</IdPolozky>
+      <IdSkladoveKarty>12752</IdSkladoveKarty>
+      <nazev>ACC LONG por tbl eff20x600mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>BN2046</sarze>
+      <exspirace>2014-07-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="182.43" cenaSDPH="209.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="182.43" cenaSDPH="209.80" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270001204167</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="36">
+      <sukl>0046219</sukl>
+      <pdk>8590322000397</pdk>
+      <kodDodavatele />
+      <IdPolozky>120417</IdPolozky>
+      <IdSkladoveKarty>20198</IdSkladoveKarty>
+      <nazev>Aspirin tbl 10x500mg §§§</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>BTAB8S0</sarze>
+      <exspirace>2016-11-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="31.39" cenaSDPH="36.10" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="31.39" cenaSDPH="36.10" />
+      <carovyKod>8590322000397</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204174</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="37">
+      <sukl>0046216</sukl>
+      <pdk>8590322000403</pdk>
+      <kodDodavatele />
+      <IdPolozky>120418</IdPolozky>
+      <IdSkladoveKarty>17252</IdSkladoveKarty>
+      <nazev>ASPIRIN tbl 20x500mg §§§</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>BTAB880</sarze>
+      <exspirace>2016-11-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="60.35" cenaSDPH="69.40" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="60.35" cenaSDPH="69.40" />
+      <carovyKod>8590322000403</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204181</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="38">
+      <sukl>0059714</sukl>
+      <pdk>8590322000038</pdk>
+      <kodDodavatele />
+      <IdPolozky>120419</IdPolozky>
+      <IdSkladoveKarty>1110</IdSkladoveKarty>
+      <nazev>BEPANTHEN PLUS CRM 1X30GM</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>GP00D7C</sarze>
+      <exspirace>2014-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="126.43" cenaSDPH="145.40" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="126.43" cenaSDPH="145.40" />
+      <carovyKod>8590322000038</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204198</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="39">
+      <sukl>0002564</sukl>
+      <pdk>8590322000076</pdk>
+      <kodDodavatele />
+      <IdPolozky>120420</IdPolozky>
+      <IdSkladoveKarty>9397</IdSkladoveKarty>
+      <nazev>BEPANTHEN ung 1x100gm 5%</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>GP00C8Z</sarze>
+      <exspirace>2014-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="284.52" cenaSDPH="327.20" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="284.52" cenaSDPH="327.20" />
+      <carovyKod>8590322000076</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204204</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="40">
+      <sukl>0076188</sukl>
+      <pdk>8594739016347</pdk>
+      <kodDodavatele />
+      <IdPolozky>120421</IdPolozky>
+      <IdSkladoveKarty>1658</IdSkladoveKarty>
+      <nazev>CELASKON TBL 40X100MG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>2010411</sarze>
+      <exspirace>2013-03-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="37.04" cenaSDPH="42.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="37.04" cenaSDPH="42.60" />
+      <carovyKod>8594739016347</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204211</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="41">
+      <sukl>0078277</sukl>
+      <pdk>8594739016378</pdk>
+      <kodDodavatele />
+      <IdPolozky>120422</IdPolozky>
+      <IdSkladoveKarty>1622</IdSkladoveKarty>
+      <nazev>CELASKON TBL 30X250MG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>2130611</sarze>
+      <exspirace>2013-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="42.00" cenaSDPH="48.30" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="42.00" cenaSDPH="48.30" />
+      <carovyKod>8594739016378</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204228</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="42">
+      <sukl>0017293</sukl>
+      <pdk>8584005016522</pdk>
+      <kodDodavatele />
+      <IdPolozky>120423</IdPolozky>
+      <IdSkladoveKarty>15272</IdSkladoveKarty>
+      <nazev>Celaskon 500mg Červený pomer.por.tbl.eff.20x500mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>2240411</sarze>
+      <exspirace>2013-03-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="66.70" cenaSDPH="76.70" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="66.70" cenaSDPH="76.70" />
+      <carovyKod>8584005016522</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204235</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="43">
+      <sukl>0017294</sukl>
+      <pdk>8584005016539</pdk>
+      <kodDodavatele />
+      <IdPolozky>120424</IdPolozky>
+      <IdSkladoveKarty>16027</IdSkladoveKarty>
+      <nazev>Celaskon 500mg Červený pomer.por.tbl.eff.3x10promo</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>2480711</sarze>
+      <exspirace>2013-06-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="94.17" cenaSDPH="108.30" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="94.17" cenaSDPH="108.30" />
+      <carovyKod>8584005016539</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204242</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="44">
+      <sukl>0043197</sukl>
+      <pdk>8595145700493</pdk>
+      <kodDodavatele />
+      <IdPolozky>120425</IdPolozky>
+      <IdSkladoveKarty>15269</IdSkladoveKarty>
+      <nazev>CERAZETTE por tbl flm 84x75rg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>914155</sarze>
+      <exspirace>2013-01-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="580.70" cenaSDPH="667.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="580.70" cenaSDPH="667.80" />
+      <carovyKod>8595145700493</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204259</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="45">
+      <sukl>0083059</sukl>
+      <pdk>8584055830598</pdk>
+      <kodDodavatele />
+      <IdPolozky>120426</IdPolozky>
+      <IdSkladoveKarty>1605</IdSkladoveKarty>
+      <nazev>CLARINASE REPETABS TBL RET 14</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>1JRPG44A01</sarze>
+      <exspirace>2013-04-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="201.65" cenaSDPH="231.90" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="201.65" cenaSDPH="231.90" />
+      <carovyKod>8584055830598</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204266</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="46">
+      <sukl>0025408</sukl>
+      <pdk>4007221013198</pdk>
+      <kodDodavatele />
+      <IdPolozky>120427</IdPolozky>
+      <IdSkladoveKarty>9608</IdSkladoveKarty>
+      <nazev>DRONTAL PLUS A.U.V. TBL 2 flavour-s hovězí příchutí</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>KP076X2</sarze>
+      <exspirace>2016-01-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="105.54" cenaSDPH="127.70" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="105.54" cenaSDPH="127.70" />
+      <carovyKod>4007221013198</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204273</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="47">
+      <sukl>0025408</sukl>
+      <pdk>4007221013198</pdk>
+      <kodDodavatele />
+      <IdPolozky>120428</IdPolozky>
+      <IdSkladoveKarty>9608</IdSkladoveKarty>
+      <nazev>DRONTAL PLUS A.U.V. TBL 2 flavour-s hovězí příchutí</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>KP07747</sarze>
+      <exspirace>2016-04-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="110.66" cenaSDPH="133.90" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="110.66" cenaSDPH="133.90" />
+      <carovyKod>4007221013198</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204280</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="48">
+      <sukl>0053171</sukl>
+      <pdk>8595561100075</pdk>
+      <kodDodavatele />
+      <IdPolozky>120429</IdPolozky>
+      <IdSkladoveKarty>7850</IdSkladoveKarty>
+      <nazev>DUOFILM LIQ 15ml na bradavice</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>490N</sarze>
+      <exspirace>2013-10-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="143.13" cenaSDPH="164.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="143.13" cenaSDPH="164.60" />
+      <carovyKod>5011091104282</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204297</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="49">
+      <sukl>0059748</sukl>
+      <pdk>8594003073250</pdk>
+      <kodDodavatele />
+      <IdPolozky>120430</IdPolozky>
+      <IdSkladoveKarty>5639</IdSkladoveKarty>
+      <nazev>č fenyklový čaj n.s. MEGAFYT</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>225102011</sarze>
+      <exspirace>2013-10-01T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="36.61" cenaSDPH="42.10" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="36.61" cenaSDPH="42.10" />
+      <carovyKod>8594003073250</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204303</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="50">
+      <sukl>0010553</sukl>
+      <pdk>0819122002584</pdk>
+      <kodDodavatele />
+      <IdPolozky>120431</IdPolozky>
+      <IdSkladoveKarty>1726</IdSkladoveKarty>
+      <nazev>FERMALAC VAGINAL CPS VAG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>DD0217</sarze>
+      <exspirace>2012-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="211.30" cenaSDPH="243.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="211.30" cenaSDPH="243.00" />
+      <carovyKod>819122002584</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204310</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="51">
+      <sukl>0059746</sukl>
+      <pdk>8594003073014</pdk>
+      <kodDodavatele />
+      <IdPolozky>120432</IdPolozky>
+      <IdSkladoveKarty>3313</IdSkladoveKarty>
+      <nazev>č heřmánek n.s.20x1.5g MEG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>207102011</sarze>
+      <exspirace>2013-10-01T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="36.61" cenaSDPH="42.10" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="36.61" cenaSDPH="42.10" />
+      <carovyKod>8594003073014</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204327</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="52">
+      <sukl>0017174</sukl>
+      <pdk>5702589304689</pdk>
+      <kodDodavatele />
+      <IdPolozky>120433</IdPolozky>
+      <IdSkladoveKarty>15724</IdSkladoveKarty>
+      <nazev>Hypnogen por.tbl.flm.100x10mg</nazev>
+      <skupina>6</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>720279</sarze>
+      <exspirace>2014-01-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="461.13" cenaSDPH="530.30" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="461.13" cenaSDPH="530.30" />
+      <carovyKod>8594739026735</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204334</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="53">
+      <sukl>0100013</sukl>
+      <pdk>8594739204829</pdk>
+      <kodDodavatele />
+      <IdPolozky>120434</IdPolozky>
+      <IdSkladoveKarty>22161</IdSkladoveKarty>
+      <nazev>IBALGIN 400 POR TBL FLM 24X400MG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>20.0000</mnozstvi>
+      <sarze>3630511</sarze>
+      <exspirace>2014-04-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="45.22" cenaSDPH="52.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="45.22" cenaSDPH="52.00" />
+      <carovyKod>8594739204829</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204341</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="54">
+      <sukl>0064758</sukl>
+      <pdk>4011548008829</pdk>
+      <kodDodavatele />
+      <IdPolozky>120435</IdPolozky>
+      <IdSkladoveKarty>19993</IdSkladoveKarty>
+      <nazev>Kamistad Senzitiv orm.gel.1x10g</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>11017</sarze>
+      <exspirace>2014-03-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="108.26" cenaSDPH="124.50" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="108.26" cenaSDPH="124.50" />
+      <carovyKod>4011548008829</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204358</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="55">
+      <sukl />
+      <pdk>4008233027883</pdk>
+      <kodDodavatele />
+      <IdPolozky>120436</IdPolozky>
+      <IdSkladoveKarty>2680</IdSkladoveKarty>
+      <nazev>KNEIPP dražé z kozlíku lékařského 90drg</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>1111343</sarze>
+      <exspirace>2014-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="198.61" cenaSDPH="228.40" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="198.61" cenaSDPH="228.40" />
+      <carovyKod>4008233027883</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204365</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="56">
+      <sukl>0093469</sukl>
+      <pdk>8594740494301</pdk>
+      <kodDodavatele />
+      <IdPolozky>120437</IdPolozky>
+      <IdSkladoveKarty>3233</IdSkladoveKarty>
+      <nazev>č Urcyston n.s. 20x1.5 LER</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>3241011</sarze>
+      <exspirace>2014-10-24T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="34.17" cenaSDPH="39.30" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="34.17" cenaSDPH="39.30" />
+      <carovyKod>8594740494301</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204372</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="57">
+      <sukl>0137120</sukl>
+      <pdk>8595165288513</pdk>
+      <kodDodavatele />
+      <IdPolozky>120438</IdPolozky>
+      <IdSkladoveKarty>22282</IdSkladoveKarty>
+      <nazev>MAGNESIUM 250 MG PHARMAVIT TBL EFF 20</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>B310311</sarze>
+      <exspirace>2013-03-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="56.70" cenaSDPH="65.20" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="56.70" cenaSDPH="65.20" />
+      <carovyKod>8595165288513</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204389</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="58">
+      <sukl>0011024</sukl>
+      <pdk>8594739035263</pdk>
+      <kodDodavatele />
+      <IdPolozky>120439</IdPolozky>
+      <IdSkladoveKarty>9420</IdSkladoveKarty>
+      <nazev>MODAFEN tbl obd 24!!!!!!</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>3260911</sarze>
+      <exspirace>2014-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="124.00" cenaSDPH="142.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="124.00" cenaSDPH="142.60" />
+      <carovyKod>8594739035263</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204396</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="59">
+      <sukl>0054119</sukl>
+      <pdk>5000158101760</pdk>
+      <kodDodavatele />
+      <IdPolozky>120440</IdPolozky>
+      <IdSkladoveKarty>22166</IdSkladoveKarty>
+      <nazev>NUROFEN FORTE TBL OBD 24X400MG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>13HH</sarze>
+      <exspirace>2014-02-28T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="67.83" cenaSDPH="78.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="67.83" cenaSDPH="78.00" />
+      <carovyKod>5000158101760</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204402</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="60">
+      <sukl>0146482</sukl>
+      <pdk>5000158101753</pdk>
+      <kodDodavatele />
+      <IdPolozky>120441</IdPolozky>
+      <IdSkladoveKarty>22165</IdSkladoveKarty>
+      <nazev>NUROFEN RAPID 400 MG  CPS  10X400MG PVC II</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>4JJ</sarze>
+      <exspirace>2013-04-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="67.83" cenaSDPH="78.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="67.83" cenaSDPH="78.00" />
+      <carovyKod>5000158101753</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204419</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="61">
+      <sukl>0040542</sukl>
+      <pdk>3574660402599</pdk>
+      <kodDodavatele />
+      <IdPolozky>120442</IdPolozky>
+      <IdSkladoveKarty>19401</IdSkladoveKarty>
+      <nazev>Olynth HA 0.1% nas.spr.sol.1x10mg/10ml</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>10.0000</mnozstvi>
+      <sarze>274637UP</sarze>
+      <exspirace>2014-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="91.65" cenaSDPH="105.40" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="91.65" cenaSDPH="105.40" />
+      <carovyKod>3574660402599</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204426</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="62">
+      <sukl>0042770</sukl>
+      <pdk>8594739041110</pdk>
+      <kodDodavatele />
+      <IdPolozky>120443</IdPolozky>
+      <IdSkladoveKarty>13270</IdSkladoveKarty>
+      <nazev>PARALEN EXTRA PROTI BOLESTI 12tbl</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>2040411</sarze>
+      <exspirace>2013-03-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="33.39" cenaSDPH="38.40" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="33.39" cenaSDPH="38.40" />
+      <carovyKod>8594739041110</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204433</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="63">
+      <sukl>0055911</sukl>
+      <pdk>0309477</pdk>
+      <kodDodavatele />
+      <IdPolozky>120444</IdPolozky>
+      <IdSkladoveKarty>7534</IdSkladoveKarty>
+      <nazev>PEROXID VODIKU 3% liq 100ml Coopharma</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>10.0000</mnozstvi>
+      <sarze>6411</sarze>
+      <exspirace>2012-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="35.65" cenaSDPH="41.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="35.65" cenaSDPH="41.00" />
+      <carovyKod>8594000520207</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204440</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="64">
+      <sukl>0060111</sukl>
+      <pdk>3838957098507</pdk>
+      <kodDodavatele />
+      <IdPolozky>120445</IdPolozky>
+      <IdSkladoveKarty>1921</IdSkladoveKarty>
+      <nazev>PERSEN FORTE  CPS 20</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>BT0079</sarze>
+      <exspirace>2014-02-28T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="119.65" cenaSDPH="137.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="119.65" cenaSDPH="137.60" />
+      <carovyKod>3838957098507</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204457</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="65">
+      <sukl>0012455</sukl>
+      <pdk>3400970001088</pdk>
+      <kodDodavatele />
+      <IdPolozky>120446</IdPolozky>
+      <IdSkladoveKarty>12986</IdSkladoveKarty>
+      <nazev>PHARMATEX VAGINALNI GLOBULE GLO VAG 10X1</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>11009</sarze>
+      <exspirace>2014-02-28T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="238.96" cenaSDPH="274.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="238.96" cenaSDPH="274.80" />
+      <carovyKod>3400970001088</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204464</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="66">
+      <sukl>0059377</sukl>
+      <pdk>5997001311165</pdk>
+      <kodDodavatele />
+      <IdPolozky>120447</IdPolozky>
+      <IdSkladoveKarty>7903</IdSkladoveKarty>
+      <nazev>POSTINOR 2tbl 2x0.75mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>T19521K</sarze>
+      <exspirace>2016-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="538.52" cenaSDPH="619.30" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="538.52" cenaSDPH="619.30" />
+      <carovyKod>5997001312445</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204471</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="67">
+      <sukl>0053646</sukl>
+      <pdk>3534510000405</pdk>
+      <kodDodavatele />
+      <IdPolozky>120448</IdPolozky>
+      <IdSkladoveKarty>7266</IdSkladoveKarty>
+      <nazev>RENNIE 24ctb !!</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>L6H788</sarze>
+      <exspirace>2016-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="56.96" cenaSDPH="65.50" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="56.96" cenaSDPH="65.50" />
+      <carovyKod>3534510000429</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204488</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="68">
+      <sukl>0058160</sukl>
+      <pdk>8594737047718</pdk>
+      <kodDodavatele />
+      <IdPolozky>120449</IdPolozky>
+      <IdSkladoveKarty>8119</IdSkladoveKarty>
+      <nazev>SANORIN spray 0.05% spr.nas.1x10ml</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>3C011090</sarze>
+      <exspirace>2013-11-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="66.35" cenaSDPH="76.30" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="66.35" cenaSDPH="76.30" />
+      <carovyKod>8594737047718</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204495</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="69">
+      <sukl>0058705</sukl>
+      <pdk>3352712001323</pdk>
+      <kodDodavatele />
+      <IdPolozky>120450</IdPolozky>
+      <IdSkladoveKarty>7261</IdSkladoveKarty>
+      <nazev>SEDATIF PC 60tbl nespavost homeo</nazev>
+      <skupina>6</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>M1072235</sarze>
+      <exspirace>2016-07-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="85.48" cenaSDPH="98.30" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="85.48" cenaSDPH="98.30" />
+      <carovyKod>3352712001323</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204501</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="70">
+      <sukl>0060073</sukl>
+      <pdk>3352713100063</pdk>
+      <kodDodavatele />
+      <IdPolozky>120451</IdPolozky>
+      <IdSkladoveKarty>2618</IdSkladoveKarty>
+      <nazev>STODAL sir 200ml 2CH-30CH</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>M1051683</sarze>
+      <exspirace>2016-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="95.13" cenaSDPH="109.40" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="95.13" cenaSDPH="109.40" />
+      <carovyKod>3352713100063</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204518</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="71">
+      <sukl>0045507</sukl>
+      <pdk>5000167019865</pdk>
+      <kodDodavatele />
+      <IdPolozky>120452</IdPolozky>
+      <IdSkladoveKarty>6857</IdSkladoveKarty>
+      <nazev>STREPSILS VITAMIN C 100MG LOZ 12</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>5JJ</sarze>
+      <exspirace>2014-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="77.39" cenaSDPH="89.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="77.39" cenaSDPH="89.00" />
+      <carovyKod>5000167019865</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204525</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="72">
+      <sukl>0003688</sukl>
+      <pdk>8594739047907</pdk>
+      <kodDodavatele />
+      <IdPolozky>120453</IdPolozky>
+      <IdSkladoveKarty>2122</IdSkladoveKarty>
+      <nazev>SUPPOSITORIA GLYCERINI SUP 2X5/2.35GM</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>10.0000</mnozstvi>
+      <sarze>4391011</sarze>
+      <exspirace>2015-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="71.39" cenaSDPH="82.10" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="71.39" cenaSDPH="82.10" />
+      <carovyKod>8594739047907</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204532</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="73">
+      <sukl>0021736</sukl>
+      <pdk>8594002959012</pdk>
+      <kodDodavatele />
+      <IdPolozky>120454</IdPolozky>
+      <IdSkladoveKarty>1393</IdSkladoveKarty>
+      <nazev>VALETOL TBL 10</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>20.0000</mnozstvi>
+      <sarze>2110611</sarze>
+      <exspirace>2013-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="44.96" cenaSDPH="51.70" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="44.96" cenaSDPH="51.70" />
+      <carovyKod>8594002959012</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204549</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="74">
+      <sukl>0053180</sukl>
+      <pdk>3574660402360</pdk>
+      <kodDodavatele />
+      <IdPolozky>120455</IdPolozky>
+      <IdSkladoveKarty>1959</IdSkladoveKarty>
+      <nazev>VISINE GTT OPH 15ML 0.05%</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>11077</sarze>
+      <exspirace>2014-03-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="105.74" cenaSDPH="121.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="105.74" cenaSDPH="121.60" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270001204556</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="75">
+      <sukl>0099888</sukl>
+      <pdk>3585550031928</pdk>
+      <kodDodavatele />
+      <IdPolozky>120456</IdPolozky>
+      <IdSkladoveKarty>1006</IdSkladoveKarty>
+      <nazev>C-VITAMIN 1000mg PHARMAVIT TBL EFF 10X1000mg</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>M7405</sarze>
+      <exspirace>2012-11-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="38.09" cenaSDPH="43.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="38.09" cenaSDPH="43.80" />
+      <carovyKod>3585550031928</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204563</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="76">
+      <sukl>0066196</sukl>
+      <pdk>4029668040520</pdk>
+      <kodDodavatele />
+      <IdPolozky>120457</IdPolozky>
+      <IdSkladoveKarty>13106</IdSkladoveKarty>
+      <nazev>YADINE por tbl flm 3x21=63</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>12399C</sarze>
+      <exspirace>2014-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="856.35" cenaSDPH="984.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="856.35" cenaSDPH="984.80" />
+      <carovyKod>4029668040520</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204570</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="77">
+      <sukl />
+      <pdk>8594060890074</pdk>
+      <kodDodavatele />
+      <IdPolozky>120458</IdPolozky>
+      <IdSkladoveKarty>14869</IdSkladoveKarty>
+      <nazev>ALTERMED Baby Winter cream 50g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>11101002</sarze>
+      <exspirace>2013-10-11T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="109.01" cenaSDPH="131.90" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="109.01" cenaSDPH="131.90" />
+      <carovyKod>8594060890074</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204587</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="78">
+      <sukl />
+      <pdk>8594009400135</pdk>
+      <kodDodavatele />
+      <IdPolozky>120459</IdPolozky>
+      <IdSkladoveKarty>733031</IdSkladoveKarty>
+      <nazev>AROMATICA Echinaceové bylinné kapky od 3 let 50ml</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>37040811</sarze>
+      <exspirace>2013-09-29T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="66.20" cenaSDPH="80.10" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="66.20" cenaSDPH="80.10" />
+      <carovyKod>8594009400135</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204594</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="79">
+      <sukl />
+      <pdk>8594002391010</pdk>
+      <kodDodavatele />
+      <IdPolozky>120460</IdPolozky>
+      <IdSkladoveKarty>2949</IdSkladoveKarty>
+      <nazev>Ascoffin-s kofeinem a vit.,proti únavě 10x4g BIOMEDICA</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>L081011</sarze>
+      <exspirace>2013-04-04T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="51.74" cenaSDPH="59.50" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="51.74" cenaSDPH="59.50" />
+      <carovyKod>8594002391010</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204600</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="80">
+      <sukl />
+      <pdk>5709976072404</pdk>
+      <kodDodavatele />
+      <IdPolozky>120461</IdPolozky>
+      <IdSkladoveKarty>16517</IdSkladoveKarty>
+      <nazev>Bioaktivní C.L.A. 1000 Booster cps.80</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>1100109</sarze>
+      <exspirace>2014-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="613.39" cenaSDPH="705.40" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="613.39" cenaSDPH="705.40" />
+      <carovyKod>5709976072404</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204617</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="81">
+      <sukl />
+      <pdk>8594975140455</pdk>
+      <kodDodavatele />
+      <IdPolozky>120462</IdPolozky>
+      <IdSkladoveKarty>19633</IdSkladoveKarty>
+      <nazev>Bonella krem proti striim 200ml</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>11112203</sarze>
+      <exspirace>2013-11-22T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="89.42" cenaSDPH="108.20" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="89.42" cenaSDPH="108.20" />
+      <carovyKod>8594975140455</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204624</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="82">
+      <sukl />
+      <pdk>9120036090415</pdk>
+      <kodDodavatele />
+      <IdPolozky>120463</IdPolozky>
+      <IdSkladoveKarty>22568</IdSkladoveKarty>
+      <nazev>Centrum SILVER s Multi-Efektem tbl.30</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>1TS026A</sarze>
+      <exspirace>2013-07-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="197.91" cenaSDPH="227.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="197.91" cenaSDPH="227.60" />
+      <carovyKod>9120036090415</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204631</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="83">
+      <sukl />
+      <pdk>8590335000223</pdk>
+      <kodDodavatele />
+      <IdPolozky>120464</IdPolozky>
+      <IdSkladoveKarty>13073</IdSkladoveKarty>
+      <nazev>Corsodyl ústní voda 0.1% 200ml</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>100330</sarze>
+      <exspirace>2014-03-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="69.92" cenaSDPH="84.60" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="69.92" cenaSDPH="84.60" />
+      <carovyKod>8590335000223</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204648</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="84">
+      <sukl />
+      <pdk>7612412011104</pdk>
+      <kodDodavatele />
+      <IdPolozky>120465</IdPolozky>
+      <IdSkladoveKarty>11876</IdSkladoveKarty>
+      <nazev>Curaprox CPS 011 zelený-prime-mez.kart.5ks</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>122011</sarze>
+      <exspirace>2015-12-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="114.71" cenaSDPH="138.80" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="114.71" cenaSDPH="138.80" />
+      <carovyKod>7612412011104</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204655</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="85">
+      <sukl />
+      <pdk>7612412540604</pdk>
+      <kodDodavatele />
+      <IdPolozky>120466</IdPolozky>
+      <IdSkladoveKarty>20292</IdSkladoveKarty>
+      <nazev>Curaprox 5460 Ultrasoft z.kart. 3za cenu 2</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>5.0000</mnozstvi>
+      <sarze>122011</sarze>
+      <exspirace>2015-12-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="121.32" cenaSDPH="146.80" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="121.32" cenaSDPH="146.80" />
+      <carovyKod>7612412540604</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204662</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="86">
+      <sukl />
+      <pdk>8594009625415</pdk>
+      <kodDodavatele />
+      <IdPolozky>120467</IdPolozky>
+      <IdSkladoveKarty>10727</IdSkladoveKarty>
+      <nazev>Dr.Muller DERMO chlorophyl spray 30 g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>434</sarze>
+      <exspirace>2015-06-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="92.73" cenaSDPH="112.20" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="92.73" cenaSDPH="112.20" />
+      <carovyKod>8594009625415</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204679</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="87">
+      <sukl />
+      <pdk>8594747003278</pdk>
+      <kodDodavatele />
+      <IdPolozky>120468</IdPolozky>
+      <IdSkladoveKarty>20934</IdSkladoveKarty>
+      <nazev>Desident CaviCide 200ml</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>2166657</sarze>
+      <exspirace>2013-11-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="91.74" cenaSDPH="105.50" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="91.74" cenaSDPH="105.50" />
+      <carovyKod>8594747003278</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204686</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="88">
+      <sukl />
+      <pdk>5011091102608</pdk>
+      <kodDodavatele />
+      <IdPolozky>120469</IdPolozky>
+      <IdSkladoveKarty>7543</IdSkladoveKarty>
+      <nazev>Driclor 20ml</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>504N</sarze>
+      <exspirace>2013-11-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="185.54" cenaSDPH="224.50" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="185.54" cenaSDPH="224.50" />
+      <carovyKod>5011091102608</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204693</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="89">
+      <sukl />
+      <pdk>4007965507137</pdk>
+      <kodDodavatele />
+      <IdPolozky>120470</IdPolozky>
+      <IdSkladoveKarty>2859</IdSkladoveKarty>
+      <nazev>Elmex Sensitive z.pasta zelený 75ml ASTRID</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>12351E</sarze>
+      <exspirace>2014-02-28T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="78.43" cenaSDPH="94.90" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="78.43" cenaSDPH="94.90" />
+      <carovyKod>4007965507137</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204709</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="90">
+      <sukl />
+      <pdk>4007965508004</pdk>
+      <kodDodavatele />
+      <IdPolozky>120471</IdPolozky>
+      <IdSkladoveKarty>3841</IdSkladoveKarty>
+      <nazev>Elmex dětská z.pasta červený 50ml ASTRID</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>12941G</sarze>
+      <exspirace>2014-04-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="54.05" cenaSDPH="65.40" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="54.05" cenaSDPH="65.40" />
+      <carovyKod>4007965508004</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204716</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="91">
+      <sukl />
+      <pdk>7640119230252</pdk>
+      <kodDodavatele />
+      <IdPolozky>120472</IdPolozky>
+      <IdSkladoveKarty>16334</IdSkladoveKarty>
+      <nazev>Aurecon drops-ušní kapky 10ml/Fytofontána</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>0311</sarze>
+      <exspirace>2013-07-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="92.00" cenaSDPH="105.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="92.00" cenaSDPH="105.80" />
+      <carovyKod>7640119230252</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204723</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="92">
+      <sukl />
+      <pdk>7640119230245</pdk>
+      <kodDodavatele />
+      <IdPolozky>120473</IdPolozky>
+      <IdSkladoveKarty>15957</IdSkladoveKarty>
+      <nazev>Aurecon Plus ušní svíčky</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>10111</sarze>
+      <exspirace>2016-10-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="103.13" cenaSDPH="118.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="103.13" cenaSDPH="118.60" />
+      <carovyKod>7640119230245</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204730</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="93">
+      <sukl />
+      <pdk>7640119230498</pdk>
+      <kodDodavatele />
+      <IdPolozky>120474</IdPolozky>
+      <IdSkladoveKarty>22006</IdSkladoveKarty>
+      <nazev>Aurecon ušní svíčky natural</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>12111N</sarze>
+      <exspirace>2016-12-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="103.13" cenaSDPH="118.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="103.13" cenaSDPH="118.60" />
+      <carovyKod>7640119230498</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204747</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="94">
+      <sukl />
+      <pdk>8594021590227</pdk>
+      <kodDodavatele />
+      <IdPolozky>120475</IdPolozky>
+      <IdSkladoveKarty>18734</IdSkladoveKarty>
+      <nazev>Gelmodel Premium 500ml</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>78</sarze>
+      <exspirace>2013-09-12T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="441.48" cenaSDPH="507.70" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="441.48" cenaSDPH="507.70" />
+      <carovyKod>8594021590227</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204754</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="95">
+      <sukl />
+      <pdk>8594032753185</pdk>
+      <kodDodavatele />
+      <IdPolozky>120476</IdPolozky>
+      <IdSkladoveKarty>19496</IdSkladoveKarty>
+      <nazev>GS Anxiolan tbl.30</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>011104012</sarze>
+      <exspirace>2014-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="118.09" cenaSDPH="135.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="118.09" cenaSDPH="135.80" />
+      <carovyKod>8594032753185</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204761</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="96">
+      <sukl />
+      <pdk>8594033650285</pdk>
+      <kodDodavatele />
+      <IdPolozky>120477</IdPolozky>
+      <IdSkladoveKarty>12974</IdSkladoveKarty>
+      <nazev>GUARETA Rajska polevka v prasku 3ks</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>211</sarze>
+      <exspirace>2012-12-23T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="121.65" cenaSDPH="139.90" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="121.65" cenaSDPH="139.90" />
+      <carovyKod>8594033650285</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204778</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="97">
+      <sukl />
+      <pdk>8594033650704</pdk>
+      <kodDodavatele />
+      <IdPolozky>120478</IdPolozky>
+      <IdSkladoveKarty>20187</IdSkladoveKarty>
+      <nazev>Guareta hrachová polévka v prášku 3ks</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>311</sarze>
+      <exspirace>2013-04-13T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="121.65" cenaSDPH="139.90" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="121.65" cenaSDPH="139.90" />
+      <carovyKod>8594033650704</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204785</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="98">
+      <sukl />
+      <pdk>8594033650339</pdk>
+      <kodDodavatele />
+      <IdPolozky>120479</IdPolozky>
+      <IdSkladoveKarty>13165</IdSkladoveKarty>
+      <nazev>Guareta výživná tyčinka smetana 44g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>5.0000</mnozstvi>
+      <sarze>1311</sarze>
+      <exspirace>2012-11-10T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="33.74" cenaSDPH="38.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="33.74" cenaSDPH="38.80" />
+      <carovyKod>8594033650339</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204792</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="99">
+      <sukl />
+      <pdk>8594033650087</pdk>
+      <kodDodavatele />
+      <IdPolozky>120480</IdPolozky>
+      <IdSkladoveKarty>19814</IdSkladoveKarty>
+      <nazev>Guareta zeleninova polevka v prasku 3ks</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>411</sarze>
+      <exspirace>2013-05-17T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="121.65" cenaSDPH="139.90" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="121.65" cenaSDPH="139.90" />
+      <carovyKod>8594033650087</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204808</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="100">
+      <sukl />
+      <pdk>6432100011725</pdk>
+      <kodDodavatele />
+      <IdPolozky>120481</IdPolozky>
+      <IdSkladoveKarty>20284</IdSkladoveKarty>
+      <nazev>Gynocaps vaginalni tobolky 14ks</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>201104</sarze>
+      <exspirace>2014-04-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="136.52" cenaSDPH="157.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="136.52" cenaSDPH="157.00" />
+      <carovyKod>6432100011725</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204815</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="101">
+      <sukl />
+      <pdk>5012335119109</pdk>
+      <kodDodavatele />
+      <IdPolozky>120482</IdPolozky>
+      <IdSkladoveKarty>17618</IdSkladoveKarty>
+      <nazev>HALIBORANGE Omega-3 Pro děti 30 tob.s pom.přích.*</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>411113</sarze>
+      <exspirace>2013-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="188.52" cenaSDPH="216.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="188.52" cenaSDPH="216.80" />
+      <carovyKod>5012335119109</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204822</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="102">
+      <sukl />
+      <pdk>8594002951405</pdk>
+      <kodDodavatele />
+      <IdPolozky>120483</IdPolozky>
+      <IdSkladoveKarty>13244</IdSkladoveKarty>
+      <nazev>KOALKA Baby od 1 roku 60ml</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>04082011574</sarze>
+      <exspirace>2013-08-04T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="56.28" cenaSDPH="68.10" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="56.28" cenaSDPH="68.10" />
+      <carovyKod>8594002951405</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204839</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="103">
+      <sukl />
+      <pdk>8595177400019</pdk>
+      <kodDodavatele />
+      <IdPolozky>120484</IdPolozky>
+      <IdSkladoveKarty>5693</IdSkladoveKarty>
+      <nazev>Eukalyptový olej KOALKA 50ml</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>YJE1092</sarze>
+      <exspirace>2013-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="60.91" cenaSDPH="73.70" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="60.91" cenaSDPH="73.70" />
+      <carovyKod>8595177400019</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204846</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="104">
+      <sukl />
+      <pdk>7640133070391</pdk>
+      <kodDodavatele />
+      <IdPolozky>120485</IdPolozky>
+      <IdSkladoveKarty>19716</IdSkladoveKarty>
+      <nazev>Koňská mast forte chladivá 250ml</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>110390509</sarze>
+      <exspirace>2014-09-05T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="167.93" cenaSDPH="203.20" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="167.93" cenaSDPH="203.20" />
+      <carovyKod>7640133070391</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204853</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="105">
+      <sukl />
+      <pdk>8595054900090</pdk>
+      <kodDodavatele />
+      <IdPolozky>120486</IdPolozky>
+      <IdSkladoveKarty>5834</IdSkladoveKarty>
+      <nazev>LECITIN sojový 100g  6115  MOGADOR  Zajíc*</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>11102012</sarze>
+      <exspirace>2012-10-11T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="60.91" cenaSDPH="73.70" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="60.91" cenaSDPH="73.70" />
+      <carovyKod>8595054900090</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204860</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="106">
+      <sukl />
+      <pdk>8594740482520</pdk>
+      <kodDodavatele />
+      <IdPolozky>120487</IdPolozky>
+      <IdSkladoveKarty>13255</IdSkladoveKarty>
+      <nazev>č LEROS NATUR čaj na spánek a nervy 20x1.3g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>17102011</sarze>
+      <exspirace>2013-10-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="36.61" cenaSDPH="42.10" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="36.61" cenaSDPH="42.10" />
+      <carovyKod>8594740482520</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204877</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="107">
+      <sukl />
+      <pdk />
+      <kodDodavatele />
+      <IdPolozky>120488</IdPolozky>
+      <IdSkladoveKarty>21092</IdSkladoveKarty>
+      <nazev>BEBA H.A. 1 Premium 400g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>126207421Z</sarze>
+      <exspirace>2013-09-19T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="224.17" cenaSDPH="257.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="224.17" cenaSDPH="257.80" />
+      <carovyKod>7613031660810</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204884</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="108">
+      <sukl />
+      <pdk>8590340104077</pdk>
+      <kodDodavatele />
+      <IdPolozky>120489</IdPolozky>
+      <IdSkladoveKarty>19784</IdSkladoveKarty>
+      <nazev>Nutrilon 2 800g dóza</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>07042013</sarze>
+      <exspirace>2013-04-07T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="292.26" cenaSDPH="336.10" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="292.26" cenaSDPH="336.10" />
+      <carovyKod>8590340104077</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204891</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="109">
+      <sukl />
+      <pdk>8595226400342</pdk>
+      <kodDodavatele />
+      <IdPolozky>120490</IdPolozky>
+      <IdSkladoveKarty>19602</IdSkladoveKarty>
+      <nazev>Pangamin Aktiv tbl.160</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>L381</sarze>
+      <exspirace>2013-12-05T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="85.48" cenaSDPH="98.30" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="85.48" cenaSDPH="98.30" />
+      <carovyKod>8595226400342</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204907</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="110">
+      <sukl />
+      <pdk>8595226400236</pdk>
+      <kodDodavatele />
+      <IdPolozky>120491</IdPolozky>
+      <IdSkladoveKarty>3436</IdSkladoveKarty>
+      <nazev>PANGAMIN BIFI 200tbl sáček 0.45g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>L355</sarze>
+      <exspirace>2013-11-04T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="56.17" cenaSDPH="64.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="56.17" cenaSDPH="64.60" />
+      <carovyKod>8595226400236</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204914</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="111">
+      <sukl />
+      <pdk>8595226400458</pdk>
+      <kodDodavatele />
+      <IdPolozky>120492</IdPolozky>
+      <IdSkladoveKarty>7835</IdSkladoveKarty>
+      <nazev>Pangamin-GNOSTIN 200tbl</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>L377</sarze>
+      <exspirace>2013-12-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="74.61" cenaSDPH="85.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="74.61" cenaSDPH="85.80" />
+      <carovyKod>8595226400458</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204921</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="112">
+      <sukl />
+      <pdk>8594009625033</pdk>
+      <kodDodavatele />
+      <IdPolozky>120493</IdPolozky>
+      <IdSkladoveKarty>3164</IdSkladoveKarty>
+      <nazev>DR.MULLER Panthenol krem tuba 30g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>332</sarze>
+      <exspirace>2014-05-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="66.20" cenaSDPH="80.10" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="66.20" cenaSDPH="80.10" />
+      <carovyKod>8594009625033</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204938</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="113">
+      <sukl />
+      <pdk>8594009625057</pdk>
+      <kodDodavatele />
+      <IdPolozky>120494</IdPolozky>
+      <IdSkladoveKarty>7951</IdSkladoveKarty>
+      <nazev>DR.MULLER PANTHENOL krém na rty 7% 10ml</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>099</sarze>
+      <exspirace>2014-02-28T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="67.52" cenaSDPH="81.70" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="67.52" cenaSDPH="81.70" />
+      <carovyKod>8594009625057</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204945</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="114">
+      <sukl />
+      <pdk>8595058900201</pdk>
+      <kodDodavatele />
+      <IdPolozky>120495</IdPolozky>
+      <IdSkladoveKarty>14841</IdSkladoveKarty>
+      <nazev>Psyllium 200g Dr.Popov</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>1102001</sarze>
+      <exspirace>2013-02-09T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="101.57" cenaSDPH="116.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="101.57" cenaSDPH="116.80" />
+      <carovyKod>8595058900201</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204952</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="115">
+      <sukl />
+      <pdk>4030571002482</pdk>
+      <kodDodavatele />
+      <IdPolozky>120496</IdPolozky>
+      <IdSkladoveKarty>21079</IdSkladoveKarty>
+      <nazev>Recugel oční gel 10g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>761</sarze>
+      <exspirace>2013-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="88.35" cenaSDPH="101.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="88.35" cenaSDPH="101.60" />
+      <carovyKod>4030571002482</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204969</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="116">
+      <sukl />
+      <pdk>8594033380052</pdk>
+      <kodDodavatele />
+      <IdPolozky>120497</IdPolozky>
+      <IdSkladoveKarty>13479</IdSkladoveKarty>
+      <nazev>SARAPIS soja 30 tbl</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>L1060881</sarze>
+      <exspirace>2014-06-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="244.96" cenaSDPH="281.70" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="244.96" cenaSDPH="281.70" />
+      <carovyKod>8594033380052</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204976</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="117">
+      <sukl />
+      <pdk>5000347084065</pdk>
+      <kodDodavatele />
+      <IdPolozky>120498</IdPolozky>
+      <IdSkladoveKarty>13477</IdSkladoveKarty>
+      <nazev>Sensodyne expandujici zubni nit 30m</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>1373</sarze>
+      <exspirace>2012-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="60.25" cenaSDPH="72.90" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="60.25" cenaSDPH="72.90" />
+      <carovyKod>5000347084065</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204983</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="118">
+      <sukl />
+      <pdk>8593379500230</pdk>
+      <kodDodavatele />
+      <IdPolozky>120499</IdPolozky>
+      <IdSkladoveKarty>5937</IdSkladoveKarty>
+      <nazev>Prima baby šídítko dětské Flora 03-kytička</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>3943</sarze>
+      <exspirace>2014-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="15.45" cenaSDPH="18.70" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="15.45" cenaSDPH="18.70" />
+      <carovyKod>8593379500230</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001204990</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="119">
+      <sukl />
+      <pdk>8595151944270</pdk>
+      <kodDodavatele />
+      <IdPolozky>120500</IdPolozky>
+      <IdSkladoveKarty>13367</IdSkladoveKarty>
+      <nazev>č ČAJOVÁ SMĚS při kašli Megafyt 20x1,5 g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>16082011</sarze>
+      <exspirace>2013-08-01T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="37.04" cenaSDPH="42.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="37.04" cenaSDPH="42.60" />
+      <carovyKod>8595151944270</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001205003</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="120">
+      <sukl />
+      <pdk>5999881284010</pdk>
+      <kodDodavatele />
+      <IdPolozky>120501</IdPolozky>
+      <IdSkladoveKarty>19603</IdSkladoveKarty>
+      <nazev>Sudocrem 125g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>126215</sarze>
+      <exspirace>2016-06-25T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="125.87" cenaSDPH="152.30" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="125.87" cenaSDPH="152.30" />
+      <carovyKod>5999881284010</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001205010</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="121">
+      <sukl>0002301</sukl>
+      <pdk>4049500927895</pdk>
+      <kodDodavatele />
+      <IdPolozky>120502</IdPolozky>
+      <IdSkladoveKarty>2230</IdSkladoveKarty>
+      <nazev>VATA OBVAZOVÁ SKLÁDANÁ 50g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>260711</sarze>
+      <exspirace>2016-07-26T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="11.65" cenaSDPH="13.40" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="11.65" cenaSDPH="13.40" />
+      <carovyKod>4049500927895</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001205027</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="122">
+      <sukl />
+      <pdk>8595165284003</pdk>
+      <kodDodavatele />
+      <IdPolozky>120503</IdPolozky>
+      <IdSkladoveKarty>20491</IdSkladoveKarty>
+      <nazev>W Denoxinal 60tbl. new</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>D1J0462</sarze>
+      <exspirace>2014-10-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="362.35" cenaSDPH="416.70" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="362.35" cenaSDPH="416.70" />
+      <carovyKod>8595165284003</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001205034</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="123">
+      <sukl />
+      <pdk>8594003974618</pdk>
+      <kodDodavatele />
+      <IdPolozky>120504</IdPolozky>
+      <IdSkladoveKarty>10741</IdSkladoveKarty>
+      <nazev>W Ginkostim (GuaraStim) tbl.b ls.30</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>D1I0729</sarze>
+      <exspirace>2014-09-11T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="140.87" cenaSDPH="162.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="140.87" cenaSDPH="162.00" />
+      <carovyKod>8594003974618</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001205041</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="124">
+      <sukl />
+      <pdk />
+      <kodDodavatele />
+      <IdPolozky>120508</IdPolozky>
+      <IdSkladoveKarty>18852</IdSkladoveKarty>
+      <nazev>Rennie Fruit 32 pastilek</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>L6H357</sarze>
+      <exspirace>2014-07-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="70.78" cenaSDPH="81.40" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="70.78" cenaSDPH="81.40" />
+      <carovyKod>8590322000328</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001205089</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="125">
+      <sukl />
+      <pdk />
+      <kodDodavatele />
+      <IdPolozky>120509</IdPolozky>
+      <IdSkladoveKarty>9012</IdSkladoveKarty>
+      <nazev>W Coenzyme Q10 s karnitinem 30tbl*</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>D1G0001</sarze>
+      <exspirace>2014-07-07T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="194.70" cenaSDPH="223.90" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="194.70" cenaSDPH="223.90" />
+      <carovyKod>8594003975004</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001205096</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="126">
+      <sukl />
+      <pdk>8595054900694</pdk>
+      <kodDodavatele />
+      <IdPolozky>120510</IdPolozky>
+      <IdSkladoveKarty>22663</IdSkladoveKarty>
+      <nazev>Syrovatka susena ASP sacek 500g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>07102012</sarze>
+      <exspirace>2012-10-07T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="35.48" cenaSDPH="40.80" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="35.48" cenaSDPH="40.80" />
+      <carovyKod>8594028190321</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001205102</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="127">
+      <sukl />
+      <pdk>8594003974304</pdk>
+      <kodDodavatele />
+      <IdPolozky>120505</IdPolozky>
+      <IdSkladoveKarty>2929</IdSkladoveKarty>
+      <nazev>W Pupalka dvouletá + vit.E 500mg+70 I.U. 30tbl</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>D1I1799</sarze>
+      <exspirace>2014-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="102.52" cenaSDPH="117.90" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="102.52" cenaSDPH="117.90" />
+      <carovyKod>8594003974304</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001205058</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="128">
+      <sukl />
+      <pdk />
+      <kodDodavatele />
+      <IdPolozky>120506</IdPolozky>
+      <IdSkladoveKarty>7583</IdSkladoveKarty>
+      <nazev>W Selen 100mikrog 100tbl</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>D1K0697</sarze>
+      <exspirace>2014-11-03T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="131.83" cenaSDPH="151.60" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="131.83" cenaSDPH="151.60" />
+      <carovyKod>8595165292992</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001205065</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="129">
+      <sukl />
+      <pdk>8594003073090</pdk>
+      <kodDodavatele />
+      <IdPolozky>120507</IdPolozky>
+      <IdSkladoveKarty>4771</IdSkladoveKarty>
+      <nazev>č šípkový čaj s ibiškem n.s.20x2.5g MEG</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>06012011</sarze>
+      <exspirace>2013-01-06T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="34.00" cenaSDPH="39.10" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="34.00" cenaSDPH="39.10" />
+      <carovyKod>8594003073090</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001205072</carovyKodPolozkySkladoveKarty>
+    </polozka>
+  </polozky>
+</dodaciList>

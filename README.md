@@ -10,7 +10,8 @@ XML schéma, dokumentace, příklady, validátory
 
 Jde o nejaktuálnější verze XML schématu z vybrané branch tohoto repository. Nemusí odpovídat označeným release verzím rozhraní.
 
-* [RozhraniDL-Lekis-XML-v3.xsd](Schema/RozhraniDL-Lekis-XML-v3.xsd) (preferováno)
+* [RozhraniDL-Lekis-XML-v4.xsd](Schema/RozhraniDL-Lekis-XML-v4.xsd) (preferováno)
+* [RozhraniDL-Lekis-XML-v3.xsd](Schema/RozhraniDL-Lekis-XML-v3.xsd)
 * [RozhraniDL-Lekis-XML-v1+v2.xsd](Schema/RozhraniDL-Lekis-XML-v1+v2.xsd)
 
 ## Dokumentace
