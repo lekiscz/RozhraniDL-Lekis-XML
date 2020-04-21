@@ -4,7 +4,7 @@
     <dodavatel>
       <nazev>Testovací lékárna</nazev>
       <nazev2>Lekárna u Hrocha</nazev2>
-      <IC>00000000</IC>
+      <IC>27604977</IC>
       <DIC>CZ27604977</DIC>
       <interniCislo>555</interniCislo>
     </dodavatel>
@@ -21,10 +21,10 @@
     <datumVytvoreni>2020-04-20T10:57:12.927</datumVytvoreni>
     <poznamka />
     <soucetNakupnichCen cenaBezDPH="3545.50" cenaSDPH="3900.00">
-      <nakupniCena sazbaDPH="15.00" cenaBezDPH="3545.50" cenaSDPH="3900.00" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="3545.50" cenaSDPH="3900.00" />
     </soucetNakupnichCen>
     <soucetProdejnichCen cenaBezDPH="4627.30" cenaSDPH="5090.00">
-      <prodejniCena sazbaDPH="15.00" cenaBezDPH="4627.30" cenaSDPH="5090.00" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="4627.30" cenaSDPH="5090.00" />
     </soucetProdejnichCen>
   </hlavicka>
   <polozky>
