@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dodaciList xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2020-04-20T15:24:35.6706367+01:00" verzeLpW="2020.2.1.6" verzeRozhrani="4" opravnyDanovyDoklad="0">
+  <hlavicka>
+    <dodavatel>
+      <nazev>Testovací lékárna</nazev>
+      <nazev2>Lekárna u Hrocha</nazev2>
+      <IC>27604977</IC>
+      <DIC>CZ27604977</DIC>
+      <interniCislo>555</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev>Lékárna Votice</nazev>
+      <IC />
+      <DIC />
+      <nakladoveStredisko />
+    </odberatel>
+    <oznaceni>2001508</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>1</pocetPolozek>
+    <idSkladu>1000</idSkladu>
+    <datumVytvoreni>2020-04-20T10:57:12.927</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="3545.50" cenaSDPH="3900.00">
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="3545.50" cenaSDPH="3900.00" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="4627.30" cenaSDPH="5090.00">
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="4627.30" cenaSDPH="5090.00" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl>9969489</sukl>
+      <pdk />
+      <kodDodavatele />
+      <IdPolozky>130852</IdPolozky>
+      <IdSkladoveKarty>8547</IdSkladoveKarty>
+      <nazev>Karsivan 50 mg 2x30 TBL</nazev>
+      <skupina>11</skupina>
+      <mnozstvi>10.0000</mnozstvi>
+      <sarze>1245889</sarze>
+      <exspirace>2021-09-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="354.55" cenaSDPH="390.00" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="462.73" cenaSDPH="509.00" />
+      <carovyKod>8584005110701</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001203825</carovyKodPolozkySkladoveKarty>
+    </polozka>
+  </polozky>
+</dodaciList>

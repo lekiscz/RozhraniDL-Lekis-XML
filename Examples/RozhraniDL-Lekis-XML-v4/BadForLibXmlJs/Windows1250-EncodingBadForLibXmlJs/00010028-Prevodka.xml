@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<prevodka xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2015-11-27T10:33:11.6118004+01:00" verzeLpW="1.0.5809.18269" verzeRozhrani="4">
+  <hlavicka>
+    <dodavatel>
+      <nazev>Testovací lékárna</nazev>
+      <nazev2>Lekárna u Hrocha</nazev2>
+      <IC>00000000</IC>
+      <DIC>CZ27604977</DIC>
+      <interniCislo>555</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev>IBI International s.r.o.</nazev>
+      <IC />
+      <DIC />
+    </odberatel>
+    <oznaceni>10028</oznaceni>
+    <cisloObjednavky>9237</cisloObjednavky>
+    <pocetPolozek>10</pocetPolozek>
+    <idSkladu />
+    <datumVytvoreni>2015-05-18T13:01:53.817</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="8785.3403" cenaSDPH="9643.7300">
+      <nakupniCena sazbaDPH="9.00" cenaBezDPH="2014.4404" cenaSDPH="2195.7400" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="6770.8999" cenaSDPH="7447.9900" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="10722.0000" cenaSDPH="11794.2000">
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="10722.0000" cenaSDPH="11794.2000" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl>0028924</sukl>
+      <pdk>3837000108217</pdk>
+      <kodDodavatele />
+      <IdPolozky>21181</IdPolozky>
+      <IdSkladoveKarty>20844</IdSkladoveKarty>
+      <nazev>ALTARGO 1% DRM UNG 1X5GM</nazev>
+      <skupina>6</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>C323358</sarze>
+      <exspirace>2009-10-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.0000" />
+      <nakupniCena sazbaDPH="9.00" cenaBezDPH="217.9817" cenaSDPH="237.6000" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="274.1800" cenaSDPH="301.6000" />
+      <carovyKod>3837000108217</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270000211814</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="2">
+      <sukl>0017802</sukl>
+      <pdk>7681900599035</pdk>
+      <kodDodavatele />
+      <IdPolozky>117590</IdPolozky>
+      <IdSkladoveKarty>17271</IdSkladoveKarty>
+      <nazev>BRONCHO-VAXOM PRO ADULTIS cps 30x7mg§§§</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>5.0000</mnozstvi>
+      <sarze>23841</sarze>
+      <exspirace>2014-07-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="369.3200" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="381.1364" cenaSDPH="419.2500" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="509.2700" cenaSDPH="560.2000" />
+      <carovyKod>7681900599035</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001175900</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="3">
+      <sukl>0100285</sukl>
+      <pdk>8590347060062</pdk>
+      <kodDodavatele />
+      <IdPolozky>101198</IdPolozky>
+      <IdSkladoveKarty>19854</IdSkladoveKarty>
+      <nazev>Mucosolvan Junior por.sir.1x120ml §§§</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>5.0000</mnozstvi>
+      <sarze>3A804096</sarze>
+      <exspirace>2011-03-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="45.5800" />
+      <nakupniCena sazbaDPH="9.00" cenaBezDPH="47.0367" cenaSDPH="51.2700" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="64.4500" cenaSDPH="70.9000" />
+      <carovyKod>8590347060062</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001011987</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="4">
+      <sukl>0032082</sukl>
+      <pdk>8594739029880</pdk>
+      <kodDodavatele />
+      <IdPolozky>109974</IdPolozky>
+      <IdSkladoveKarty>10631</IdSkladoveKarty>
+      <nazev>IBALGIN 400 tbl obd 100x400mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>10.0000</mnozstvi>
+      <sarze>3760909</sarze>
+      <exspirace>2012-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="85.0000" />
+      <nakupniCena sazbaDPH="9.00" cenaBezDPH="87.7156" cenaSDPH="95.6100" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="120.2700" cenaSDPH="132.3000" />
+      <carovyKod>8594739029880</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001099749</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="5">
+      <sukl>0062052</sukl>
+      <pdk>8715239090433</pdk>
+      <kodDodavatele />
+      <IdPolozky>118933</IdPolozky>
+      <IdSkladoveKarty>1883</IdSkladoveKarty>
+      <nazev>DUOMOX 1000 TBL 20X1000MG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>15.0000</mnozstvi>
+      <sarze>09I07/51</sarze>
+      <exspirace>2013-03-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="150.5800" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="155.4000" cenaSDPH="170.9400" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="129.7800" cenaSDPH="142.7600" />
+      <carovyKod>8715239090433</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001189334</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="6">
+      <sukl>0100285</sukl>
+      <pdk>8590347060062</pdk>
+      <kodDodavatele />
+      <IdPolozky>119136</IdPolozky>
+      <IdSkladoveKarty>19854</IdSkladoveKarty>
+      <nazev>Mucosolvan Junior por.sir.1x120ml §§§</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>10.0000</mnozstvi>
+      <sarze>3A707122</sarze>
+      <exspirace>2010-07-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="39.5400" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="40.4364" cenaSDPH="44.4800" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="56.4500" cenaSDPH="62.1000" />
+      <carovyKod>8590347060062</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001191368</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="7">
+      <sukl>0006200</sukl>
+      <pdk>4032129000872</pdk>
+      <kodDodavatele />
+      <IdPolozky>78966</IdPolozky>
+      <IdSkladoveKarty>16786</IdSkladoveKarty>
+      <nazev>TRAMAL 50 inj 5x1ml/50mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>4.0000</mnozstvi>
+      <sarze>690M05</sarze>
+      <exspirace>2013-08-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="61.3800" />
+      <nakupniCena sazbaDPH="9.00" cenaBezDPH="63.3394" cenaSDPH="69.0400" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="86.7300" cenaSDPH="95.4000" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270000789665</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="8">
+      <sukl>0092423</sukl>
+      <pdk>1181933</pdk>
+      <kodDodavatele />
+      <IdPolozky>100449</IdPolozky>
+      <IdSkladoveKarty>15557</IdSkladoveKarty>
+      <nazev>ZYRTEC por tbl flm 7x10mg §§§</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>08I29D</sarze>
+      <exspirace>2013-09-29T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="76.1100" />
+      <nakupniCena sazbaDPH="9.00" cenaBezDPH="70.9266" cenaSDPH="77.3100" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="100.3600" cenaSDPH="110.4000" />
+      <carovyKod>8594013100021</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001004491</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="9">
+      <sukl>0021736</sukl>
+      <pdk>8594002959012</pdk>
+      <kodDodavatele />
+      <IdPolozky>116471</IdPolozky>
+      <IdSkladoveKarty>1393</IdSkladoveKarty>
+      <nazev>VALETOL TBL 10</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>43.0000</mnozstvi>
+      <sarze>2100909</sarze>
+      <exspirace>2011-08-31T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="31.5800" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="32.6182" cenaSDPH="35.8800" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="44.6400" cenaSDPH="49.1000" />
+      <carovyKod>8594002959012</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001164713</carovyKodPolozkySkladoveKarty>
+    </polozka>
+    <polozka pozice="10">
+      <sukl>0013702</sukl>
+      <pdk>8594737039515</pdk>
+      <kodDodavatele />
+      <IdPolozky>119382</IdPolozky>
+      <IdSkladoveKarty>15839</IdSkladoveKarty>
+      <nazev>SIMGAL 40 MG por tbl flm 84x40mg</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>20.0000</mnozstvi>
+      <sarze>3A906029</sarze>
+      <exspirace />
+      <certifikat />
+      <vyrobniCena cenaBezDPH="50.0000" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="36.3636" cenaSDPH="40.0000" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="51.1800" cenaSDPH="56.3000" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270001193829</carovyKodPolozkySkladoveKarty>
+    </polozka>
+  </polozky>
+</prevodka>
