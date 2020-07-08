@@ -902,6 +902,13 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="externiSkladovaCena" type="decimalNullableType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Externí skladová cena]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="carovyKod" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>

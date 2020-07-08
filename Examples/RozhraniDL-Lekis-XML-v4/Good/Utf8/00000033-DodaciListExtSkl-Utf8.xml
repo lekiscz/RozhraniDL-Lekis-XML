@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dodaciList xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2020-07-08T15:50:01.0874723+01:00" verzeLpW="2020.2.1.31" verzeRozhrani="4" opravnyDanovyDoklad="0">
+  <hlavicka>
+    <dodavatel>
+      <nazev>Nemocnice Konopiště</nazev>
+      <nazev2 />
+      <IC>456456456</IC>
+      <DIC>CZ1234567890</DIC>
+      <interniCislo>1</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev>Lekis s.r.o.</nazev>
+      <IC>25356089</IC>
+      <DIC>CZ25356089</DIC>
+      <nakladoveStredisko />
+    </odberatel>
+    <oznaceni>33</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>1</pocetPolozek>
+    <idSkladu>1000</idSkladu>
+    <datumVytvoreni>2020-07-08T15:50:00.31</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="136.45" cenaSDPH="150.10">
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="136.45" cenaSDPH="150.10" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="136.45" cenaSDPH="150.10">
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="136.45" cenaSDPH="150.10" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl>0003822</sukl>
+      <pdk>4022536860732</pdk>
+      <kodDodavatele />
+      <IdPolozky>196424</IdPolozky>
+      <IdSkladoveKarty>9121</IdSkladoveKarty>
+      <nazev>CONCOR COR 5 MG TBL OBD 28X5MG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>E201723</sarze>
+      <exspirace>2023-04-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="99.60" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="136.45" cenaSDPH="150.10" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="136.45" cenaSDPH="150.10" />
+      <externiSkladovaCena>130.10</externiSkladovaCena>
+      <carovyKod>4022536860732</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001964245</carovyKodPolozkySkladoveKarty>
+      <sarzeOznacenaFMD>1</sarzeOznacenaFMD>
+      <sklademPred20190209>1</sklademPred20190209>
+    </polozka>
+  </polozky>
+</dodaciList>
