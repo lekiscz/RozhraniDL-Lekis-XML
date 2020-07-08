@@ -902,10 +902,10 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="externiSkladovaCena" type="decimalNullableType" minOccurs="0">
+			<xs:element name="externiSkladovaCena" type="cenaBezDPHNullableType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[Externí skladová cena]]>
+						<![CDATA[Externí skladová cena bez DPH]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>

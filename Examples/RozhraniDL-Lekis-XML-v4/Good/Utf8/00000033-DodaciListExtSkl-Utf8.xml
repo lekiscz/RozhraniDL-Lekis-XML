@@ -43,7 +43,7 @@
       <vyrobniCena cenaBezDPH="99.60" />
       <nakupniCena sazbaDPH="10.00" cenaBezDPH="136.45" cenaSDPH="150.10" />
       <prodejniCena sazbaDPH="10.00" cenaBezDPH="136.45" cenaSDPH="150.10" />
-      <externiSkladovaCena>130.10</externiSkladovaCena>
+      <externiSkladovaCena cenaBezDPH="130.10" />
       <carovyKod>4022536860732</carovyKod>
       <carovyKodPolozkySkladoveKarty>2270001964245</carovyKodPolozkySkladoveKarty>
       <sarzeOznacenaFMD>1</sarzeOznacenaFMD>
