@@ -216,7 +216,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:unsignedInt">
-			<xs:pattern value="[1-8]"/>
+			<xs:pattern value="[1-8]|11"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="typPolozkyPripravyType">
