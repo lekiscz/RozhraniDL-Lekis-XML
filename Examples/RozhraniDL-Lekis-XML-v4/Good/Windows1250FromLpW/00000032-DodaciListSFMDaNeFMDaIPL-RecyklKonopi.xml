@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<dodaciList xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2021-05-08T10:59:42.0874723+01:00" verzeLpW="2021.1.1.10" verzeRozhrani="4" opravnyDanovyDoklad="0">
+  <hlavicka>
+    <dodavatel>
+      <nazev>Nemocnice Konopiště</nazev>
+      <nazev2 />
+      <IC>456456456</IC>
+      <DIC>CZ1234567890</DIC>
+      <interniCislo>1</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev>Lekis s.r.o.</nazev>
+      <IC>25356089</IC>
+      <DIC>CZ25356089</DIC>
+      <nakladoveStredisko />
+    </odberatel>
+    <oznaceni>32</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>4</pocetPolozek>
+    <idSkladu>1000</idSkladu>
+    <datumVytvoreni>2021-05-08T10:53:49.31</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="861.74" cenaSDPH="949.50">
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="829.57" cenaSDPH="912.50" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="32.17" cenaSDPH="37.00" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="861.73" cenaSDPH="949.50">
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="829.56" cenaSDPH="912.50" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="32.17" cenaSDPH="37.00" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl>0003822</sukl>
+      <pdk>4022536860732</pdk>
+      <gtin>04022536860732</gtin>
+      <kodDodavatele />
+      <IdPolozky>196424</IdPolozky>
+      <IdSkladoveKarty>9121</IdSkladoveKarty>
+      <nazev>CONCOR COR 5 MG TBL OBD 28X5MG</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>3.0000</mnozstvi>
+      <sarze>E201723</sarze>
+      <exspirace>2023-04-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="99.60" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="136.45" cenaSDPH="150.10" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="136.45" cenaSDPH="150.10" />
+	  <recyklacniPrispevek cenaBezDPH="0.00" />
+      <carovyKod>4022536860732</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001964245</carovyKodPolozkySkladoveKarty>
+      <sarzeOznacenaFMD>1</sarzeOznacenaFMD>
+      <sklademPred20190209>1</sklademPred20190209>
+    </polozka>
+    <polozka pozice="2">
+      <sukl>0162142</sukl>
+      <pdk>0891201</pdk>
+      <gtin>08594739209978</gtin>
+      <kodDodavatele />
+      <IdPolozky>185873</IdPolozky>
+      <IdSkladoveKarty>29488</IdSkladoveKarty>
+      <nazev>PARALEN 500 POR TBL NOB 24X500M</nazev>
+      <skupina>1</skupina>
+      <mnozstvi>10.0000</mnozstvi>
+      <sarze>3250316</sarze>
+      <exspirace>2019-02-28T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="24.49" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="33.64" cenaSDPH="37.00" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="33.64" cenaSDPH="37.00" />
+	  <recyklacniPrispevek cenaBezDPH="0.00" />
+      <carovyKod>8594739209978</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001858735</carovyKodPolozkySkladoveKarty>
+      <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
+      <sklademPred20190209>1</sklademPred20190209>
+    </polozka>
+    <polozka pozice="3">
+      <sukl />
+      <pdk>8595058902618</pdk>
+      <gtin />
+      <kodDodavatele />
+      <IdPolozky>160946</IdPolozky>
+      <IdSkladoveKarty>33212</IdSkladoveKarty>
+      <nazev>Čaj Sladký sen Dr.Popov n.s.20x1.5g</nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>5149016</sarze>
+      <exspirace>2017-05-29T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="32.17" cenaSDPH="37.00" />
+      <prodejniCena sazbaDPH="15.00" cenaBezDPH="32.17" cenaSDPH="37.00" />
+	  <recyklacniPrispevek cenaBezDPH="0.00" />
+      <carovyKod>8595058902618</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2270001609467</carovyKodPolozkySkladoveKarty>
+      <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
+      <sklademPred20190209>1</sklademPred20190209>
+    </polozka>
+    <polozka pozice="4">
+      <sukl>0001000</sukl>
+      <pdk />
+      <gtin />
+      <kodDodavatele />
+      <IdPolozky>196437</IdPolozky>
+      <IdSkladoveKarty>100</IdSkladoveKarty>
+      <nazev>IPL (Mast Matoušek)</nazev>
+      <skupina>5</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>20190208001</sarze>
+      <exspirace>2019-04-09T15:57:33.4952672+02:00</exspirace>
+      <certifikat />
+      <priprava>
+        <typPripravy>IPL</typPripravy>
+        <rodneCislo />
+        <kodZP>111</kodZP>
+        <ICZLekare>20</ICZLekare>
+        <vlastniOznaceni>93</vlastniOznaceni>
+        <cisloPripravy>20190208001</cisloPripravy>
+        <nazevPripravy>Mast Matoušek</nazevPripravy>
+        <pripravil>René Jahoda</pripravil>
+        <objemSurovin>10</objemSurovin>
+        <mnozstviSurovin>10</mnozstviSurovin>
+        <predatZPJako>1</predatZPJako>
+        <typUhradyZP>3</typUhradyZP>
+        <uhradaZP cenaSDPH="37.86" />
+        <prvniUhradaZP cenaSDPH="37.86" />
+        <druhaUhradaZP cenaSDPH="0.00" />
+        <tretiUhradaZP cenaSDPH="0.00" />
+        <taxaLaborum cenaBezDPH="21.25" />
+        <cenaSurovin cenaBezDPH="62.56" />
+        <prirazka cenaBezDPH="0.00" />
+        <typizovaneKonopi>0</typizovaneKonopi>
+        <celkemKonopi>0.00</celkemKonopi>
+        <hrazeneKonopi>0.00</hrazeneKonopi>
+        <polozkyPripravy>
+          <polozkaPripravy>
+            <nazev>S-AMBIDERMAN (CR. BASE A) G</nazev>
+            <sarze>16d11-t09-032055</sarze>
+            <jednotka>kg</jednotka>
+            <mnozstvi>8</mnozstvi>
+            <uhradaZP cenaSDPH="0.45" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>7</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <sukl>0185968</sukl>
+            <nazev>Acylpyrin 500mg por.tbl.eff.15x500mg</nazev>
+            <sarze>2010216</sarze>
+            <mnozstvi>1</mnozstvi>
+            <uhradaZP cenaSDPH="0.00" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>1</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev>O-LEKOVKA STERILNI   50ML</nazev>
+            <mnozstvi>1</mnozstvi>
+            <uhradaZP cenaSDPH="10.89" />
+            <typPolozkyPripravy>2</typPolozkyPripravy>
+            <skupina>8</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <sukl>191</sukl>
+            <nazev>TP Úprava ředěním před dispenzací          sk.1.12</nazev>
+            <mnozstvi>1</mnozstvi>
+            <uhradaZP cenaSDPH="23.38" />
+            <typPolozkyPripravy>3</typPolozkyPripravy>
+          </polozkaPripravy>
+        </polozkyPripravy>
+      </priprava>
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="83.82" cenaSDPH="92.20" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="83.81" cenaSDPH="92.20" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270001964375</carovyKodPolozkySkladoveKarty>
+      <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
+      <sklademPred20190209>1</sklademPred20190209>
+    </polozka>
+  </polozky>
+</dodaciList>
