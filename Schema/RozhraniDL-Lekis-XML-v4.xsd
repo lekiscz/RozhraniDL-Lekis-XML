@@ -272,7 +272,7 @@
 			<xs:pattern value="[1-4]"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="druhUhradyZP">
+	<xs:simpleType name="druhUhradyZPType">
 		<xs:annotation>
 			<xs:documentation>
 				<![CDATA[
