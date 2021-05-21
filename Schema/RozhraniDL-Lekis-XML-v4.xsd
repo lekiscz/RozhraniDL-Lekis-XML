@@ -828,37 +828,17 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="prvniUhradaZP" type="cenaSDPHType" minOccurs="0">
+			<xs:element name="zapocDoplatek" type="cenaSDPHType" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>
-                        <![CDATA[
-						Výše první úhrady přípravy zdravotní pojišťovny. 
-						Jelikož přenášená Příprava nenese veškeré informace o položkách přípravy, 
-						obsahuje tento element číselníkovou hodnotu první úhrady Přípravy.
-						]]>
+                        <![CDATA[Výše započitatelného doplatku]]>
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
-			<xs:element name="druhaUhradaZP" type="cenaSDPHType" minOccurs="0">
+			<xs:element name="zapocDoplatek65" type="cenaSDPHType" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>
-                        <![CDATA[
-						Výše druhé úhrady přípravy zdravotní pojišťovny. 
-						Jelikož přenášená Příprava nenese veškeré informace o položkách přípravy, 
-						obsahuje tento element číselníkovou hodnotu druhé úhrady Přípravy.
-						]]>
-                    </xs:documentation>
-                </xs:annotation>
-            </xs:element>
-			<xs:element name="tretiUhradaZP" type="cenaSDPHType" minOccurs="0">
-                <xs:annotation>
-                    <xs:documentation>
-                        <![CDATA[
-						Výše třetí úhrady přípravy zdravotní pojišťovny. 
-						Jelikož přenášená Příprava nenese veškeré informace o položkách přípravy, 
-						obsahuje tento element číselníkovou hodnotu třetí úhrady Přípravy.
-						Tato hodnota se může použít při změně úhrady na výdeji 
-						]]>
+                        <![CDATA[Výše započitatelného doplatku pro mladší 65 let]]>
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
