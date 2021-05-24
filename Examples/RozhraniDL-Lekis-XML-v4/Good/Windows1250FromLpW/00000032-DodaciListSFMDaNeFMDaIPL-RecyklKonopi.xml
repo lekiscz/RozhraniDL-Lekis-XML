@@ -124,7 +124,7 @@
         <typUhradyZP>3</typUhradyZP>
         <uhradaZP cenaSDPH="37.86" />
         <zapocDoplatek cenaSDPH="54.34" />
-        <zapocDoplatek65 cenaSDPH="54.34" />
+        <zapocDoplatekPod65 cenaSDPH="54.34" />
         <taxaLaborum cenaBezDPH="21.25" />
         <cenaSurovin cenaBezDPH="62.56" />
         <prirazka cenaBezDPH="0.00" />

@@ -757,6 +757,13 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="kodEReceptu" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Identifikátor eReceptu přidělený centrálním úložištěm SÚKL]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="nazevPripravy" type="xs:string">
 				<xs:annotation>
 					<xs:documentation>
@@ -835,7 +842,7 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
-			<xs:element name="zapocDoplatek65" type="cenaSDPHType" minOccurs="0">
+			<xs:element name="zapocDoplatekPod65" type="cenaSDPHType" minOccurs="0">
                 <xs:annotation>
                     <xs:documentation>
                         <![CDATA[Výše započitatelného doplatku pro mladší 65 let]]>
