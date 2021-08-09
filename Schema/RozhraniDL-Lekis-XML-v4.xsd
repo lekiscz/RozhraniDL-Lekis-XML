@@ -219,6 +219,77 @@
 			<xs:pattern value="[1-8]|11"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="typPripravyType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				**Typ přípravy**
+
+				Podporovány jsou hodnoty s následujícími významy:
+
+				* IPL - jde o běžnou přípravu
+				* IPLKonopi - jde o přípravu konopí
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="IPL|IPLKonopi"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="predatZPJakoType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				**Způsob předání zdravotní pojišťovně**
+
+				Podporovány jsou hodnoty s následujícími významy:
+
+				* 1 - HVLP, Registrované
+				* 2 - IVLP
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:unsignedInt">
+			<xs:pattern value="[1-2]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="typUhradyZPType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				**Typ úhrady zdravotní pojišťovnou**
+
+				Podporovány jsou hodnoty s následujícími významy:
+
+				* 1 - Nehrazeno
+				* 2 - Hrazeno procentuálně
+				* 3 - Hrazeno plně, HVLP dle číselníku
+				* 4 - Hrazeno plně, HVLP také hrazeno plně
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:unsignedInt">
+			<xs:pattern value="[1-4]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="druhUhradyZPType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				**Druh úhrady zdravotní pojišťovnou**
+
+				Podporovány jsou hodnoty s následujícími významy:
+
+				* 1 - První úhrada
+				* 2 - Druhá úhrada
+				* 3 - Třetí úhrada
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:unsignedInt">
+			<xs:pattern value="[1-3]"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="typPolozkyPripravyType">
 		<xs:annotation>
 			<xs:documentation>
@@ -284,6 +355,26 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="0"/>
 			<xs:enumeration value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="kodEReceptuType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[Kód eReceptu]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9A-Za-z]{12}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="guidType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[GUID identifikátor]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12}"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="subjektType">
@@ -637,6 +728,20 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
+			<xs:element name="typPripravy" type="typPripravyType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Typ přípravy**
+
+						Viz popis použitého datového typu.
+						V případě neuvedení elementu se uvažuje výchozí hodnota `IPL`.
+
+						Pro hodnotu `IPLKonopi` je třeba uvést také elementy `typizovaneKonopi`, `celkemKonopi` a `hrazeneKonopi`.
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="rodneCislo" type="rodneCisloType">
 				<xs:annotation>
 					<xs:documentation>
@@ -672,6 +777,20 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="kodEReceptu" type="kodEReceptuType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Identifikátor eReceptu přidělený centrálním úložištěm SÚKL]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="kodPolozkyEReceptu" type="guidType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Identifikátor položky eReceptu přidělený centrálním úložištěm SÚKL]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="nazevPripravy" type="xs:string">
 				<xs:annotation>
 					<xs:documentation>
@@ -700,13 +819,63 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="uhradaZP" type="cenaSDPHType">
+			<xs:element name="predatZPJako" type="predatZPJakoType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
-						<![CDATA[Úhrada zdravotní pojišťovny]]>
+						<![CDATA[
+						**Způsob předání zdravotní pojišťovně**
+
+						Viz popis použitého datového typu.
+						V případě neuvedení elementu se uvažuje výchozí hodnota `2 - IVLP`.
+						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="typUhradyZP" type="typUhradyZPType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Typ úhrady zdravotní pojišťovnou**
+
+						Viz popis použitého datového typu.
+						V případě neuvedení elementu se uvažuje výchozí hodnota `3 - Hrazeno plně, HVLP dle číselníku`.
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="druhUhradyZP" type="druhUhradyZPType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Druh úhrady zdravotní pojišťovnou**
+
+						Viz popis použitého datového typu.
+						V případě neuvedení elementu se uvažuje výchozí hodnota `1 - První úhrada`.
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="uhradaZP" type="cenaSDPHType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Výše úhrady zdravotní pojišťovny určená a upravená v okamžiku vytvoření Přípravy]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="zapocDoplatek" type="cenaSDPHType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>
+                        <![CDATA[Výše započitatelného doplatku]]>
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+			<xs:element name="zapocDoplatekPod65" type="cenaSDPHType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>
+                        <![CDATA[Výše započitatelného doplatku pro mladší 65 let]]>
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
 			<xs:element name="taxaLaborum" type="cenaBezDPHType">
 				<xs:annotation>
 					<xs:documentation>
@@ -728,12 +897,39 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-				<xs:element name="polozkyPripravy" minOccurs="0" maxOccurs="1">
+			<xs:element name="typizovaneKonopi" type="bitType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Typizované konopí**
+
+						Hodnoty
+						* 0 - nejedná se o typizované konopí
+						* 1 - jedná se o typizované konopí
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element name="celkemKonopi" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>
+                        <![CDATA[Celkové množství použitého konopí do přípravy]]>
+                    </xs:documentation>
+                </xs:annotation>
+			</xs:element>
+			<xs:element name="hrazeneKonopi" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>
+                        <![CDATA[Množství hrazeného konopí v přípravě]]>
+                    </xs:documentation>
+                </xs:annotation>
+			</xs:element>
+			<xs:element name="polozkyPripravy" minOccurs="0" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
 						**Položky přípravy**
-						
+
 						Obsahuje informace o položkách přípravy.
 						Tyto údaje jsou důležité při práci s touto položkou dodacího listu / převodky v rámci eRp (například její výdej na eRp).
 						]]>
@@ -902,6 +1098,13 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="recyklacniPrispevek" type="cenaBezDPHType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>
+                        <![CDATA[Výše recyklačního příspěvku bez DPH]]>
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
 			<xs:element name="externiSkladovaCena" type="cenaBezDPHNullableType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
@@ -934,7 +1137,7 @@
 						<![CDATA[
 						**Zda je šarže označena FMD 2D kódem**
 
-						Hodnoty 
+						Hodnoty
 						* 0 - není označena FMD 2D kódem
 						* 1 - je označena FMD 2D kódem
 						* prázdno - není známo, zda je šarže označena FMD 2D kódem
@@ -948,7 +1151,7 @@
 						<![CDATA[
 						**Zda byla šarže skladem u dodavatele před 9.2.2019**
 
-						Hodnoty 
+						Hodnoty
 						* 0 - šarže nebyla skladem u dodavatele před 9.2.2019 nebo to není známo
 						* 1 - šarže byla skladem u dodavatele před 9.2.2019
 						* prázdno - shodný význam jako 0

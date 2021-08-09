@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<prevodka xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2021-07-02T10:44:59.0766136+02:00" verzeLpW="2021.1.2.1" verzeRozhrani="4">
+  <hlavicka>
+    <dodavatel>
+      <nazev><![CDATA[Testovací lékárna]]></nazev>
+      <nazev2><![CDATA[Lekárna u Hrocha]]></nazev2>
+      <IC>00000022</IC>
+      <DIC>CZ27604977</DIC>
+      <interniCislo>555</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev>test</nazev>
+      <IC />
+      <DIC />
+    </odberatel>
+    <oznaceni>10040</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>1</pocetPolozek>
+    <idSkladu />
+    <datumVytvoreni>2021-07-02T10:43:16.1086541+02:00</datumVytvoreni>
+    <poznamka><![CDATA[testujeme přenos IPL]]></poznamka>
+    <soucetNakupnichCen cenaBezDPH="148.5200" cenaSDPH="179.7092">
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="148.5200" cenaSDPH="179.7092" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="148.3636" cenaSDPH="163.2000">
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="148.3636" cenaSDPH="163.2000" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl>0001001</sukl>
+      <pdk />
+      <gtin />
+      <kodDodavatele />
+      <IdPolozky>274153</IdPolozky>
+      <IdSkladoveKarty>100</IdSkladoveKarty>
+      <nazev><![CDATA[IPL (Mast na hemeroidy)]]></nazev>
+      <skupina>5</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>20210702002</sarze>
+      <exspirace>2021-08-31T10:39:32.917</exspirace>
+      <certifikat />
+      <priprava>
+        <typPripravy>IPL</typPripravy>
+        <rodneCislo>8702140712</rodneCislo>
+        <kodZP>111</kodZP>
+        <ICZLekare>20101959</ICZLekare>
+        <vlastniOznaceni>1166</vlastniOznaceni>
+        <cisloPripravy>20210702002</cisloPripravy>
+        <kodEReceptu>PIEAPH6PAVH2</kodEReceptu>
+        <kodPolozkyEReceptu><![CDATA[eeda6a4a-a71a-4a01-85dd-c0e30ebd58bb]]></kodPolozkyEReceptu>
+        <nazevPripravy><![CDATA[Mast na hemeroidy]]></nazevPripravy>
+        <pripravil><![CDATA[Administrátor LpW]]></pripravil>
+        <objemSurovin>1.3333</objemSurovin>
+        <mnozstviSurovin>1.3333</mnozstviSurovin>
+        <predatZPJako>2</predatZPJako>
+        <typUhradyZP>3</typUhradyZP>
+        <druhUhradyZP>1</druhUhradyZP>
+        <uhradaZP cenaSDPH="81.6000" />
+        <zapocDoplatek cenaSDPH="0.0000" />
+        <taxaLaborum cenaBezDPH="0.0000" />
+        <cenaSurovin cenaBezDPH="74.1800" />
+        <prirazka cenaBezDPH="0.0000" />
+        <polozkyPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[!FMD TESTING 5022]]></nazev>
+            <mnozstvi>1.3333</mnozstvi>
+            <uhradaZP cenaSDPH="110.0000" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>4</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[Forma na 10 čípků 2g 31011/bal.25ks Manta]]></nazev>
+            <mnozstvi>0.6667</mnozstvi>
+            <uhradaZP cenaSDPH="25.0690" />
+            <typPolozkyPripravy>2</typPolozkyPripravy>
+            <skupina>8</skupina>
+          </polozkaPripravy>
+        </polozkyPripravy>
+      </priprava>
+      <vyrobniCena cenaBezDPH="0.0000" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="74.2600" cenaSDPH="89.8546" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="74.1800" cenaSDPH="81.6000" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270002741531</carovyKodPolozkySkladoveKarty>
+      <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
+      <sklademPred20190209>0</sklademPred20190209>
+    </polozka>
+  </polozky>
+</prevodka>
