@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<dodaciList xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2021-05-21T15:32:45.3009333+02:00" verzeLpW="2021.1.2.1" verzeRozhrani="4" opravnyDanovyDoklad="0">
+  <hlavicka>
+    <dodavatel>
+      <nazev><![CDATA[Testovací lékárna u anděla spasitele]]></nazev>
+      <nazev2><![CDATA[Lekárna u Hrocha]]></nazev2>
+      <IC>12345678</IC>
+      <DIC>CZ1212121218</DIC>
+      <interniCislo>555</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev><![CDATA[Nemocnice Aš]]></nazev>
+      <IC />
+      <DIC />
+      <nakladoveStredisko />
+    </odberatel>
+    <oznaceni>2002012</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>2</pocetPolozek>
+    <idSkladu />
+    <datumVytvoreni>2021-05-11T08:46:03.487</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="25910.48" cenaSDPH="28501.52">
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="25910.48" cenaSDPH="28501.52" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="25910.47" cenaSDPH="28501.52">
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="25910.47" cenaSDPH="28501.52" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl>9284580</sukl>
+      <pdk />
+      <gtin />
+      <kodDodavatele />
+      <IdPolozky>129499</IdPolozky>
+      <IdSkladoveKarty>100</IdSkladoveKarty>
+      <nazev><![CDATA[IPL (Bhang)]]></nazev>
+      <skupina>5</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>20210511001</sarze>
+      <exspirace>2021-07-10T08:38:53.927</exspirace>
+      <certifikat />
+      <priprava>
+        <typPripravy>IPLKonopi</typPripravy>
+        <rodneCislo />
+        <kodZP>111</kodZP>
+        <ICZLekare>21</ICZLekare>
+        <vlastniOznaceni>1121</vlastniOznaceni>
+        <cisloPripravy>20210511001</cisloPripravy>
+        <nazevPripravy>Bhang</nazevPripravy>
+        <pripravil><![CDATA[Administrátor Lekisu pro Windows]]></pripravil>
+        <objemSurovin>500.0000</objemSurovin>
+        <mnozstviSurovin>500.0000</mnozstviSurovin>
+        <predatZPJako>2</predatZPJako>
+        <typUhradyZP>3</typUhradyZP>
+        <druhUhradyZP>1</druhUhradyZP>
+        <uhradaZP cenaSDPH="15388.83" />
+        <zapocDoplatek cenaSDPH="0.00" />
+        <taxaLaborum cenaBezDPH="92.14" />
+        <cenaSurovin cenaBezDPH="5071.60" />
+        <prirazka cenaBezDPH="0.00" />
+        <typizovaneKonopi>1</typizovaneKonopi>
+        <celkemKonopi>50</celkemKonopi>
+        <hrazeneKonopi>30.0000</hrazeneKonopi>
+        <polozkyPripravy>
+          <polozkaPripravy>
+            <sukl>9284000</sukl>
+            <nazev><![CDATA[Cannabis Indica L (THC <= 4 %, CBD >= 7,5 %)]]></nazev>
+            <mnozstvi>50.0000</mnozstvi>
+            <uhradaZP cenaSDPH="76.52" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>7</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[Mléko]]></nazev>
+            <jednotka>ml</jednotka>
+            <mnozstvi>450.0000</mnozstvi>
+            <uhradaZP cenaSDPH="3.83" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>7</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[Kelímek bílý PP 500g se šroub.uz.]]></nazev>
+            <mnozstvi>1.0000</mnozstvi>
+            <uhradaZP cenaSDPH="30.93" />
+            <typPolozkyPripravy>2</typPolozkyPripravy>
+            <skupina>8</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <sukl>108</sukl>
+            <nazev><![CDATA[TP Příprava smísením  KOMP.4<      ZÁSOBNÍ sk.1.1.]]></nazev>
+            <mnozstvi>1.0000</mnozstvi>
+            <uhradaZP cenaSDPH="101.35" />
+            <typPolozkyPripravy>3</typPolozkyPripravy>
+          </polozkaPripravy>
+        </polozkyPripravy>
+      </priprava>
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="25907.13" cenaSDPH="28497.84" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="25907.12" cenaSDPH="28497.84" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270001294991</carovyKodPolozkySkladoveKarty>
+      <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
+      <sklademPred20190209>0</sklademPred20190209>
+    </polozka>
+    <polozka pozice="2">
+      <sukl>0001000</sukl>
+      <pdk />
+      <gtin />
+      <kodDodavatele />
+      <IdPolozky>128229</IdPolozky>
+      <IdSkladoveKarty>100</IdSkladoveKarty>
+      <nazev><![CDATA[IPL (Anti Covid-19 Tinctura)]]></nazev>
+      <skupina>5</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>20200507001</sarze>
+      <exspirace>2020-07-06T08:34:04.107</exspirace>
+      <certifikat />
+      <priprava>
+        <typPripravy>IPL</typPripravy>
+        <rodneCislo />
+        <kodZP>111</kodZP>
+        <ICZLekare>21</ICZLekare>
+        <vlastniOznaceni>1115</vlastniOznaceni>
+        <cisloPripravy>20200507001</cisloPripravy>
+        <nazevPripravy><![CDATA[Anti Covid-19 Tinctura]]></nazevPripravy>
+        <pripravil><![CDATA[Administrátor Lekisu pro Windows]]></pripravil>
+        <objemSurovin>10.0000</objemSurovin>
+        <mnozstviSurovin>10.0000</mnozstviSurovin>
+        <predatZPJako>2</predatZPJako>
+        <typUhradyZP>3</typUhradyZP>
+        <druhUhradyZP>1</druhUhradyZP>
+        <uhradaZP cenaSDPH="3.68" />
+        <zapocDoplatek cenaSDPH="0.00" />
+        <taxaLaborum cenaBezDPH="0.00" />
+        <cenaSurovin cenaBezDPH="3.34" />
+        <prirazka cenaBezDPH="0.00" />
+        <polozkyPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[Benzinum* hustota=0.675   0340951]]></nazev>
+            <sarze>29042008</sarze>
+            <mnozstvi>2.0000</mnozstvi>
+            <uhradaZP cenaSDPH="0.10" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>7</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[Zinci oxidum 1000g Fagron]]></nazev>
+            <sarze>D57189</sarze>
+            <mnozstvi>2.0000</mnozstvi>
+            <uhradaZP cenaSDPH="0.36" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>7</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[Ricini oleum virginale 900g Fagron]]></nazev>
+            <sarze>L812280</sarze>
+            <mnozstvi>2.0000</mnozstvi>
+            <uhradaZP cenaSDPH="0.26" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>7</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[Iodum *]]></nazev>
+            <sarze>8106</sarze>
+            <mnozstvi>2.0000</mnozstvi>
+            <uhradaZP cenaSDPH="10.78" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>7</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[UNGUENTUM LAVARIZINI *]]></nazev>
+            <sarze>02130809</sarze>
+            <mnozstvi>2.0000</mnozstvi>
+            <uhradaZP cenaSDPH="0.31" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>7</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[Kelímek bílý PP 150g se šroub.uz.21012 12ks Manta]]></nazev>
+            <sarze>neuvedeno</sarze>
+            <mnozstvi>1.0000</mnozstvi>
+            <uhradaZP cenaSDPH="13.18" />
+            <typPolozkyPripravy>2</typPolozkyPripravy>
+            <skupina>8</skupina>
+          </polozkaPripravy>
+        </polozkyPripravy>
+      </priprava>
+      <vyrobniCena cenaBezDPH="0.00" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="3.35" cenaSDPH="3.68" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="3.35" cenaSDPH="3.68" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270001282295</carovyKodPolozkySkladoveKarty>
+      <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
+      <sklademPred20190209>0</sklademPred20190209>
+    </polozka>
+  </polozky>
+</dodaciList>

@@ -357,6 +357,26 @@
 			<xs:enumeration value="1"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="kodEReceptuType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[Kód eReceptu ve formátu se 3 částmi, každá 4 písmena/číslice, oddělené mezerou]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-9A-Za-z]{4} ){2}[0-9A-Za-z]{4}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="guidType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[GUID identifikátor]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12}"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="subjektType">
 		<xs:annotation>
 			<xs:documentation>
@@ -757,10 +777,17 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="kodEReceptu" type="xs:string" minOccurs="0">
+			<xs:element name="kodEReceptu" type="kodEReceptuType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Identifikátor eReceptu přidělený centrálním úložištěm SÚKL]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="kodPolozkyEReceptu" type="guidType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Identifikátor položky eReceptu přidělený centrálním úložištěm SÚKL]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
