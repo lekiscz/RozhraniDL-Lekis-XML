@@ -360,11 +360,11 @@
 	<xs:simpleType name="kodEReceptuType">
 		<xs:annotation>
 			<xs:documentation>
-				<![CDATA[Kód eReceptu ve formátu se 3 částmi, každá 4 písmena/číslice, oddělené mezerou]]>
+				<![CDATA[Kód eReceptu]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="([0-9A-Za-z]{4} ){2}[0-9A-Za-z]{4}"/>
+			<xs:pattern value="[0-9A-Za-z]{12}"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="guidType">

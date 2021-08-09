@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<prevodka xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2021-06-29T15:07:42.1515523+02:00" verzeLpW="2021.1.2.1" verzeRozhrani="4">
+  <hlavicka>
+    <dodavatel>
+      <nazev><![CDATA[Testovací lékárna]]></nazev>
+      <nazev2><![CDATA[Lekárna u Hrocha]]></nazev2>
+      <IC>00000022</IC>
+      <DIC>CZ27604977</DIC>
+      <interniCislo>555</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev><![CDATA[Alliance Healthcare]]></nazev>
+      <IC>14707420</IC>
+      <DIC>CZ14707420</DIC>
+    </odberatel>
+    <oznaceni>10038</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>1</pocetPolozek>
+    <idSkladu />
+    <datumVytvoreni>2021-06-21T11:15:11.797</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="173.7400" cenaSDPH="199.8010">
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="173.7400" cenaSDPH="199.8010" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="235.0909" cenaSDPH="258.6000">
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="235.0909" cenaSDPH="258.6000" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl>0201970</sukl>
+      <pdk />
+      <gtin />
+      <kodDodavatele />
+      <IdPolozky>274136</IdPolozky>
+      <IdSkladoveKarty>100</IdSkladoveKarty>
+      <nazev><![CDATA[IPL (Pamycon gtt)]]></nazev>
+      <skupina>1</skupina>
+      <mnozstvi>2.0000</mnozstvi>
+      <sarze>20210629001</sarze>
+      <exspirace>2021-08-28T11:30:01.497</exspirace>
+      <certifikat />
+      <priprava>
+        <typPripravy>IPL</typPripravy>
+        <rodneCislo>8702140712</rodneCislo>
+        <kodZP>111</kodZP>
+        <ICZLekare>20101959</ICZLekare>
+        <vlastniOznaceni>1161</vlastniOznaceni>
+        <cisloPripravy>20210629001</cisloPripravy>
+        <kodEReceptu>PIEAPH6PAVH2</kodEReceptu>
+        <kodPolozkyEReceptu><![CDATA[eeda6a4a-a71a-4a01-85dd-c0e30ebd58bb]]></kodPolozkyEReceptu>
+        <nazevPripravy><![CDATA[Pamycon gtt]]></nazevPripravy>
+        <pripravil><![CDATA[Administrátor LpW]]></pripravil>
+        <objemSurovin>2.0000</objemSurovin>
+        <mnozstviSurovin>2.0000</mnozstviSurovin>
+        <predatZPJako>1</predatZPJako>
+        <typUhradyZP>3</typUhradyZP>
+        <druhUhradyZP>1</druhUhradyZP>
+        <uhradaZP cenaSDPH="89.9100" />
+        <zapocDoplatek cenaSDPH="10.0000" />
+        <zapocDoplatekPod65 cenaSDPH="10.0000" />
+        <taxaLaborum cenaBezDPH="11.0000" />
+        <cenaSurovin cenaBezDPH="106.5400" />
+        <prirazka cenaBezDPH="0.0000" />
+        <polozkyPripravy>
+          <polozkaPripravy>
+            <sukl>18900</sukl>
+            <nazev><![CDATA[a další zásobní]]></nazev>
+            <mnozstvi>2.0000</mnozstvi>
+            <uhradaZP cenaSDPH="12.1000" />
+            <typPolozkyPripravy>3</typPolozkyPripravy>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <sukl>0201970</sukl>
+            <nazev><![CDATA[PAMYCON NA PŘÍPRAVU KAPEK#DRM PLV SOL 1]]></nazev>
+            <sarze>0906026</sarze>
+            <mnozstvi>2.0000</mnozstvi>
+            <uhradaZP cenaSDPH="89.9100" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>1</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <sukl>0091876</sukl>
+            <nazev><![CDATA[AQUA PRO INIECTIONE ARDEAPHARMA#INF SOL 1X500ML]]></nazev>
+            <sarze>0206230810</sarze>
+            <mnozstvi>2.0000</mnozstvi>
+            <uhradaZP cenaSDPH="27.3000" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>4</skupina>
+          </polozkaPripravy>
+        </polozkyPripravy>
+      </priprava>
+      <vyrobniCena cenaBezDPH="0.0000" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="86.8700" cenaSDPH="99.9005" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="117.5500" cenaSDPH="129.3000" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270002741364</carovyKodPolozkySkladoveKarty>
+      <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
+      <sklademPred20190209>0</sklademPred20190209>
+    </polozka>
+  </polozky>
+</prevodka>
