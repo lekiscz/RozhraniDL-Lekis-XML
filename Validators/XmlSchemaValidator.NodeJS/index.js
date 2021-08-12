@@ -1,7 +1,7 @@
 var async = require('async');
 var fs = require('fs');
 var glob = require("glob");
-var libxml = require("libxmljs");
+var libxml = require("libxmljs2");
 var path = require("path");
 
 // inicializace pole dostupnych schemat, temi budeme pak validovat vsechny nalezene prikladove dokumenty
