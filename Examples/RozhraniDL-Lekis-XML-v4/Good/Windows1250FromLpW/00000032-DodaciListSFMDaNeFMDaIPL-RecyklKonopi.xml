@@ -46,7 +46,7 @@
       <vyrobniCena cenaBezDPH="99.60" />
       <nakupniCena sazbaDPH="10.00" cenaBezDPH="136.45" cenaSDPH="150.10" />
       <prodejniCena sazbaDPH="10.00" cenaBezDPH="136.45" cenaSDPH="150.10" />
-	  <recyklacniPrispevek cenaBezDPH="0.00" />
+      <recyklacniPrispevek cenaBezDPH="0.00" />
       <carovyKod>4022536860732</carovyKod>
       <carovyKodPolozkySkladoveKarty>2270001964245</carovyKodPolozkySkladoveKarty>
       <sarzeOznacenaFMD>1</sarzeOznacenaFMD>
@@ -68,7 +68,7 @@
       <vyrobniCena cenaBezDPH="24.49" />
       <nakupniCena sazbaDPH="10.00" cenaBezDPH="33.64" cenaSDPH="37.00" />
       <prodejniCena sazbaDPH="10.00" cenaBezDPH="33.64" cenaSDPH="37.00" />
-	  <recyklacniPrispevek cenaBezDPH="0.00" />
+      <recyklacniPrispevek cenaBezDPH="0.00" />
       <carovyKod>8594739209978</carovyKod>
       <carovyKodPolozkySkladoveKarty>2270001858735</carovyKodPolozkySkladoveKarty>
       <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
@@ -90,7 +90,7 @@
       <vyrobniCena cenaBezDPH="0.00" />
       <nakupniCena sazbaDPH="15.00" cenaBezDPH="32.17" cenaSDPH="37.00" />
       <prodejniCena sazbaDPH="15.00" cenaBezDPH="32.17" cenaSDPH="37.00" />
-	  <recyklacniPrispevek cenaBezDPH="0.00" />
+      <recyklacniPrispevek cenaBezDPH="0.00" />
       <carovyKod>8595058902618</carovyKod>
       <carovyKodPolozkySkladoveKarty>2270001609467</carovyKodPolozkySkladoveKarty>
       <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
