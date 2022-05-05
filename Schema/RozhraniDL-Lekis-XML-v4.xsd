@@ -245,7 +245,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:unsignedInt">
-			<xs:pattern value="[1-14]"/>
+			<xs:pattern value="[1-9]|10|11|12|13|14"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="typPripravyType">

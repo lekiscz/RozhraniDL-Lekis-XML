@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<prevodka xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2021-05-21T17:33:22.2762034+02:00" verzeLpW="2021.1.2.1" verzeRozhrani="4">
+  <hlavicka>
+    <dodavatel>
+      <nazev><![CDATA[Testovací lékárna]]></nazev>
+      <nazev2><![CDATA[Lekárna u Hrocha]]></nazev2>
+      <IC>00000022</IC>
+      <DIC>CZ27604977</DIC>
+      <interniCislo>555</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev><![CDATA[Lékárna Centrum]]></nazev>
+      <IC />
+      <DIC />
+    </odberatel>
+    <oznaceni>10037</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>1</pocetPolozek>
+    <idSkladu />
+    <datumVytvoreni>2021-05-21T17:29:03.777</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="248.3800" cenaSDPH="273.2180">
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="248.3800" cenaSDPH="273.2180" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="547.6364" cenaSDPH="602.4000">
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="547.6364" cenaSDPH="602.4000" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl>9173105</sukl>
+      <pdk />
+      <gtin />
+      <kodDodavatele />
+      <IdPolozky>272101</IdPolozky>
+      <IdSkladoveKarty>100</IdSkladoveKarty>
+      <nazev><![CDATA[IPL (Zkouška přenosu konopí v LekXMLv4.2)]]></nazev>
+      <skupina>5</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>20210511001</sarze>
+      <exspirace>2021-07-10T12:36:04</exspirace>
+      <certifikat />
+      <priprava>
+        <typPripravy>IPLKonopi</typPripravy>
+        <rodneCislo />
+        <kodZP>111</kodZP>
+        <ICZLekare>20</ICZLekare>
+        <vlastniOznaceni>1159</vlastniOznaceni>
+        <cisloPripravy>20210511001</cisloPripravy>
+        <nazevPripravy><![CDATA[Zkouška přenosu konopí v LekXMLv4.2]]></nazevPripravy>
+        <pripravil><![CDATA[Administrátor LpW]]></pripravil>
+        <objemSurovin>35.5000</objemSurovin>
+        <mnozstviSurovin>35.5000</mnozstviSurovin>
+        <predatZPJako>2</predatZPJako>
+        <typUhradyZP>3</typUhradyZP>
+        <druhUhradyZP>1</druhUhradyZP>
+        <uhradaZP cenaSDPH="542.1600" />
+        <zapocDoplatek cenaSDPH="30.0000" />
+        <zapocDoplatekPod65 cenaSDPH="50.0000" />
+        <taxaLaborum cenaBezDPH="299.2600" />
+        <cenaSurovin cenaBezDPH="248.3700" />
+        <prirazka cenaBezDPH="0.0000" />
+        <typizovaneKonopi>1</typizovaneKonopi>
+        <celkemKonopi>1.5</celkemKonopi>
+        <hrazeneKonopi>1.5000</hrazeneKonopi>
+		<formaLeku>11</formaLeku>
+        <polozkyPripravy>
+          <polozkaPripravy>
+            <sukl>9173000</sukl>
+            <nazev><![CDATA[Cannabis Sativa L]]></nazev>
+            <mnozstvi>1.5000</mnozstvi>
+            <uhradaZP cenaSDPH="165.3100" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>7</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[Tritici amylum 1g Dr.Kulich]]></nazev>
+            <mnozstvi>2.0000</mnozstvi>
+            <uhradaZP cenaSDPH="0.4200" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>4</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[KAPSLE 1 NAT 1KS]]></nazev>
+            <mnozstvi>30.0000</mnozstvi>
+            <uhradaZP cenaSDPH="0.2750" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>8</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[Lactosum 1g Fagron]]></nazev>
+            <mnozstvi>2.0000</mnozstvi>
+            <uhradaZP cenaSDPH="0.4100" />
+            <typPolozkyPripravy>1</typPolozkyPripravy>
+            <skupina>4</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[Kelímek bílý PP 30g se šroub.uz.21002 20ks Manta]]></nazev>
+            <mnozstvi>1.0000</mnozstvi>
+            <uhradaZP cenaSDPH="15.1800" />
+            <typPolozkyPripravy>2</typPolozkyPripravy>
+            <skupina>8</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <nazev><![CDATA[SIGNATURA IPL]]></nazev>
+            <mnozstvi>2.0000</mnozstvi>
+            <uhradaZP cenaSDPH="0.0900" />
+            <typPolozkyPripravy>2</typPolozkyPripravy>
+            <skupina>4</skupina>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <sukl>185</sukl>
+            <nazev><![CDATA[PP Pomůcky pro pevné LP                   sk.2.2.3]]></nazev>
+            <mnozstvi>1.0000</mnozstvi>
+            <uhradaZP cenaSDPH="17.5890" />
+            <typPolozkyPripravy>3</typPolozkyPripravy>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <sukl>157</sukl>
+            <nazev><![CDATA[TP Dělené prášky v ž.t., KOMP.1-2          sk.1.8.]]></nazev>
+            <mnozstvi>1.0000</mnozstvi>
+            <uhradaZP cenaSDPH="225.8300" />
+            <typPolozkyPripravy>3</typPolozkyPripravy>
+          </polozkaPripravy>
+          <polozkaPripravy>
+            <sukl>186</sukl>
+            <nazev><![CDATA[SP Sterilizace horkovzduš.sterilizátorem  sk.2.3.1]]></nazev>
+            <mnozstvi>0.5000</mnozstvi>
+            <uhradaZP cenaSDPH="171.5230" />
+            <typPolozkyPripravy>3</typPolozkyPripravy>
+          </polozkaPripravy>
+        </polozkyPripravy>
+      </priprava>
+      <vyrobniCena cenaBezDPH="0.0000" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="248.3800" cenaSDPH="273.2180" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="547.6400" cenaSDPH="602.4000" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270002721014</carovyKodPolozkySkladoveKarty>
+      <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
+      <sklademPred20190209>0</sklademPred20190209>
+    </polozka>
+  </polozky>
+</prevodka>
