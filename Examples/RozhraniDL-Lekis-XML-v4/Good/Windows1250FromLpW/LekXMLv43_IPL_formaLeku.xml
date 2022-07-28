@@ -47,7 +47,7 @@
         <ICZLekare>20</ICZLekare>
         <vlastniOznaceni>1159</vlastniOznaceni>
         <cisloPripravy>20210511001</cisloPripravy>
-        <nazevPripravy><![CDATA[Zkouška pøenosu konopí v LekXMLv4.2]]></nazevPripravy>
+        <nazevPripravy><![CDATA[Zkouška pøenosu konopí v LekXMLv4.3]]></nazevPripravy>
         <pripravil><![CDATA[Administrátor LpW]]></pripravil>
         <objemSurovin>35.5000</objemSurovin>
         <mnozstviSurovin>35.5000</mnozstviSurovin>
@@ -63,7 +63,7 @@
         <typizovaneKonopi>1</typizovaneKonopi>
         <celkemKonopi>1.5</celkemKonopi>
         <hrazeneKonopi>1.5000</hrazeneKonopi>
-		<formaLeku>11</formaLeku>
+        <formaLeku>11</formaLeku>
         <polozkyPripravy>
           <polozkaPripravy>
             <sukl>9173000</sukl>
