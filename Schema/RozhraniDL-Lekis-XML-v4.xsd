@@ -219,6 +219,35 @@
 			<xs:pattern value="[1-8]|11"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="formaLekuType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				**Forma připravovaného léku**
+
+				Podporovány jsou hodnoty s následujícími významy:
+
+				* 1 - Roztoky
+				* 2 - Masti
+				* 3 - Krémy
+				* 4 - Gely
+				* 5 - Pasty
+				* 6 - Tobolky
+				* 7 - Oční kapky a oční vody
+				* 8 - Emulze a suspenze
+				* 9 - Sirupy
+				* 10 - Čípky a globule
+				* 11 - Prachy
+				* 12 - Injekční přípravky
+				* 13 - Infuzní roztoky a vaky
+				* 14 - Ostatní
+				]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:unsignedInt">
+			<xs:pattern value="[1-9]|10|11|12|13|14"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="typPripravyType">
 		<xs:annotation>
 			<xs:documentation>
@@ -923,6 +952,19 @@
                         <![CDATA[Množství hrazeného konopí v přípravě]]>
                     </xs:documentation>
                 </xs:annotation>
+			</xs:element>
+			<xs:element name="formaLeku" type="formaLekuType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Forma připravovaného léku**
+
+						Viz popis použitého datového typu.
+						Tento údaj je důležitý pro Hlášení výdeje IPLP, obsahuje formu léku (Lek13).
+						Základní hodnota je 14 - Ostatní
+						]]>
+					</xs:documentation>
+				</xs:annotation>
 			</xs:element>
 			<xs:element name="polozkyPripravy" minOccurs="0" maxOccurs="1">
 				<xs:annotation>
