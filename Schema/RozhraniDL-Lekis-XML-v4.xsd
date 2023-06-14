@@ -1257,6 +1257,13 @@
 								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
+						<xs:element name="cisloVerejneZakazky" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>
+									<![CDATA[Číslo veřejné zakázky, v rámci které bylo dodáno zboží na tomto dodacím listu]]>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
 						<xs:element name="pocetPolozek" type="xs:unsignedInt">
 							<xs:annotation>
 								<xs:documentation>
