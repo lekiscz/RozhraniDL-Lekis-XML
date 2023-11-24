@@ -1147,6 +1147,13 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
+			<xs:element name="distribucniPoplatek" type="cenaBezDPHType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>
+                        <![CDATA[Výše distribučního poplatku bez DPH]]>
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
 			<xs:element name="externiSkladovaCena" type="cenaBezDPHNullableType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
