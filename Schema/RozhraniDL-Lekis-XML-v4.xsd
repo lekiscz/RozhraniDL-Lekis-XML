@@ -412,8 +412,7 @@
 				<![CDATA[UDI kód, podobné jako FMD kód, ale pro PZT, kódováno Base64]]>
 			</xs:documentation>
 		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:pattern value="^(?=(.{4})*$)[A-Za-z0-9+/]*={0,2}$"/>
+		<xs:restriction base="xs:base64Binary">
 	   		<xs:maxLength value="256" />
 	   	</xs:restriction>
 	</xs:simpleType>
