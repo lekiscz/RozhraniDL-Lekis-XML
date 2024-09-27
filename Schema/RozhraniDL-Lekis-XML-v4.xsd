@@ -406,6 +406,16 @@
 			<xs:pattern value="[0-9A-Fa-f]{8}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{4}[-][0-9A-Fa-f]{12}"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="udiType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[UDI kód, podobné jako FMD kód, ale pro PZT, kódováno Base64]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:base64Binary">
+	   		<xs:maxLength value="256" />
+	   	</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="subjektType">
 		<xs:annotation>
 			<xs:documentation>
@@ -1205,6 +1215,13 @@
 						* 1 - šarže byla skladem u dodavatele před 9.2.2019
 						* prázdno - shodný význam jako 0
 						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="udi" type="udiType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[UDI kód, podobné jako FMD kód, ale pro PZT, kódováno Base64]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
