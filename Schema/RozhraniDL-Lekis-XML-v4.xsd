@@ -1225,6 +1225,13 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="cisloTransportnihoObalu" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Číslo transportního obalu 20 znaků. Slouží pro lepší orientaci obsluhy při příjmu většího množství přepravek/beden/palet]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 		</xs:sequence>
 		<xs:attribute name="pozice" type="xs:unsignedInt">
 			<xs:annotation>
