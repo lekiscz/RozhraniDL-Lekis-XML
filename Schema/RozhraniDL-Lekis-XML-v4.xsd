@@ -1238,7 +1238,8 @@
 						<![CDATA[Referenční číslo EUDR. 50 znaků. Pro výrobky spadající do působnosti EUDR]]>
 					</xs:documentation>
 				</xs:annotation>
-			</xs:element>		</xs:sequence>
+			</xs:element>		
+		</xs:sequence>
 		<xs:attribute name="pozice" type="xs:unsignedInt">
 			<xs:annotation>
 				<xs:documentation>
