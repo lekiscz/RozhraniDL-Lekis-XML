@@ -49,7 +49,8 @@
       <carovyKodPolozkySkladoveKarty>2270002760723</carovyKodPolozkySkladoveKarty>
       <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
       <sklademPred20190209>0</sklademPred20190209>
-	  <udi>MDEwODU4NDAwNTExMDIwNjEwMDAwMDNAMTcyMjEyMDAyMQ==</udi>
-    </polozka>
+      <udi>MDEwODU4NDAwNTExMDIwNjEwMDAwMDNAMTcyMjEyMDAyMQ==</udi>
+      <cisloTransportnihoObalu>KCZZ3-5524-112</cisloTransportnihoObalu>
+      <referencniCisloEudr>25NLCTYYJJ2281</referencniCisloEudr>    </polozka>
   </polozky>
 </dodaciList>
