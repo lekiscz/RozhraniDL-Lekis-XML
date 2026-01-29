@@ -1225,6 +1225,13 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element name="zvlastniPrirazka" type="cenaBezDPHType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Zvláštní obchodní přirážka distributora bez DPH [Kč]]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="cisloTransportnihoObalu" type="xs:string" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
