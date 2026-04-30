@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prevodka xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2026-01-01T12:59:41.5694317+02:00" verzeLpW="2026.1.1.1" verzeRozhrani="4">
+  <hlavicka>
+    <dodavatel>
+      <nazev>Testovací lékárna</nazev>
+      <nazev2>Lekárna u Hrocha</nazev2>
+      <IC>27604977</IC>
+      <DIC>CZ27604977</DIC>
+      <interniCislo>555</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev>ABC International s.r.o.</nazev>
+      <IC>17522</IC>
+      <DIC />
+    </odberatel>
+    <oznaceni>00048</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>1</pocetPolozek>
+    <idSkladu>1002</idSkladu>
+    <datumVytvoreni>2026-01-01T09:12:57.917</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="291.9339" cenaSDPH="353.2400">
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="291.9339" cenaSDPH="353.2400" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="652.9273" cenaSDPH="718.2200">
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="652.9273" cenaSDPH="718.2200" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl/>
+      <pdk />
+      <kodDodavatele />
+      <IdPolozky>227058</IdPolozky>
+      <IdSkladoveKarty>100</IdSkladoveKarty>
+      <nazev>Léčivý čaj</nazev>
+      <skupina>5</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze>16.06.2026</sarze>
+      <exspirace>2026-09-14T23:59:59.9</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.0000" />
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="291.9339" cenaSDPH="353.2400" />
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="652.9300" cenaSDPH="718.2200" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2240002270584</carovyKodPolozkySkladoveKarty>
+      <cisloTransportnihoObalu>KCZZ3-5524-112</cisloTransportnihoObalu>
+      <referencniCisloEudr>25NLCTYYJJ2281</referencniCisloEudr>
+      <nakupniCenaObvykla cenaBezDPH="300.0000"/>
+	  <naturalniRabat>1</naturalniRabat>
+	  <zapocDoplatekPod4 cenasdph="10.0000"/>
+	</polozka>
+  </polozky>
+</prevodka>
