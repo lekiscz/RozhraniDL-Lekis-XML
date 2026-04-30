@@ -915,6 +915,13 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
+			<xs:element name="zapocDoplatekPod4" type="cenaSDPHType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Výše započitatelného doplatku pro mladší 4 let]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element name="taxaLaborum" type="cenaBezDPHType">
 				<xs:annotation>
 					<xs:documentation>
@@ -1238,7 +1245,29 @@
 						<![CDATA[Referenční číslo EUDR. 50 znaků. Pro výrobky spadající do působnosti EUDR]]>
 					</xs:documentation>
 				</xs:annotation>
-			</xs:element>		
+			</xs:element>
+			<xs:element name="naturalniRabat" type="bitNullableType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[
+						**Zda se jedná o naturální rabat**
+
+						Hodnoty
+						* 0 - nejedná se o naturální rabat
+						* 1 - jedná se o naturální rabat
+						* prázdno - není známo, zda se jedná o naturální rabat
+						]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nakupniCenaObvykla" type="cenaBezDPHNullableType">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Nákupní cena přípravku obvyklá, bez DPH]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
 		</xs:sequence>
 		<xs:attribute name="pozice" type="xs:unsignedInt">
 			<xs:annotation>
