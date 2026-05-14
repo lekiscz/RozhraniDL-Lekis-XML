@@ -143,12 +143,12 @@
 
 				Umožňuje prázdnou hodnotu.
 
-				Představuje 7 čísel, případně doplněných zleva nulami.
+				Představuje 7 čísel nebo znaků, případně doplněných zleva nulami.
 				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="\d{7}|.{0}"/>
+			<xs:pattern value="[0-9A-Za-z]{1,7}|.{0}"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="suklNeboTlType">
@@ -159,12 +159,12 @@
 
 				Umožňuje prázdnou hodnotu.
 
-				Představuje až 7 čísel, případně doplněných zleva nulami.
+				Představuje až 7 čísel nebo znaků, případně doplněných zleva nulami.
 				]]>
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:pattern value="\d{1,7}|.{0}"/>
+			<xs:pattern value="[0-9A-Za-z]{1,7}|.{0}"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="pdkType">
@@ -1222,6 +1222,13 @@
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[UDI kód, podobné jako FMD kód, ale pro PZT, kódováno Base64]]>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="zvlastniPrirazka" type="cenaBezDPHType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						<![CDATA[Zvláštní obchodní přirážka distributora bez DPH [Kč]]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>

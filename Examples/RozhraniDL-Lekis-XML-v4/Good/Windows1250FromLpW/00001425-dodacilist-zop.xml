@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<dodaciList xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2026-01-29T11:44:42.2398508+01:00" verzeLpW="2025.1.2.32" verzeRozhrani="4" opravnyDanovyDoklad="0">
+  <hlavicka>
+    <dodavatel>
+      <nazev><![CDATA[Lékárna U Testu]]></nazev>
+      <nazev2 />
+      <IC>25356089</IC>
+      <DIC>CZ25356089</DIC>
+      <interniCislo>11</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev><![CDATA[MEDESA care s.r.o.]]></nazev>
+      <IC>63323818</IC>
+      <DIC>CZ63323818</DIC>
+      <nakladoveStredisko />
+    </odberatel>
+    <oznaceni>1425</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>1</pocetPolozek>
+    <idSkladu />
+    <datumVytvoreni>2026-01-29T11:43:41.167165+01:00</datumVytvoreni>
+    <poznamka />
+    <soucetNakupnichCen cenaBezDPH="748.20" cenaSDPH="838.00">
+      <nakupniCena sazbaDPH="12.00" cenaBezDPH="748.20" cenaSDPH="838.00" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="726.80" cenaSDPH="814.00">
+      <prodejniCena sazbaDPH="12.00" cenaBezDPH="726.80" cenaSDPH="814.00" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+    <polozka pozice="1">
+      <sukl>7770001</sukl>
+      <pdk />
+      <gtin />
+      <kodDodavatele>105551</kodDodavatele>
+      <IdPolozky>626386</IdPolozky>
+      <IdSkladoveKarty>105551</IdSkladoveKarty>
+      <nazev><![CDATA[Rozpuštěný abaktal]]></nazev>
+      <skupina>1</skupina>
+      <mnozstvi>5.0000</mnozstvi>
+      <sarze>FS7468</sarze>
+      <exspirace>2018-06-30T00:00:00</exspirace>
+      <certifikat />
+      <vyrobniCena cenaBezDPH="106.11" />
+      <nakupniCena sazbaDPH="12.00" cenaBezDPH="149.64" cenaSDPH="167.60" />
+      <prodejniCena sazbaDPH="12.00" cenaBezDPH="145.36" cenaSDPH="162.80" />
+      <carovyKod>3838957694471</carovyKod>
+      <carovyKodPolozkySkladoveKarty>2200006263869</carovyKodPolozkySkladoveKarty>
+      <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
+      <sklademPred20190209>1</sklademPred20190209>
+      <zvlastniPrirazka cenaBezDPH="4.24" />
+    </polozka>
+  </polozky>
+</dodaciList>

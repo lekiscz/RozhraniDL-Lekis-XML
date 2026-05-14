@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<dodaciList xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2025-04-12T13:18:08.3555584+02:00" verzeLpW="2025.1.2.32" verzeRozhrani="4">
+  <hlavicka>
+    <dodavatel>
+      <nazev><![CDATA[Testovací lékárna]]></nazev>
+      <nazev2><![CDATA[Lekárna u Hrocha]]></nazev2>
+      <IC>00000022</IC>
+      <DIC>CZ27604977</DIC>
+      <interniCislo>555</interniCislo>
+    </dodavatel>
+    <odberatel>
+      <nazev>test</nazev>
+      <IC />
+      <DIC />
+    </odberatel>
+    <oznaceni>10040</oznaceni>
+    <cisloObjednavky />
+    <pocetPolozek>2</pocetPolozek>
+    <idSkladu />
+    <datumVytvoreni>2024-02-02T10:43:16.11</datumVytvoreni>
+    <poznamka><![CDATA[testujeme přenos IPL]]></poznamka>
+    <soucetNakupnichCen cenaBezDPH="198.5200" cenaSDPH="234.7092">
+      <nakupniCena sazbaDPH="21.00" cenaBezDPH="148.5200" cenaSDPH="179.7092" />
+      <nakupniCena sazbaDPH="10.00" cenaBezDPH="50.0000" cenaSDPH="55.0000" />
+    </soucetNakupnichCen>
+    <soucetProdejnichCen cenaBezDPH="231.0082" cenaSDPH="263.2000">
+      <prodejniCena sazbaDPH="10.00" cenaBezDPH="148.3636" cenaSDPH="163.2000" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="82.6446" cenaSDPH="100.0000" />
+    </soucetProdejnichCen>
+  </hlavicka>
+  <polozky>
+     <polozka pozice="2">
+      <sukl />
+      <pdk />
+      <gtin />
+      <kodDodavatele>1202165</kodDodavatele>
+      <IdPolozky>276072</IdPolozky>
+      <IdSkladoveKarty>1202165</IdSkladoveKarty>
+      <nazev><![CDATA[!!! Test přenosu nákupní sazby DPH do vydané převodky/DL]]></nazev>
+      <skupina>4</skupina>
+      <mnozstvi>1.0000</mnozstvi>
+      <sarze />
+      <exspirace />
+      <certifikat />
+      <vyrobniCena cenaBezDPH="0.0000" />
+      <nakupniCena sazbaDPH="15.00" cenaBezDPH="50.0000" cenaSDPH="55.0000" />
+      <prodejniCena sazbaDPH="21.00" cenaBezDPH="82.6400" cenaSDPH="100.0000" />
+      <carovyKod />
+      <carovyKodPolozkySkladoveKarty>2270002760723</carovyKodPolozkySkladoveKarty>
+      <sarzeOznacenaFMD>0</sarzeOznacenaFMD>
+      <sklademPred20190209>0</sklademPred20190209>
+      <udi>MDEwODU4NDAwNTExMDIwNjEwMDAwMDNAMTcyMjEyMDAyMQ==</udi>
+      <cisloTransportnihoObalu>KCZZ3-5524-112</cisloTransportnihoObalu>
+      <referencniCisloEudr>25NLCTYYJJ2281</referencniCisloEudr>    </polozka>
+  </polozky>
+</dodaciList>
