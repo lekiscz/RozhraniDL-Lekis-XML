@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<prevodka xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2026-01-01T12:59:41.5694317+02:00" verzeLpW="2026.1.1.1" verzeRozhrani="4">
+<dodaciList xmlns="http://lekis.cz/RozhraniDL-Lekis-XML-v4" datumExportu="2026-01-01T12:59:41.5694317+02:00" verzeLpW="2026.1.1.1" verzeRozhrani="4">
   <hlavicka>
     <dodavatel>
       <nazev>Testovací lékárna</nazev>
@@ -47,8 +47,8 @@
       <cisloTransportnihoObalu>KCZZ3-5524-112</cisloTransportnihoObalu>
       <referencniCisloEudr>25NLCTYYJJ2281</referencniCisloEudr>
       <nakupniCenaObvykla cenaBezDPH="300.0000"/>
-	  <naturalniRabat>1</naturalniRabat>
-	  <zapocDoplatekPod4 cenasdph="10.0000"/>
-	</polozka>
+      <naturalniRabat>1</naturalniRabat>
+      <zapocDoplatekPod4 cenasdph="10.0000"/>
+    </polozka>
   </polozky>
-</prevodka>
+</dodaciList>

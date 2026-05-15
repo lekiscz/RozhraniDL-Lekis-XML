@@ -1246,7 +1246,7 @@
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="naturalniRabat" type="bitNullableType" minOccurs="0">
+			<xs:element name="naturalniRabat" type="bitType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[
@@ -1255,19 +1255,17 @@
 						Hodnoty
 						* 0 - nejedná se o naturální rabat
 						* 1 - jedná se o naturální rabat
-						* prázdno - není známo, zda se jedná o naturální rabat
 						]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="nakupniCenaObvykla" type="cenaBezDPHNullableType">
+			<xs:element name="nakupniCenaObvykla" type="cenaBezDPHType" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>
 						<![CDATA[Nákupní cena přípravku obvyklá, bez DPH]]>
 					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-
 		</xs:sequence>
 		<xs:attribute name="pozice" type="xs:unsignedInt">
 			<xs:annotation>
